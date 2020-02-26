@@ -1,0 +1,36 @@
+import { 
+    REGISTER_USER,
+    LOGIN_USER,
+    AUTH_USER,
+    FORGET,
+    PASS,
+    logoutuser
+} from "../actions/types";
+
+export default function(state={},action){
+    switch(action.type){ 
+        case REGISTER_USER:
+        return {...state, register: action.payload }
+        case LOGIN_USER:
+            return {...state,member:action.payload}
+           
+               
+            case logoutuser:
+                    return  {...state,member:{
+                        member:{},
+                        loginSuccess:false,
+                          logoutSuccess:action.payload
+                        }
+                      }
+            case FORGET:
+                return{
+                    ...state,forget:action.payload
+                }
+                case PASS:
+                    return{
+                        ...state,forgetpass:action.payload
+                    }
+             default:
+            return state;
+    }
+}

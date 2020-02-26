@@ -1,0 +1,349 @@
+
+*{
+    margin:0px;
+    padding:0px; 
+}
+
+      /* IMAGE UPLOAD */
+.dropzone {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 40px;
+  }
+  
+  .dropzone_box {
+    float: left;
+    width: 30%;
+    height: 160px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .dropzone_box  .wrap {
+    background: #eaeaea;
+    height: 100%;
+    text-align: center;
+    padding-top: 31px;
+    box-sizing: border-box;
+    font-size: 49px;
+    background-size: contain !important;
+    background-position: center  !important;
+    border: 1px solid #eaeaea;
+  }
+
+
+
+                /* FOOTER */
+
+                .bck_b_dark {
+                    margin-top:10rem;
+                    background: #272723;
+                }
+
+                .bck_b_light {
+                    background: #999592;
+                }   
+                footer{
+                    border-top:2px solid black; 
+                }
+               .container {
+                   widows: 100%;
+                    margin: 0 auto;
+                     }
+
+            footer .back_b_dark{
+                position: absolute;
+                top:100%;
+                }
+             footer .logo {
+                    text-align: center;
+                    font-family: 'Monoton', cursive;
+                    color: #ffffff;
+                    font-size: 40px;
+                    padding: 11px 0px;
+                    border-bottom: 1px solid #4d4d4d;
+                }
+                
+                footer .wrapper {
+                    display: flex;
+                    position:absolute;
+
+                    color: #828282;
+                }
+                
+                footer .left,
+                footer .right {
+                    flex: 1;
+                }
+                
+                footer .business_nfo {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+                footer .business_nfo .tag {
+                    flex-grow: 1;
+                    position: relative;
+                    width: 50%;
+                    margin-bottom: 30px;
+                }
+                footer .business_nfo .icon {
+                    position: absolute;
+                    font-size: 2rem;
+                    top: 10px;
+                }
+                footer .business_nfo .nfo {
+                    padding-left: 40px;
+                }
+                
+                
+                /* MAIN.js  */
+.logo{
+    height:60px;
+    padding:20px;
+}
+
+                    /*Header*/
+
+
+                /* FORMROW */
+
+.name{
+    font-weight:300;
+    font-family:Algerian;
+    text-align:left;
+    color:black;
+    font-size:20px;
+}
+
+.value{
+    font-size:15px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.formrow{
+    margin:10px;
+    padding:15px;
+}
+
+/* form */
+input {
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 10px;
+    border-radius:10px;
+}
+
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+    background: #e1ddc3;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.error_label {
+    color: #F44336;
+    display:block;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 51px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+
+
+.label_inputs {
+    text-transform:capitalize;
+    font-family:algerian;
+    display: inline-block;
+    
+    color: black;
+    padding: 5px;
+}
+
+
+/* typography */
+#logo {
+    
+    font-family: 'Federant', ;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-align:center;
+  }
+
+  
+   @media (max-width:768px){
+    #logo{
+        font-size: 30px;
+    }
+    }
+
+  .nav-link{
+    font-family: 'Odibee Sans', ;
+    font-weight: 800;
+}
+  .neon{
+      font-weight:500;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 20px;
+      margin :10px
+  }
+
+
+   
+   /* SLIDER */
+
+   
+  .wavep{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background:url('../../../images/1.jpg');
+    
+    background-size:cover;
+    animation:wavechange 10s linear infinite;
+    background-size: cover;
+}
+
+.wave{
+    position:absolute;
+    width:100%;
+    height:143px;
+    bottom:0;
+    left:0;
+    background:url('../../../images/wave.png');
+    background-size: cover;
+    animation-delay: 10s;
+    animation:wave 40s linear infinite;
+    background-size: cover;
+
+}
+
+.wave:before{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:143px;
+    opacity:0.4;
+    bottom:0;
+    left:0;
+    background:url('../../../images/wave.png');
+    background-size:cover ;
+    animation:wave-reverse 10s linear infinite;
+   ;
+       }
+
+.wave:after{
+  content:'';
+  position: absolute;
+  width:100%;
+  height:143px;
+  bottom:0;
+  left:0;
+  background:url('../../../images/wave.png');
+  background-size: cover;
+  opacity: 0.6;
+  animation-delay: -5s;
+  animation:wave 20s linear infinite;
+}
+  @keyframes wave
+   {
+    0%
+    {
+        background-position: 0;
+        background-size: cover;
+    }
+    100%
+    {
+      background-position: 1360px;
+      background-size:cover ;
+    } 
+   }
+  @keyframes wavechange
+  {
+    0%
+    {
+        background:url('../../../images/1.jpg');
+        background-size: cover;
+    }
+    50%
+    {
+      background:url('../../../images/2.jpg');
+      background-size: cover;
+    }
+    100%{
+      background:url('../../../images/4.jpg');
+      background-size: cover;
+      
+    }
+  }
+
+  @keyframes wave-reverse
+   {
+    0%
+    {
+        background-position: 1360px;
+    }
+    100%
+    {
+      background-position: 0px;
+    }
+  }
+    /* DESCRIPTION */
+
+  #about{
+    max-width:"900px"; 
+    margin:"auto";
+    margin-left: 30px;
+    color:brown;
+  }
+  
+  
+  .description{
+  
+    border-radius: 5px; 
+        margin-bottom:30px;
+        margin-top: 90px; 
+        overflow: hidden;
+        font-family: 'Oswald', sans-serif;
+        font-size:20px;
+        font-style: oblique;
+        font-weight:800;
+      
+  }
+  .description h1{
+    font-weight: 800;
+    color: #000;
+  }
+  
+  .circle{
+    background-image:url("../../../images/lo.jpg");
+    background-size:cover ;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    float:left;
+    shape-outside:circle();
+    margin:10px;
+  
+  }
