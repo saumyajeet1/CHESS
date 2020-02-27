@@ -43,7 +43,7 @@ const recordSchema=mongoose.Schema({
         type:String
     },
     year:{
-        type:Number,
+        type:String,
         required:true
     }
     

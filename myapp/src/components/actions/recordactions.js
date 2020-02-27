@@ -3,6 +3,7 @@ import {
     ADDDETAIL,
     ADDRECORD,
     ALLALUM,
+    SEARCHYR,
     GETRECORD,
     ADDEDUCATION
 } from './types';
@@ -38,6 +39,18 @@ export function getrecords(){
     
     return {
         type: GETRECORD,
+        payload: request
+    }
+}
+
+
+
+export function searchyear(data){
+    console.log(data)
+    const request = axios.post(`${RECORD_SERVER}/searchyr`,data)
+        .then(response => response.data);
+    return {
+        type:SEARCHYR,
         payload: request
     }
 }

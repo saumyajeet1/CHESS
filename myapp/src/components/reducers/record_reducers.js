@@ -1,7 +1,8 @@
 import { 
     ADDRECORD,
     GETRECORD,
-    ALLALUM
+    ALLALUM,
+    SEARCHYR
 } from "../actions/types";
 
 export default function(state={},action){
@@ -13,7 +14,9 @@ export default function(state={},action){
             return {...state, rec:action.payload }
         case ALLALUM:
             return {...state, all:action.payload }
-             
+        case SEARCHYR:
+            return {...state, searchresult:action.payload }
+              
         
         default:
             return state;

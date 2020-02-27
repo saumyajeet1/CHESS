@@ -209,9 +209,28 @@ app.get('/api/records/allalum',(req,res)=>{
             res.status(400).send(err)
             
         }
-        res.status(200).send(allalum)
+       return res.status(200).send(allalum)
     })
  })
+
+ 
+app.post('/api/records/searchyr',(req,res)=>{
+    console.log(req.body)
+    Record.find( {$or: [
+        {"year":req.body.year}, {"name":req.year}
+     ]},(err,result)=>{
+        
+      console.log(result) 
+      console.log(err)
+      if(err){
+        console.log(err)
+        return  res.status(400).send(err)
+      }
+     res.status(200).json({
+          resyr:result
+    })
+})
+})
 
 app.post('/api/records/adddetail',(req,res)=>{
   

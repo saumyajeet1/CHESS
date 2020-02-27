@@ -7,7 +7,7 @@ export const GETRECORD="getrecord"
 export const  AUTH_USER="authuser"
 export const  ALLALUM="allalum"
 export const  PASS="pass"
-
+export const SEARCHYR="searchyr"
 
 export const  FORGET="forget"
 export const ADDEDUCATION="addeducation"

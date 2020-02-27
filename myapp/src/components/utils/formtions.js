@@ -40,6 +40,16 @@ newformdata[element.id]=newelement
 return newformdata
 };
 
+
+export const updatesearch=(element,formdata,type)=> {
+    const newformdata={...formdata}
+    const newelement={...newformdata[element.id]}
+    newelement.value=element.event.target.value
+    
+    newformdata[element.id]=newelement
+    return newformdata
+    };
+    
 export const validform=(formdata,type)=>{
 let formvalid=true;
 for(let key in formdata) {
