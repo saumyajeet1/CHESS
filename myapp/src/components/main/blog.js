@@ -1,0 +1,439 @@
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import {Link} from 'react-router-dom'
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  IconButton,
+  ListItemSecondaryAction
+} from "@material-ui/core";
+import RootRef from "@material-ui/core/RootRef";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import InboxIcon from "@material-ui/icons/Inbox";
+import { makeStyles ,withStyles} from '@material-ui/core/styles';
+const useStyles = theme => ({
+  root: {
+     fontSize:"25px",
+   },
+});
+
+const getItemStyle = (isDragging, draggableStyle) => ({
+  // styles we need to apply on draggables
+  ...draggableStyle,
+
+  ...(isDragging && {
+    background: "rgb(235,235,235)"
+  })
+});
+
+const getListStyle = isDraggingOver => ({
+  //background: isDraggingOver ? 'lightblue' : 'lightgrey',
+});
+
+class Blog extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [{id:"1",primary:"Tejaswi Shah",secondary:`
+      Hey guys this is Tejaswi Shah. It’s a great platform that CHESS is providing to guide the upcoming batches...
+      `,
+      main:`
+      Hey guys this is Tejaswi Shah. It’s a great platform that CHESS is providing to guide the upcoming batches of Chemical
+Engineering. First of all let me tell you that Capgemini is an IT company and I got selected in this company through campus
+placement. Two rounds were conducted: Online Aptitude Test and Personal Interview. As I was preparing for CAT exams,
+so didn&#39;t need any extra preparation. However, I highly recommend that you all practice aptitude from online websites like
+IndiaBix. There was around 80 questions plus a separate section to solve pseudo codes. Overall level of difficulty is 4/5.
+There was no GD round but still I prepared for it by keeping myself in touch with current affairs and practice speaking in
+front of mirror. In Personal Interview they asked questions mainly from DBMS and OOPS. So, I recommend to study these
+two topics thoroughly. You can take help from YouTube Channels. HR round was mere a formality. They just asked about
+my club activities. I was the President of Enteract-the Official Dramatics club of NIT Durgapur. PI level of difficulty was 3/5.
+You need to be thorough with everything you have written in your CV. Don’t write false content in your CV. That’s all
+about it. Feel free to get in touch with me through my mail. Good luck for your future endeavors.
+      `,company:"Capegemini",batch:"2020",email:"tejaswishah1998@gmail.com",name:"Tejaswi Shah"},
+      {id:"2",primary:"Jyoti Ranjan Mishra",secondary:` Hello everyone this is Jyoti Ranjan Mishra. We are really grateful that CHESS is providing us the platform to guide our
+      juniors. I was selected in Capgemini through campus placement. There were two rounds: Online Test and Personal
+      Interview...`,
+      main:`
+      Hello everyone this is Jyoti Ranjan Mishra. We are really grateful that CHESS is providing us the platform to guide our
+      juniors. I was selected in Capgemini through campus placement. There were two rounds: Online Test and Personal
+      Interview. Online test has aptitude section, essay writing section and technical section which includes data structures &amp;
+      algorithms and pseudocodes. For aptitude I regularly practiced and revised the things in summer vacation itself from
+      books as well as different online sites such as IndiaBix, PrepInsta etc. It&#39;s advisable to focus on verbal aptitude skill,
+      probability, permutation-combination etc. Essay writing topic was easy with 160-180 word limit. Avoid spelling and
+      grammatical errors and use backspace as minimum as possible. Technical round comprises of mcq questions based on
+      data structures &amp; algorithms and pseudocodes. DS and algo questions were mostly theoretical. Give special focus on time
+      complexity questions. Overall difficulty is 3/5. There was no GD. The Technical PI lasted for 25-30 minutes. It started with
+      basic introduction and all and this is a point you can put your 1st impression as a perfect candidate for the role. Then the
+      rest of the questions will move around things you have mentioned in your CV. In my case, I was asked about my summer
+      project and then questions from based on my technical skills (C, DS, SQL) in CV. Question level will depend on the
+      interviewer and it was moderate in my case. However, it is advisable not to lie/ extrapolate about your skills. Also, if you
+      don&#39;t know an answer, don&#39;t guess blindly. If you are a non CS/IT student, interviewer will focus a lot on the projects you
+      worked, your interest towards learning and coding, your attitude to implement the knowledge for practical purpose. If you
+      are in any club or societies, it will be an added advantage. `,company:"Capegemini",batch:"2020",email:"mishra.jyotiranjan.1999@gmail.com",name:"Jyoti Ranjan Mishra"},
+      {id:"3",primary:"Tanushree Mondal",secondary:`
+      Hi everyone. This is Tanushree Mondal. I am glad that ChESS gave me the opportunity to share my interview experience
+      with all of you
+      `,
+      main:`
+      Hi everyone. This is Tanushree Mondal. I am glad that ChESS gave me the opportunity to share my interview experience
+with all of you. I was selected in HUL through campus placement. First shortlisting was done on the basis of CGPA and CV.
+There were two rounds after shortlisting: Technical PI and HR. Both the rounds were done on Skype.
+For PI round I would suggest to go through all departmental subjects thoroughly. On an average they asked 5-7 questions.
+Level of difficulty is 4/5. Mostly they ask questions from your training/intern and from your favorite subjects. In HR round
+they asked me why I took chemical engineering, what are my future plans, about my family, whether I am okay with remote
+location or not and what is supply chain. As a final tip I would say that answer all questions with confidence and try to
+explain in the simplest manner with technical terms when asked. Prepare your favorite subjects properly. They also check
+whether you have been in a place for too long or not because their job demands all round India transfer. `,company:"Hindustan Unilever Limited (HUL)",batch:"2020",email:"tanushreemondal1998@gmail.com",name:"Tanushree Mondal"}
+,   {id:"4",primary:"Kaberi Sarkar",secondary:`
+Hi, this is Kaberi Sarkar. I really appreciate the effort of Chess to help us reach out to our juniors. Firstly, I got selected at
+Tata Consulting Engineers...
+`,
+main:`
+Hi, this is Kaberi Sarkar. I really appreciate the effort of Chess to help us reach out to our juniors. Firstly, I got selected at
+Tata Consulting Engineers through the campus placement process. There were three rounds conducted by the company
+namely, pen and paper test, technical interview and HR interview. For the online round, I prepared basics of chemical core
+subjects like heat transfer, mass transfer, fluid mechanics mainly and others like CRE, Thermodynamics etc., also a little bit
+of formulas, heat exchanger design and analogies. There were 30 technical questions and 30 aptitude questions for the
+online round. The level of difficulty for which was 4/5. The technical questions I faced in PI round were to design Heat
+exchanger on paper, tricky questions about pump and valves, basic ideas about distillation column and other mass transfer
+phenomenon. I was asked about my internships topics and why I chose design field. For the technical PI round, I prepared
+basics of chemical core subjects. Some of the HR questions that I faced in the PI round were to give a solution to a tricky
+situation. I was asked about the company little bit, why I wanted to join TCE, why I prefer design field. I was asked to
+mention my strengths and weakness, how to handle difficulty and other obstacles in job life etc. The level of difficulty for the
+PI round was 4/5. My take away from the interview process was that I had to be confident about my say and attitude
+matters. Some tips to juniors to prepare for this particular company&#39;s interview is that no need to mug up chemical
+engineering subjects, you should have a clear basic idea about core chemical, go through the basic phenomena of fluid
+mechanics, heat exchanger, mass transfer specially. Be confident about what you are saying because they diverts your
+ideas to confuse you, always be ready to draw heat exchanger, Valves, graphs, formulas etc, You need to study about the
+company, their field, innovation etc. , be confident and try to maintain eye contact with the interviewer and if you can&#39;t
+remember any topic say that clearly instead of making stories. Good luck.`,company:"TCE",batch:"2020",email:"kaberisarkar.1999@gmail.com",name:"Kaberi Sarkar"}
+,
+{id:"5",primary:"Aritra Karmakar",secondary:`
+Hey everyone. This is Aritra Karmakar. It’s a great platform that CHESS is providing to guide the upcoming batches of
+Chemical Engineering. I was selected in Tredence...
+`,
+main:`
+Hey everyone. This is Aritra Karmakar. It’s a great platform that CHESS is providing to guide the upcoming batches of
+Chemical Engineering. I was selected in Tredence from college placement which is a non-core IT company. The placement
+process was conducted in three rounds: Aptitude, technical and HR. I practiced aptitude from Indiabix and Pariksha. For
+coding I followed geekforgeeks and some youtube videos. There were different sections in aptitude round, guesstimate was
+one of them. Overall level of difficulty for apti round is 4/5 . There was no GD round. However it will be wise to be aware
+about recent happenings around the world. In the PI round they asked from Sql, guesstimate and puzzles. I practiced
+puzzles from geekforgeeks and had an in-depth knowledge of Sql. In the HR round they again asked a few technical
+questions but very few. It was just a formality. PI round was overall 4/5 . I was offered the offer letter there only along with
+some goodies.For clearing the initial apti round, you need to practice apti a lot. Questions are easy, but time will be very
+less. Practice typing on keyboard. During the online round, 30 mins will be given to you and you will be told to write an
+essay and a guesstimate, both of minimum 350 words. So you need to be very fast. Most of my friends were unable to
+complete the essay and the guesstimate part. I completed both on time. For the technical round, i would suggest you guys
+to have a thorough knowledge of mysql and excel. If you know python and R , it&#39;s great. Also study guesstimates from
+various youtube videos . Puzzles are also very important. Just go to geekforgeeks and search for puzzles. You just need to
+see the first 100 puzzles and you will surely get some common questions during the interview. And for the Hr round, I would
+suggest you be confident about what you speak that will do the job.`,company:"Tredence",batch:"2020",email:"aritra240@gmail.com",name:"Aritra Karmakar"},
+{id:"6",primary:"J Anisha Rao",secondary:`
+First of all I would like to thank CheSS for proving me the opportunity to help my juniors. I was selected in Aditya Birla Group
+from campus placement. The placement process was held in 4 rounds: Online Test, GD, Technical Interview and HR...
+`,
+main:`
+First of all I would like to thank CheSS for proving me the opportunity to help my juniors. I was selected in Aditya Birla Group
+from campus placement. The placement process was held in 4 rounds: Online Test, GD, Technical Interview and HR
+Interview.Below are the sites I had followed while preparing for aptitude in order of difficulty:
+1. Indiabix
+2.A to Z exams
+3.Pariksha
+4.Lofoya
+5. FACEPREP
+For the technical part just go through some of the reference books for respective subjects.
+In 120 minutes we have to solve 40 aptitude questions and 60 technical questions. Overall level of difficulty is 3/5. In the GD
+round a Case study was given where we had to analyze among five unique startups which was the most feasible and
+profitable one. Be vigilant about current topics and practice how to summarize your points. In the PI round they asked
+mainly from the industrial training I had undergone, heat exchangers, cooling towers and basic questions from fluid
+mechanics. In the HR round they asked questions from my CV and justification of what I have mentioned in it. Difficulty of
+the HR round was 3/5.Remember some of the key points:
+
+1. Never miss proposing a tagline or a catchy phrase at the end in GD.
+2. Technical questions were completely based on the practical application of what you have learnt in 4 years.
+3. HR round is how well you can portray yourself as the right person for them.
+Last but not the least I would like to add few more points:
+1. Be very competent in the Online test. Work on your speed in doing minor calculations.
+2. Improve your vocabulary
+3. Try to initiate the talk in GD and listen patiently to what others are saying.
+4. If you don’t know any answer just admit it. Don’t be oversmart.`,company:"Aditya Birla Group",batch:"2020",email:"j.nisharao@gmail.com",name:"J Anisha Rao"},
+{id:"7",primary:"Sonu Dixit",secondary:`
+Hi, this is Sonu Dixit. Thank you ChESS, for providing this platform. I got selected at Linde through the campus
+placement process. There were two rounds conducted by the company namely,...
+`,
+main:`
+Hi, this is Sonu Dixit. Thank you ChESS, for providing this platform. I got selected at Linde through the campus
+placement process. There were two rounds conducted by the company namely,
+1-written test
+2-Interview.
+1-For aptitude I took preparation from a youtube channel name genique education.
+2-For technical part ,as I was preparing for GATE so everything came under it..
+Around 70 to 80 questions in 1 hour were asked in the online round, the level of difficulty being 3/5. The technical
+questions I faced in PI round were mostly practical based. I did not take much preparation for the technical PI
+round as I was preparing for GATE.
+
+The HR questions I faced during HR interview were mostly general,as other companies like :
+
+· Why linde ?
+· Why not higher studies?
+· Where do you want to see yourself in next 5 years?
+The level of difficulty for which was 4/5.My takeaway from the interview process was that it was a good
+experience.
+Some tips to juniors for preparation are:
+· There is no any specific thing you need to do for this particular company.
+· Just work hard on your technical part (Heat transfer, fluid mechanics, mass transfer ).
+ALL THE BEST!`,company:"Linde",batch:"2020",email:"sonu.dixit.505@gmail.com",name:"Sonu Dixit"},
+{id:"8",primary:"Supratim Dey",secondary:`
+Hi, everyone. I appreciate the initiative taken by ChESS. I got selected in RIL through campus placement process.
+The different rounds conducted by the company were...
+`,
+main:`
+Hi, everyone. I appreciate the initiative taken by ChESS. I got selected in RIL through campus placement process.
+The different rounds conducted by the company were
+· Online aptitude + technical 1st round
+· Face to face interview 2nd round
+· HR interview final round.
+For the online round, focus more on aptitude as it carries higher weightage. Keep time limit in mind and
+attempt maximum questions with higher accuracy.
+
+The number of questions asked in the online round were 30 aptitude and 30 technical, level of difficulty for which
+was 4/5. The type of technical questions I faced in PI round were:
+· Moderate.
+· Subject related.
+· Current semester related.
+· Training related.
+· Basic practical application.
+The preparation I took for the technical PI round was that I cleared the basic level concept of every topic and the
+basic idea about all main equipments.
+Some HR questions I faced in the PI round were regarding:
+· Family background.
+· Long term goals.
+· Strength and weakness.
+· Expectations from RIL.
+The level of difficulty for the questions faced in the PI rounds was 4/5.
+My takeaways from the interview process were:
+· Keep calm.
+· Never blabber if you don&#39;t know the answer.
+· Be confident, not arrogant.
+Some tips to juniors to prepare for this particular company&#39;s interview are:
+
+· Basics should be clear.
+· Heat, mass and fluid are the main topics you need to focus.
+· Study about your training or internship in detail.
+
+All the very best for your future!`,company:"Reliance Industries Limited",batch:"2020",email:"tubaione98@gmail.com",name:"Supratim Dey"},
+{id:"9",primary:"Bidipta Ghosh",secondary:`
+Hi, this is Bidipta. I got selected in RIL through the campus placement procedure. Thank you, ChESS for
+giving me an opportunity to share my experience. The different rounds conducted by the company were...
+`,
+main:`
+Hi, this is Bidipta. I got selected in RIL through the campus placement procedure. Thank you, ChESS for
+giving me an opportunity to share my experience. The different rounds conducted by the company were:
+· Online(Aptitude + Technical)
+· Interview (Technical + HR)
+I did not take any such preparation for the online aptitude round.Approximately, 50 questions were asked
+in the online round, the level of difficulty for which was ⅗. The technical questions I faced in PI round were
+asked from:
+· transport phenomena (fluid mechanics, especially pumps and valves)
+· control and instrumentation(close loop control system)
+· project work(recent and summer intern)
+· some questions from elective subject.
+
+For the technical PI round, I made sure that every line I have written in my CV is crystal clear to me and I can
+answer each of them and I went through the important chem engg subjects which were taught in previous
+semesters.The HR questions I faced in the PI round were:
+1. Tell me about yourself
+2. Extracurricular activities
+3. Why should we select you over others?
+4. Weakness
+5. What will you do if your subordinates don&#39;t abide by your instructions?
+The level of difficulty for the interview process was ⅘. My takeaway from the interview process was that the
+questions (both online and technical PI) were the very basics of chemical engineering and you can easily answer
+them if you remember the things which were taught in the previous semesters. Try to be a bit smart while
+answering the HR questions but don&#39;t lie to them as they are much experienced than you.
+Some tips to my juniors to prepare for this particular company&#39;s interview will be:
+1.Questions are asked in such a way that if you have the basic knowledge regarding the subject, you can easily
+answer them.
+2. If you don&#39;t know the exact answer, try to approach the question in a logical manner.
+3. Don&#39;t write anything in your CV which you are not well aware of.
+Good luck !!`,company:"Reliance Industries Limited",batch:"2020",email:"ghoshbidipta660@gmail.com",name:"Bidipta Ghosh"},
+{id:"10",primary:"Ananya Ghosh",secondary:`
+Hi, this is Ananya. Thank you for asking me to share my experience. I got selected in Linde by the campus
+recruitment process. There were three different...
+`,
+main:`
+Hi, this is Ananya. Thank you for asking me to share my experience. I got selected in Linde by the campus
+recruitment process. There were three different rounds conducted by the company namely, Pen and Paper Test
+(includes technical, aptitude and english), PI (technical and HR). For the pen and paper test, I checked in
+glassdoor.com that what kind of questions they generally ask, and then I prepare accordingly. There were
+around 50 questions for the pen and paper round, the level of difficulty for which was 4/5. Generally Linde
+takes GD but in our time due to less number of students who qualified the pen and paper test, GD didn&#39;t
+happen. Linde&#39;s GD topics are mostly on trending and common issues.
+Technical Questions in the PI round, started from my favourite subject then interviewer tried to link it with
+Thermodynamics and then some basic questions from Physics and Chemistry. Mostly, basics questions were
+asked in the PI round. For the technical round I mostly focused on the unit operations and different types of
+equipment, their working principles and most importantly thermodynamic processes and cycles. In the HR
+round, normal HR questions like Tell about yourself (background + education + hobbies), passion in life,
+aspirations, where you see yourself after 5 years, which domain you would like to work in Linde
+(process/sales), any location problem, interested in doing MBA or not and why (never say NO, try to give
+diplomatic answer) etc. were asked. The level of difficulty for the PI round was 4/5. My take away from the
+interview process was:
+1. Be confident and maintain eye contact with a gentle smile
+2. Give positive responses to every question, don&#39;t say direct NO to any question. Try to be little diplomatic.
+3. Focus on your forte.
+Some tips to juniors to prepare for this particular company&#39;s interview are:
+1. Focus on the pure basics of chemical engineering.
+2. Prepare Thermodynamics thoroughly
+3. Study about every equipment (including compressor), it&#39;s working principles.
+All the best.
+`,company:"Linde",batch:"2020",email:"anu17ananya@gmail.com",name:"Ananya Ghosh"},
+{id:"11",primary:"Polaki Sri Kavya",secondary:`
+Hi, everyone. This is Polaki Sri Kavya, I got selected at PRADAN through the campus placement procedure.
+There were three different rounds conducted...
+`,
+main:`
+Hi, everyone. This is Polaki Sri Kavya, I got selected at PRADAN through the campus placement procedure.
+There were three different rounds conducted by the company.For the online round I, basically prepared for the
+Non verbal Reasoning. 100 questions were asked in the online round, the level of difficulty for which was 3/5.
+In the GD round, the topic given to us was illegal affair. In the PI round, I was asked if I was comfortable with
+any locality. The level of difficulty of the PI round was 3/5. Some tips to juniors to prepare for this particular
+company&#39;s interview would be that you should be fast enough in reasoning. All the best.
+`,company:"PRADAN",batch:"2020",email:"srikavyapolaki@gmail.com",name:"Polaki Sri Kavya"},
+{id:"12",primary:"Monalisa Gorain",secondary:`
+Hi, this is Monalisa Gorain. I got selected in Reliance Industries Limited by the campus placement procedure.
+I practiced aptitude questions from pariksha and brushed up the important concepts and formula of fluid...
+`,
+main:`
+Hi, this is Monalisa Gorain. I got selected in Reliance Industries Limited by the campus placement procedure.
+I practiced aptitude questions from pariksha and brushed up the important concepts and formula of fluid
+mechanics, mass transfer, heat transfer, cre and process control before the test. Many of the previous year gate
+questions are repeated, so if you are a gate aspirant and preparing for it, it will definitely provide you an upper
+hand. Time will be short, so make sure you don&#39;t waste a lot of time on a problem. There were 30 aptitude
+questions and 50 technical questions in the online round, the level of difficulty for which was 3/5. Reliance
+came for recruitment for 2 different positions for our batch- for RPMG and for Operations. So the very first
+question t. 3 rounds were conducted by the company. First one was the online (technical+aptitude) round,
+second was the technical interview round and finally the HR round. I think the online round was the most
+crucial round. Around 45 students sat for the online test and only 10 were shortlisted hat I was asked in my PI
+round was why I wanted to go for operations and not RPMG. I was cross questioned on answering that. Then
+they asked me some basic questions of fluid mechanics related to bernoulli’s theorem and pumps (cavitation,
+types and utilities). They were not exactly direct questions rather application based so make sure you have
+crystal clear concepts of your core subjects. I had done my 3rd year summer training at IOCL Haldia, so next
+part of the interview was completely based on that. I was asked questions about various units of the refinery
+(functions, products, inlet stream source, outlet stream destination). Most of the questions were based on
+sulphur removal from crude petroleum. Then I was asked, if electric cars completely take over the market,
+what would happen to reliance. And then finally the technical interview ended with some HR questions. For
+the technical PI round, I made sure to have my basics clear of my core subjects(heat transfer, mass transfers,
+cre, fluid mechanics and process control). I asked my seniors about the interview process, they told me that
+small problems could be asked to solve, so I went through the important formulas. I read about my projects
+and trainings before interview. The first question in the HR round was the same as the technical interview
+round i.e why I went for operations and not RPMG. Second, was why I wanted to join reliance. Then they
+asked me to name five companies from the Fortune 500 list. Then they asked about my takeaways from IOCL
+Haldia. Then some questions about club and stuff. Then they finally asked me, what if they paid me 4 lakhs
+and gave a chance to work in their refinery. The level of difficulty in the PI round was also 3/5. I think with
+every interview I improved. I learned to represent myself with confidence. I retrospect on what went wrong
+and work towards improving that. Besides I got to know alot about Reliance Industries and the various perks
+of working at Reliance. Some tips to juniors to prepare for this particular company&#39;s interview are that try to
+do training in some refinery or petrochemical industry. That&#39;s the job you will have to do at Reliance being a
+
+chemical engineer, so prior experience will obviously provide you advantage both in the interview and your
+job. Besides you will get exposed to almost every unit operation you have studied. All the best.
+`,company:"Reliance Industries Limited",batch:"2020",email:"monalisa.gorain@gmail.com",name:"Monalisa Gorain"},
+{id:"13",primary:"Aradhna Lama Yolmo",secondary:`
+Hi , this is Aradhna and I got selected at Helium Consulting through campus placement. The different rounds
+conducted by the company were...
+`,
+main:`
+Hi , this is Aradhna and I got selected at Helium Consulting through campus placement. The different rounds
+conducted by the company were:
+1) HR round
+2) TECHNICAL + HR round
+3) Technical round
+4) Problem solving and personal interaction with the Director
+
+For the online round, I prepared some Guesstimate questions from Google and YouTube, technical questions and
+conceptual questions from books and notes. 6-7 questions were asked in the online round, the level of difficulty
+for which was 3/5. The technical questions I faced in the PI round, were mostly related to the Project and
+vocational training. For the technical PI round, I thoroughly read my project and the units covered in my
+vocational training. The HR questions I faced in the PI round were based on:
+· Strengths and weaknesses
+· How hard working are you?
+· Family background
+· Future plans
+· Further studies
+The level of difficulty for which was 4/5. My takeaway from the interview process was that drive the interview
+process according to you and not according to them. Some tips to juniors to prepare for this particular company&#39;s
+interview are do not take out a topic which is bizzare to you. Instead, put forward the topics you know. And be
+confident.
+`,company:"Helium Consulting",batch:"2020",email:"aradhna.542@gmail.com",name:"Aradhna Lama Yolmo"}
+]
+    };
+    this.onDragEnd = this.onDragEnd.bind(this);
+  }
+
+  onDragEnd(result) {
+    // dropped outside the list
+    if (!result.destination) {
+      return;
+    }
+
+  }
+
+  // Normally you would want to split things out into separate components.
+  // But in this example everything is just done in one place for simplicity
+  render() {
+    const {classes} = this.props;
+
+    return (
+      <DragDropContext onDragEnd={this.onDragEnd}>
+        <Droppable droppableId="droppable">
+          {(provided, snapshot) => (
+            <RootRef rootRef={provided.innerRef}>
+              <List style={getListStyle(snapshot.isDraggingOver)}>
+                {this.state.items.map((item, index) => (
+                  <Draggable key={item.id} draggableId={item.id} index={index}>
+                    {(provided, snapshot) => (
+                      <ListItem
+                      className={classes.root}
+                        ContainerComponent="li"
+                        ContainerProps={{ ref: this.props.innerRef }}
+                        innerRef={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        style={getItemStyle(
+                          snapshot.isDragging,
+                          provided.draggableProps.style
+                        )}
+                      >
+                        <ListItemIcon>
+                          <InboxIcon />
+                        </ListItemIcon>
+                        <Link to={{pathname:'/des',state:{
+                            item
+                        }}}
+                        className={classes.root}
+                        >
+                        <ListItemText
+                          primary={item.primary}
+                          secondary={item.secondary}
+                          
+                        />
+                        </Link>
+                     
+                      </ListItem>
+                    )}
+                  </Draggable>
+                ))}
+                {provided.placeholder}
+              </List>
+            </RootRef>
+          )}
+        </Droppable>
+      </DragDropContext>
+    );
+  }
+}
+export default withStyles(useStyles)(Blog)
+
