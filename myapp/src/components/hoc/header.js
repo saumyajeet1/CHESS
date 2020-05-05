@@ -60,7 +60,7 @@ class Header extends Component {
                   } 
                 {this.props.user.userData?
                   
-                  !this.props.user.userData.isAuth?
+                  this.props.user.userData.isAuth?
                   <li className="nav-item">
                   <Link className ="nav-link"  style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/blogs">BLOGS</Link>
                   </li>
