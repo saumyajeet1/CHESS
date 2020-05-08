@@ -36,7 +36,7 @@ class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [{id:"1",primary:"Tejaswi Shah",secondary:`
+      items: [{id:"1",primary:"Tejaswi Shah (CAPEGEMINI)",secondary:`
       Hey guys this is Tejaswi Shah. It’s a great platform that CHESS is providing to guide the upcoming batches...
       `,
       main:`
@@ -52,7 +52,7 @@ my club activities. I was the President of Enteract-the Official Dramatics club 
 You need to be thorough with everything you have written in your CV. Don’t write false content in your CV. That’s all
 about it. Feel free to get in touch with me through my mail. Good luck for your future endeavors.
       `,company:"Capegemini",batch:"2020",email:"tejaswishah1998@gmail.com",name:"Tejaswi Shah"},
-      {id:"2",primary:"Jyoti Ranjan Mishra",secondary:` Hello everyone this is Jyoti Ranjan Mishra. We are really grateful that CHESS is providing us the platform to guide our
+      {id:"2",primary:"Jyoti Ranjan Mishra (CAPEGEMINI)",secondary:` Hello everyone this is Jyoti Ranjan Mishra. We are really grateful that CHESS is providing us the platform to guide our
       juniors. I was selected in Capgemini through campus placement. There were two rounds: Online Test and Personal
       Interview...`,
       main:`
@@ -72,7 +72,7 @@ about it. Feel free to get in touch with me through my mail. Good luck for your 
       don&#39;t know an answer, don&#39;t guess blindly. If you are a non CS/IT student, interviewer will focus a lot on the projects you
       worked, your interest towards learning and coding, your attitude to implement the knowledge for practical purpose. If you
       are in any club or societies, it will be an added advantage. `,company:"Capegemini",batch:"2020",email:"mishra.jyotiranjan.1999@gmail.com",name:"Jyoti Ranjan Mishra"},
-      {id:"3",primary:"Tanushree Mondal",secondary:`
+      {id:"3",primary:"Tanushree Mondal (HINDUSTAN UNILEVER LIMITED)",secondary:`
       Hi everyone. This is Tanushree Mondal. I am glad that ChESS gave me the opportunity to share my interview experience
       with all of you
       `,
@@ -86,7 +86,7 @@ they asked me why I took chemical engineering, what are my future plans, about m
 location or not and what is supply chain. As a final tip I would say that answer all questions with confidence and try to
 explain in the simplest manner with technical terms when asked. Prepare your favorite subjects properly. They also check
 whether you have been in a place for too long or not because their job demands all round India transfer. `,company:"Hindustan Unilever Limited (HUL)",batch:"2020",email:"tanushreemondal1998@gmail.com",name:"Tanushree Mondal"}
-,   {id:"4",primary:"Kaberi Sarkar",secondary:`
+,   {id:"4",primary:"Kaberi Sarkar (TCE)",secondary:`
 Hi, this is Kaberi Sarkar. I really appreciate the effort of Chess to help us reach out to our juniors. Firstly, I got selected at
 Tata Consulting Engineers...
 `,
@@ -110,7 +110,7 @@ ideas to confuse you, always be ready to draw heat exchanger, Valves, graphs, fo
 company, their field, innovation etc. , be confident and try to maintain eye contact with the interviewer and if you can&#39;t
 remember any topic say that clearly instead of making stories. Good luck.`,company:"TCE",batch:"2020",email:"kaberisarkar.1999@gmail.com",name:"Kaberi Sarkar"}
 ,
-{id:"5",primary:"Aritra Karmakar",secondary:`
+{id:"5",primary:"Aritra Karmakar (TREDENCE)",secondary:`
 Hey everyone. This is Aritra Karmakar. It’s a great platform that CHESS is providing to guide the upcoming batches of
 Chemical Engineering. I was selected in Tredence...
 `,
@@ -131,7 +131,7 @@ to have a thorough knowledge of mysql and excel. If you know python and R , it&#
 various youtube videos . Puzzles are also very important. Just go to geekforgeeks and search for puzzles. You just need to
 see the first 100 puzzles and you will surely get some common questions during the interview. And for the Hr round, I would
 suggest you be confident about what you speak that will do the job.`,company:"Tredence",batch:"2020",email:"aritra240@gmail.com",name:"Aritra Karmakar"},
-{id:"6",primary:"J Anisha Rao",secondary:`
+{id:"6",primary:"J Anisha Rao (ADITYA BIRLA GROUP)",secondary:`
 First of all I would like to thank CheSS for proving me the opportunity to help my juniors. I was selected in Aditya Birla Group
 from campus placement. The placement process was held in 4 rounds: Online Test, GD, Technical Interview and HR...
 `,
@@ -160,7 +160,7 @@ Last but not the least I would like to add few more points:
 2. Improve your vocabulary
 3. Try to initiate the talk in GD and listen patiently to what others are saying.
 4. If you don’t know any answer just admit it. Don’t be oversmart.`,company:"Aditya Birla Group",batch:"2020",email:"j.nisharao@gmail.com",name:"J Anisha Rao"},
-{id:"7",primary:"Sonu Dixit",secondary:`
+{id:"7",primary:"Sonu Dixit (LINDE)",secondary:`
 Hi, this is Sonu Dixit. Thank you ChESS, for providing this platform. I got selected at Linde through the campus
 placement process. There were two rounds conducted by the company namely,...
 `,
@@ -186,7 +186,7 @@ Some tips to juniors for preparation are:
 · There is no any specific thing you need to do for this particular company.
 · Just work hard on your technical part (Heat transfer, fluid mechanics, mass transfer ).
 ALL THE BEST!`,company:"Linde",batch:"2020",email:"sonu.dixit.505@gmail.com",name:"Sonu Dixit"},
-{id:"8",primary:"Supratim Dey",secondary:`
+{id:"8",primary:"Supratim Dey (RELIANCE INDUSTRIES LIMITED)",secondary:`
 Hi, everyone. I appreciate the initiative taken by ChESS. I got selected in RIL through campus placement process.
 The different rounds conducted by the company were...
 `,
@@ -225,7 +225,7 @@ Some tips to juniors to prepare for this particular company&#39;s interview are:
 · Study about your training or internship in detail.
 
 All the very best for your future!`,company:"Reliance Industries Limited",batch:"2020",email:"tubaione98@gmail.com",name:"Supratim Dey"},
-{id:"9",primary:"Bidipta Ghosh",secondary:`
+{id:"9",primary:"Bidipta Ghosh (RELIANCE INDUSTRIES LIMITED)",secondary:`
 Hi, this is Bidipta. I got selected in RIL through the campus placement procedure. Thank you, ChESS for
 giving me an opportunity to share my experience. The different rounds conducted by the company were...
 `,
@@ -260,7 +260,7 @@ answer them.
 2. If you don&#39;t know the exact answer, try to approach the question in a logical manner.
 3. Don&#39;t write anything in your CV which you are not well aware of.
 Good luck !!`,company:"Reliance Industries Limited",batch:"2020",email:"ghoshbidipta660@gmail.com",name:"Bidipta Ghosh"},
-{id:"10",primary:"Ananya Ghosh",secondary:`
+{id:"10",primary:"Ananya Ghosh (LINDE)",secondary:`
 Hi, this is Ananya. Thank you for asking me to share my experience. I got selected in Linde by the campus
 recruitment process. There were three different...
 `,
@@ -290,7 +290,7 @@ Some tips to juniors to prepare for this particular company&#39;s interview are:
 3. Study about every equipment (including compressor), it&#39;s working principles.
 All the best.
 `,company:"Linde",batch:"2020",email:"anu17ananya@gmail.com",name:"Ananya Ghosh"},
-{id:"11",primary:"Polaki Sri Kavya",secondary:`
+{id:"11",primary:"Polaki Sri Kavya (PRADAN)",secondary:`
 Hi, everyone. This is Polaki Sri Kavya, I got selected at PRADAN through the campus placement procedure.
 There were three different rounds conducted...
 `,
@@ -302,7 +302,7 @@ In the GD round, the topic given to us was illegal affair. In the PI round, I wa
 any locality. The level of difficulty of the PI round was 3/5. Some tips to juniors to prepare for this particular
 company&#39;s interview would be that you should be fast enough in reasoning. All the best.
 `,company:"PRADAN",batch:"2020",email:"srikavyapolaki@gmail.com",name:"Polaki Sri Kavya"},
-{id:"12",primary:"Monalisa Gorain",secondary:`
+{id:"12",primary:"Monalisa Gorain (RELIANCE INDUSTRIES LIMITED)",secondary:`
 Hi, this is Monalisa Gorain. I got selected in Reliance Industries Limited by the campus placement procedure.
 I practiced aptitude questions from pariksha and brushed up the important concepts and formula of fluid...
 `,
@@ -341,7 +341,7 @@ do training in some refinery or petrochemical industry. That&#39;s the job you w
 chemical engineer, so prior experience will obviously provide you advantage both in the interview and your
 job. Besides you will get exposed to almost every unit operation you have studied. All the best.
 `,company:"Reliance Industries Limited",batch:"2020",email:"monalisa.gorain@gmail.com",name:"Monalisa Gorain"},
-{id:"13",primary:"Aradhna Lama Yolmo",secondary:`
+{id:"13",primary:"Aradhna Lama Yolmo (HELIUM CONSULTING)",secondary:`
 Hi , this is Aradhna and I got selected at Helium Consulting through campus placement. The different rounds
 conducted by the company were...
 `,
@@ -367,7 +367,41 @@ The level of difficulty for which was 4/5. My takeaway from the interview proces
 process according to you and not according to them. Some tips to juniors to prepare for this particular company&#39;s
 interview are do not take out a topic which is bizzare to you. Instead, put forward the topics you know. And be
 confident.
-`,company:"Helium Consulting",batch:"2020",email:"aradhna.542@gmail.com",name:"Aradhna Lama Yolmo"}
+`,company:"Helium Consulting",batch:"2020",email:"aradhna.542@gmail.com",name:"Aradhna Lama Yolmo"},
+{id:"14",primary:"Shahbal Akhter Ansari (ADITYA BIRLA GROUP)",secondary:`
+Hello everyone this is Shahbal from 2020 batch. I was selected in Aditya Birla Group through campus placement
+process. Overall there were 3 rounds namely an Online test, GD(case study)...
+`,
+main:`
+Hello everyone this is Shahbal from 2020 batch. I was selected in Aditya Birla Group through campus placement
+process. Overall there were 3 rounds namely an Online test, GD(case study) and PI. For aptitude part I practised
+from IndiaBix website and watched CareerRide Youtube channel for shortcuts and tricks. The online test has
+following sections: LR, Quantitative Aptitude, English, Technical Questions and Personality Testing. Overall the
+difficulty was 3/5. In the GD round we have to solve one case study. In the technical questions they asked from
+cooling tower, unit conversion, LMTD, types of pump, pump efficiency, types of evaporator, steam economy,
+pump characteristics curve etc. For the technical portion I would recommend standard textbooks and youtube
+channels like chemicalpedia. In the HR round they asked me about my weakness(es). Level of difficulty of PI was
+3/5. Interviewer will try to persuade you to change your answer so be confident if you’re right. Distillation
+columns, pumps, heat exchangers, evaporators are important topics, so study the in depth concept thoroughly.
+`,company:"Aditya Birla Group",batch:"2020",email:"netshahbal@gmail.com",name:"Shahbal Akhter Ansari"},
+{id:"15",primary:"Naveen Kumar (RELIANCE INDUSTRIES LIMITED)",secondary:`
+Hello everyone, this is Naveen Kumar. I was selected in Reliance Industries Limited through campus placement
+process. Overall there were 3 rounds : Online test, Technical PI and HR...
+`,
+main:`
+Hello everyone, this is Naveen Kumar. I was selected in Reliance Industries Limited through campus placement
+process. Overall there were 3 rounds : Online test, Technical PI and HR interview. For the online test I practiced
+both technical and aptitude part from IndiaBix. I followed Genique Education youtube channel and my personal
+chemical notes. In the online test we have to solve 30 apti questions in 30 min and 50 technical questions in 30
+min. The difficulty level was 4/5. There was no GD round. In the technical round they asked from my summer
+training which I did at IOCL Barauni and from topics such as fluid, mass transfer and heat transfer. I had revised
+all the process flow diagrams of different units I had visited during my training. I had prepared my own notes of
+heat and mass transfer. For Fluid mechanics and CRE I revised the whole notes given by PPG Sir. In the HR
+round they asked about why I want to join reliance, what are my strengths and weaknesses, my long term goal
+and where do I see myself after 5 years. Level of difficulty of HR and PI was 3/5. Your basics should be clear and
+be humble in your tone. As a tip I would suggest that you should be careful while making your CV. Don’t write
+anything that you don’t know.
+`,company:"Reliance Industries Limited",batch:"2020",email:"naveen.kr98@gmail.com",name:"Naveen Kumar"}
 ]
     };
     this.onDragEnd = this.onDragEnd.bind(this);
