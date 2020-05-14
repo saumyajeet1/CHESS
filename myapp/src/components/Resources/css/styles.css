@@ -268,6 +268,7 @@ textarea {
     margin:10px;
   
   }
+  
 
   
   .circler{
@@ -762,7 +763,8 @@ float: right;
     padding-bottom: 15px;
     width: 48%;
     height: 100%;
-    margin-left: 26%;
+    margin-left:60px;
+
 }
 #smallbox{
     margin-right: 30px;
@@ -783,7 +785,8 @@ float: right;
 {
     #box{
         margin-right: 0%;
-        width: 60%;
+        margin-left:1px !important ;
+        width: 80%;
         background-color: rgb(233, 233, 230);
     }
     .smallbox{
@@ -805,6 +808,3 @@ float: right;
     font-family: sans-serif;
     font-display:swap;
 }
-
-
-  

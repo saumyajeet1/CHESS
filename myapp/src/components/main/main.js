@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import four from '../../images/4.png' 
-import five from '../../images/gre.jpg'
-import three from '../../images/gate.jpg'
-import six from '../../images/gate.jpg'
+import five from '../../images/gre1.jpg'
+import six from '../../images/gate1.jpg'
 import {allnews} from '../actions/recordactions'
 class Main extends Component {
 
@@ -59,19 +58,19 @@ class Main extends Component {
           </ol>
           <div className="carousel-inner">
       
-            <div className="item active" style={{objectFit:"cover !important",height:"400px" }}>
+            <div className="item active" style={{objectFit:"cover" }}>
               <img src={four} alt="chess" />
               <div className="carousel-caption">
               </div>
             </div>
       
-            <div className="item" style={{objectFit:"cover !important",height:"400px" }}>
+            <div className="item"  style={{objectFit:"cover"}}>
               <img src={five} alt="chess"/>
               <div className="carousel-caption">
               </div>
             </div>
           
-            <div className="item" id="ty" >
+            <div className="item" >
               <img src={six} alt="chess"/>
               <div className="carousel-caption">
               </div>

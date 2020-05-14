@@ -8,32 +8,33 @@ const Subject = () => {
                 </div>
         <div id="smallbox">
           <div id="boxheading1">FM</div>
-          <div id="boxheading2"><a href="">Fluid Mechanics</a></div>
+          <div id="boxheading2"><a href="https://drive.google.com/open?id=1irwRtq3cAY0169EkYUXcoX2fJjq9Wj4U">Fluid Mechanics</a></div>
           <div id="boxheading3">B.tech</div>
           <div id="boxheading3">4th sem</div>
         </div>
         <div id="smallbox">
          <div id="boxheading1">PC</div>
-         <div id="boxheading2"><a href="">Process Calculations</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1iZP0fLS3pgOumPUaZm3XyOb1AFatq6O_">Process Calculations</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">3rd sem</div>
        </div>
        <div id="smallbox">
          <div id="boxheading1">CET</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'8px'}}>Engineering Thermodynamics</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1VwHiIsJWDSUCjnto2GlN_SwAQkcuLIoB">Engineering</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1VwHiIsJWDSUCjnto2GlN_SwAQkcuLIoB">Thermodynamics</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">3rd sem</div>
        </div>
        <div id="smallbox">
          <div id="boxheading1">MT</div>
-         <div id="boxheading2"><a href="">Mass Transfer</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1NvEuyx61g3WdSObZtBomr4WiyiYmNaKr">Mass Transfer</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">3rd sem</div>
        </div>
 
        <div id="smallbox">
          <div id="boxheading1">HT</div>
-         <div id="boxheading2"><a href="">Heat Transfer</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1VWSeHPkx_Uj3uliSd7IERrD7kfMAWjnI">Heat Transfer</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">4th sem</div>
        </div>
@@ -48,15 +49,8 @@ const Subject = () => {
        
        <div id="smallbox">
          <div id="boxheading1">CRE</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'8px'}}>Reaction Engineering</a></div>
-         <div id="boxheading3">B.tech</div>
-         <div id="boxheading3">5th sem</div>
-       </div>
-
-       
-       <div id="smallbox">
-         <div id="boxheading1">MT2</div>
-         <div id="boxheading2"><a href="">Mass Transfer 2</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=18irKjPEkOIeQtRL5JiFmXwh6TAFPxht3">Reaction</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=18irKjPEkOIeQtRL5JiFmXwh6TAFPxht3">Engineering</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">5th sem</div>
        </div>
@@ -64,12 +58,13 @@ const Subject = () => {
        
        <div id="smallbox">
          <div id="boxheading1">CPT</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'10px'}}>Process Technology</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1O5PxFG_pBGR49vBT19eo5KAA3aypNplr" style={{fontSize:'10px'}}>Process</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1O5PxFG_pBGR49vBT19eo5KAA3aypNplr" style={{fontSize:'10px'}}>Technology</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">5th sem</div>
        </div>
 
-       
+{/*        
        <div id="smallbox">
          <div id="boxheading1">PCI</div>
          <div id="boxheading2"><a href="" style={{fontSize:'8px'}}>Control And Instrumentation</a></div>
@@ -132,7 +127,7 @@ const Subject = () => {
          <div id="boxheading2"><a href="" style={{fontSize:'10px'}}>Boiling Heat Transfer</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">8th sem</div>
-       </div>
+       </div> */}
       </div>
     );
 };
