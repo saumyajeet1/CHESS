@@ -11,7 +11,7 @@ const {Record}=require("./server/models/records")
 const {News}=require("./server/models/news")
 const jwt=require('jsonwebtoken')
 var nodemailer = require('nodemailer');
-
+var arr = require('./paidmembers.js').arr;
 var compression = require('compression'); 
 
 const app=express()
@@ -57,7 +57,9 @@ var transporter = nodemailer.createTransport({
 }  
 
     app.post('/api/members/register',(req,res)=>{
-     console.log('dsd')
+     console.log(arr)
+     console.log(req.body.email)
+     if(arr.includes(req.body.email)){
      const member = new Alumni(req.body);
      console.log(member)
      member.save((err,doc)=>{
@@ -81,6 +83,7 @@ var transporter = nodemailer.createTransport({
                         })
         
         })
+    }
      });
 
 
