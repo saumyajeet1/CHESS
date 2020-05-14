@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import four from '../../images/4.png' 
-import five from '../../images/3.jpg'
-import six from '../../images/1.jpg'
+import five from '../../images/gre.jpg'
+import three from '../../images/gate.jpg'
+import six from '../../images/gate.jpg'
 import {allnews} from '../actions/recordactions'
 class Main extends Component {
 
@@ -17,11 +18,20 @@ class Main extends Component {
          this.state.news.map((item,i)=>(        
   <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
   <div className="d-flex w-100 justify-content-between">
-    <h5 className="mb-1">CREATED AT {item.createdAt}</h5>
+    {/* <h5 className="mb-1">CREATED AT {item.createdAt}</h5> */}
   
   </div>
      <p className="mb-1">{item.subject}</p>
+     {
+       item.author?
      <p className="mb-1">BY {item.author}</p>
+     :null
+}
+{
+       item.link?
+     <a href={item.link} className="mb-1">BY {item.link}</a>
+     :null
+}
   </a>
          ))
          :null
@@ -49,19 +59,19 @@ class Main extends Component {
           </ol>
           <div className="carousel-inner">
       
-            <div className="item active" style={{objectFit:"cover"}}>
+            <div className="item active" style={{objectFit:"cover !important",height:"400px" }}>
               <img src={four} alt="chess" />
               <div className="carousel-caption">
               </div>
             </div>
       
-            <div className="item">
+            <div className="item" style={{objectFit:"cover !important",height:"400px" }}>
               <img src={five} alt="chess"/>
               <div className="carousel-caption">
               </div>
             </div>
           
-            <div className="item" style={{objectFit:"cover"}}>
+            <div className="item" id="ty" >
               <img src={six} alt="chess"/>
               <div className="carousel-caption">
               </div>
@@ -149,7 +159,7 @@ class Main extends Component {
             <br></br>
             <br></br>
             
-            <h1 style={{color:"black"}}>NEWS LIST</h1>
+            <h1 style={{color:"black"}}>NEWS FEED</h1>
             <div className="row">
               
             <br></br><br></br><br></br> <br></br><br></br><br></br> <br></br><br></br><br></br>

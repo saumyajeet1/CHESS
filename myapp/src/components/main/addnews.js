@@ -39,6 +39,21 @@ class Addnews extends Component {
             validationMessage:'',
             label:true
         },
+        link: {
+            element:'input',
+            value:'',
+            config:{
+                name:'LINK',
+                placeholder:'Enter the URL',
+                type:'text'
+            },
+            validation:{
+                required:false
+            },
+            valid:true,
+            validationMessage:'',
+            label:true
+        }
         // year: {
         //     element:'input',
         //     value:'',
@@ -126,6 +141,17 @@ submitform=(event)=>{
                <FormFields
                   formdata={this.state.formdata.subject}
                   id={'subject'}
+                  change={(event)=>{this.updateform(event)}}
+                />
+            </div>
+            </div>
+
+            
+            <div className="row">
+            <div className="each">
+               <FormFields
+                  formdata={this.state.formdata.link}
+                  id={'link'}
                   change={(event)=>{this.updateform(event)}}
                 />
             </div>

@@ -222,7 +222,10 @@ textarea {
       margin :10px
   }
 
-
+#ty{
+    object-fit: contain !important;
+    height:400px;
+}
    
    /* SLIDER */
 

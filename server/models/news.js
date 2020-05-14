@@ -13,6 +13,9 @@ const newsSchema=mongoose.Schema({
      default:[],
      required:true
     },
+    link:{
+        type:String,
+    }
     
 
 },{timestamps:true})

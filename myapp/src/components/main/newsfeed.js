@@ -34,13 +34,15 @@ componentDidMount(){
                     value={this.state.heading}
                     />
             </div>
-
+         {
+             this.state.author?
             <div className="row">
                     <FieldRow name={'author'}
                     value={this.state.author}
                     />
             </div>
-
+            :null
+    }
 
             <div className="row">
                  <FieldRow name={'subject'}
