@@ -21,15 +21,15 @@ class Main extends Component {
     {/* <h5 className="mb-1">CREATED AT {item.createdAt}</h5> */}
   
   </div>
-     <p className="mb-1">{item.subject}</p>
+     <p className="mb-1" style={{fontFamily:"'Montserrat', sans-serif"}}>{item.subject}</p>
      {
        item.author?
-     <p className="mb-1">BY {item.author}</p>
+     <p className="mb-1" style={{textTransform:"capitalize"}}>BY {item.author}</p>
      :null
 }
 {
        item.link?
-     <a href={item.link} className="mb-1">BY {item.link}</a>
+     <a href={item.link} className="mb-1">{item.link}</a>
      :null
 }
   </a>
