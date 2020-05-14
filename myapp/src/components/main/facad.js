@@ -249,7 +249,33 @@ const Facad = () => {
               </div>
              </section>             
              
-             
+             <section id="testimonials">
+              <div className="container">
+              
+              <div className="row">
+             <div className="col-md-4 text-center">
+               
+              <div className="profile">
+                <div className="color1">
+                <img src={JS} className="user"/>
+                </div>
+              <div className="desco">
+                <div className="b">Jaya Sikder</div>
+              <div className="c">Associate Professor</div>
+              <div className="b">jaya.sikder@che.nitdgp.ac.in</div>
+              <div className="d">9434788186</div>
+              
+              {/* <div id="linkedin">LinkedIn ID</div>
+              <div id="link">https://www.linkedin.com
+                /in/rakesh-kumar-sisodiya-835851143/</div>
+              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
+               */}
+            </div>
+              </div>            
+              </div>
+              </div>
+              </div>
+             </section>             
                
              <section id="testimonials">
               <div className="container">
@@ -279,33 +305,7 @@ const Facad = () => {
               </div>
              </section>             
              
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={JS} className="user"/>
-                </div>
-              <div className="desco">
-                <div className="b">Jaya Sikder</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">jaya.sikder@che.nitdgp.ac.in</div>
-              <div className="d">9434788186</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>             
+
              <section id="testimonials">
               <div className="container">
               

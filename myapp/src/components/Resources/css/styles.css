@@ -785,7 +785,7 @@ float: right;
 {
     #box{
         margin-right: 0%;
-        margin-left:1px !important ;
+        margin-left:50px !important ;
         width: 80%;
         background-color: rgb(233, 233, 230);
     }

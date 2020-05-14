@@ -64,7 +64,7 @@ class Main extends Component {
               </div>
             </div>
       
-            <div className="item"  style={{objectFit:"cover"}}>
+            <div className="item"  style={{objectFit:"cover"}} id="tp">
               <img src={five} alt="chess"/>
               <div className="carousel-caption">
               </div>
