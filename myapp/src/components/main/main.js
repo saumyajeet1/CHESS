@@ -23,14 +23,14 @@ class Main extends Component {
      <p className="mb-1" style={{fontFamily:"'Montserrat', sans-serif"}}>{item.subject}</p>
      {
        item.author?
-     <p className="mb-1" style={{textTransform:"capitalize"}}>BY {item.author}</p>
+     <a href={item.link} className="mb-1" style={{textTransform:"capitalize"}}>BY {item.author}</a>
      :null
 }
-{
+{/* {
        item.link?
      <a href={item.link} className="mb-1">{item.link}</a>
      :null
-}
+} */}
   </a>
          ))
          :null
@@ -94,11 +94,11 @@ class Main extends Component {
                
                <div className="col-lg-12 col-sm-12 col-md-12 description" >
                    
-               <h1 style={{color:"black"}}>ABOUT CHESS</h1>
+               <h1 style={{color:"black"}}>ABOUT US</h1>
                    <div className="circle">
     
                    </div>
-                   <p style={{fontFamily: "'Lobster Two', cursive"}}>The Chemical Engineering Student's Society (CHESS) is an independent student run society of Chemical Engineering Department of NIT Durgapur.It is solely dedicated to form a network
+                   <p style={{fontFamily:"'Montserrat', sans-serif",color:"black !important" }}>The Chemical Engineering Student's Society (CHESS) is an independent student run society of Chemical Engineering Department of NIT Durgapur.It is solely dedicated to form a network
                      among all the students,faculty members and alumni of the department. It promotes interaction  within the department and implements acadmeic, social and other programs of interest to its members.
                    
                    </p>
@@ -137,7 +137,7 @@ class Main extends Component {
     
                    </div>
                
-                   <p style={{fontFamily: "'Lobster Two', cursive"}}>Chemical Engineering Students'society is working with a motivation of developing professional
+                   <p style={{ fontFamily:"'Montserrat', sans-serif" ,color:"black !important"}}>Chemical Engineering Students'society is working with a motivation of developing professional
     and personal skills of students,which facilitate them to perform magnificently as an eminent
     engineer in the society. This society is aimed to provide a platform to showcase and sharpen
     student's talents through a variety of events and activities planned throughout four years,
