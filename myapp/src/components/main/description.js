@@ -86,21 +86,13 @@ class Desc extends Component {
      <div className="page"><p className="paf">{this.props.location.state.item.name}<br/>{this.props.location.state.item.email}</p></div>
      <div className="page">{this.props.location.state.item.batch}</div>
      <div className="page"><p className="paf">Hello there!</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main1}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main2}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main3}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main4}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main5}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main6}</p></div>
-     <div className="page"></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main7}</p></div>
    </div>
    </div> 

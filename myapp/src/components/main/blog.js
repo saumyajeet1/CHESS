@@ -70,17 +70,19 @@ IndiaBix.
       algorithms and pseudocodes. `,
      main1:` For aptitude I regularly practiced and revised the things in summer vacation itself from
      books as well as different online sites such as IndiaBix, PrepInsta etc. It&#39;s advisable to focus on verbal aptitude skill,
-     probability, permutation-combination etc. Essay writing topic was easy with 160-180 word limit. Avoid spelling and
+     probability, permutation-combination etc. Essay writing topic was easy with 160-180 word limit. Avoid spelling and` ,
+     main2:` 
      grammatical errors and use backspace as minimum as possible. Technical round comprises of mcq questions based on
-     data structures &amp; algorithms and pseudocodes.` ,
-     main2:` DS and algo questions were mostly theoretical. Give special focus on time
-     complexity questions. Overall difficulty is 3/5. There was no GD. The Technical PI lasted for 25-30 minutes. It started with
+     data structures &amp; algorithms and pseudocodes.DS and algo questions were mostly theoretical. Give special focus on time
+     complexity questions. Overall difficulty is 3/5. There was no GD. The Technical PI lasted for 25-30 minutes. It started with` ,
+     main3:` 
      basic introduction and all and this is a point you can put your 1st impression as a perfect candidate for the role. Then the
      rest of the questions will move around things you have mentioned in your CV. In my case, I was asked about my summer
-     project and then questions from based on my technical skills (C, DS, SQL) in CV. Question level will depend on the
-     interviewer and it was moderate in my case.`,
-     main3:` However, it is advisable not to lie/ extrapolate about your skills. Also, if you
-     don't know an answer, don't guess blindly. If you are a non CS/IT student, interviewer will focus a lot on the projects you
+     project and then questions from based on my technical skills (C, DS, SQL) in CV. Question level will depend on the` ,
+     main4:` 
+     interviewer and it was moderate in my case. However, it is advisable not to lie/ extrapolate about your skills. Also, if you
+     don't know an answer, don't guess blindly. If you are a non CS/IT student, interviewer will focus a lot on the projects you` ,
+     main5:` 
      worked, your interest towards learning and coding, your attitude to implement the knowledge for practical purpose. If you
      are in any club or societies, it will be an added advantage.`
       ,company:"Capegemini",batch:"2020",email:"mishra.jyotiranjan.1999@gmail.com",name:"Jyoti Ranjan Mishra"},
