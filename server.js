@@ -83,6 +83,11 @@ var transporter = nodemailer.createTransport({
                         })
         
         })
+    }else{
+        res.json({
+            message:"PLEASE PAY THE MEMBERSHIP PAYMENT FIRST",
+            success:false
+        })
     }
      });
 

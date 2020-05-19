@@ -105,7 +105,8 @@ class Register extends Component {
         },
         
     },
-    value:0
+    value:0,
+    show:''
 }
 
 updateform=(element)=>{
@@ -139,7 +140,8 @@ if(isformvalid){
             },5000)}
             else{
                 this.setState({
-                    formError:true
+                    formError:true,
+                    show:response.payload.success
                 })
                 console.log('sddsd')
             }
@@ -178,7 +180,10 @@ onrchange=(e)=>{
                              <div><img src={hexa} id="image"/>
               <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
                 <h4>National Institute of Technology Durgapur</h4>
-                
+                {
+                    this.state.show?
+                <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
+                }
               </div>
                <div className="block row">
                <FormFields
@@ -265,4 +270,10 @@ onrchange=(e)=>{
     }
 }
 
-export default connect()(Register);
+
+const mapStateToProps=(state)=>{
+    return{
+      user:state.member
+    }      
+}
+export default connect(mapStateToProps)(Register);
