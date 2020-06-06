@@ -41,7 +41,8 @@ const Subject = () => {
        
        <div id="smallbox">
          <div id="boxheading1">MO</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'10px'}}>Mechanical Operations</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1xbc_mBBttYSNQGpRrXiRRk-pjXRQIeC_">Mechanical</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1xbc_mBBttYSNQGpRrXiRRk-pjXRQIeC_">Operations</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">4th sem</div>
        </div>
@@ -64,10 +65,10 @@ const Subject = () => {
          <div id="boxheading3">5th sem</div>
        </div>
 
-{/*        
        <div id="smallbox">
          <div id="boxheading1">PCI</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'8px'}}>Control And Instrumentation</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1xbc_mBBttYSNQGpRrXiRRk-pjXRQIeC_" style={{fontSize:'10px'}}>Process Control</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1xbc_mBBttYSNQGpRrXiRRk-pjXRQIeC_" style={{fontSize:'10px'}}>And Instrumentation</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">5th sem</div>
        </div>
@@ -75,10 +76,50 @@ const Subject = () => {
        
        <div id="smallbox">
          <div id="boxheading1">TP</div>
-         <div id="boxheading2"><a href="">Transport Phenomena</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1XwPFxbxA78zvJcdJnrcnJVCfKPkqpeMA">Transport</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1XwPFxbxA78zvJcdJnrcnJVCfKPkqpeMA">Phenomena</a></div>
          <div id="boxheading3">B.tech</div>
          <div id="boxheading3">6th sem</div>
        </div>
+        
+       <div id="smallbox">
+         <div id="boxheading1">POM</div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1a0Mq1qaPyA9UrNYp-Zh_UcY2geyEtvo4">Industrial Pollution</a></div>
+        <div id="boxheading2"><a href="https://drive.google.com/open?id=1a0Mq1qaPyA9UrNYp-Zh_UcY2geyEtvo4">COntrol And</a></div>
+          <div id="boxheading2"><a href="https://drive.google.com/open?id=1a0Mq1qaPyA9UrNYp-Zh_UcY2geyEtvo4">Treatment</a></div>
+         <div id="boxheading3">B.tech</div>
+         <div id="boxheading3">6th sem</div>
+       </div>
+             
+        
+       
+       <div id="smallbox">
+         <div id="boxheading1">PE</div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1qQX9tCjtynLb8xQrqakN1iAPPHn3ywbV" style={{fontSize:'10px'}}>Plant Design</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1qQX9tCjtynLb8xQrqakN1iAPPHn3ywbV" style={{fontSize:'10px'}}>And Economics</a></div>
+         <div id="boxheading3">B.tech</div>
+         <div id="boxheading3">8th sem</div>
+       </div>
+
+       <div id="smallbox">
+         <div id="boxheading1">BHT</div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1QWbwNAgC4tZuZ8SsmHuPEHrvEvwWJEc4">Boiling Heat</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1QWbwNAgC4tZuZ8SsmHuPEHrvEvwWJEc4">Transfer</a></div>
+         <div id="boxheading3">B.tech</div>
+         <div id="boxheading3">8th sem</div>
+       </div>
+       
+       
+       <div id="smallbox">
+         <div id="boxheading1">ESU</div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1r5qKc4hoa2V0aM6sW1oohiuPKJpqGvko" style={{fontSize:'12px'}}>Energy Sources</a></div>
+         <div id="boxheading2"><a href="https://drive.google.com/open?id=1r5qKc4hoa2V0aM6sW1oohiuPKJpqGvko" style={{fontSize:'12px'}}>and Utilization</a></div>
+         <div id="boxheading3">B.tech</div>
+         <div id="boxheading3">8th sem</div>
+       </div>
+
+       
+{/*        
 
        
        <div id="smallbox">
@@ -96,38 +137,10 @@ const Subject = () => {
          <div id="boxheading3">6th sem</div>
        </div>
 
+       */
        
-       <div id="smallbox">
-         <div id="boxheading1">POM</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'10px'}}>Principles Of Management</a></div>
-         <div id="boxheading3">B.tech</div>
-         <div id="boxheading3">7th sem</div>
-       </div>
-
        
-       <div id="smallbox">
-         <div id="boxheading1">ESU</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'8px'}}>Energy Sources and Utilization</a></div>
-         <div id="boxheading3">B.tech</div>
-         <div id="boxheading3">8th sem</div>
-       </div>
-
-              
-
-       
-       <div id="smallbox">
-         <div id="boxheading1">PE</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'10px'}}>Process Engineeering</a></div>
-         <div id="boxheading3">B.tech</div>
-         <div id="boxheading3">8th sem</div>
-       </div>
-       
-       <div id="smallbox">
-         <div id="boxheading1">BHT</div>
-         <div id="boxheading2"><a href="" style={{fontSize:'10px'}}>Boiling Heat Transfer</a></div>
-         <div id="boxheading3">B.tech</div>
-         <div id="boxheading3">8th sem</div>
-       </div> */}
+       }
       </div>
     );
 };
