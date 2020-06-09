@@ -81,7 +81,6 @@ var transporter = nodemailer.createTransport({
      res.status(200).json({
             success: true,doc
                         })
-        
         })
     }else{
         res.json({

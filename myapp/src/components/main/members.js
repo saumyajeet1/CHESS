@@ -134,7 +134,7 @@ const Member = () => {
   <img className="card-img-top" src={N} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Nishant Kumar</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -145,8 +145,8 @@ const Member = () => {
         <div className="card" style={{width: "25rem",borderRadius:"15px",border:"1px groove black",boxShadow:"blue"}}>
   <img className="card-img-top" src={DG} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
-  <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Debjith Goswami</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+  <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Debjit Goswami</h3>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -161,7 +161,7 @@ const Member = () => {
   <img className="card-img-top" src={SN} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Saurav Nag</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -173,7 +173,7 @@ const Member = () => {
   <img className="card-img-top" src={HA} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Harshit Anand</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -188,7 +188,7 @@ const Member = () => {
   <img className="card-img-top" src={AB} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Boyina Venkata Akhil</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -200,7 +200,7 @@ const Member = () => {
   <img className="card-img-top" src={AHossain} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Adil Hussain</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -215,7 +215,7 @@ const Member = () => {
   <img className="card-img-top" src={S} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Sucharita Pal</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
@@ -227,7 +227,7 @@ const Member = () => {
   <img className="card-img-top" src={D} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
   <div classNAme="card-body">
   <center>  <h3 className="card-text" style={{fontFamily:"algerian"}}>Darpan Shyamkumar Agarwal</h3>
-    <h3 className="card-text" style={{fontFamily:"algerian"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"algerian"}}>Senior Coordinators</h3> </center>
   </div>
   </div>
      </div>
