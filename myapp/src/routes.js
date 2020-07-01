@@ -21,6 +21,8 @@ import Member from './components/main/members';
 import Facad from './components/main/facad';
 import Auth from './components/hoc/auth'
 import Desc from './components/main/description';
+import We from './components/main/n';
+import J from './components/main/j';
 const Routes = () => {
     return (
         <Layout>
@@ -45,7 +47,7 @@ const Routes = () => {
             
             <Route exact component={Auth(Education,true)} path="/qualify"/>
 
-            
+        
             <Route exact component={Auth(Blog,null)} path="/blogs"/>
             <Route exact component={Auth(Desc,null)} path="/des"/>
 

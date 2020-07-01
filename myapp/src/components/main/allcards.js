@@ -8,7 +8,7 @@ import {updatesearch,generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
 class Allalumni extends Component {
     state={
-        records:'',
+        records:[],
         data:'',
         loading:false,
         show:false,
@@ -174,11 +174,39 @@ class Allalumni extends Component {
             
             
                 </div><br></br>
-                <div className="block">
+                <div className="blo">
                    
                 <button className="btn btn-primary" onClick={(event)=> this.search(event)}>SEARCH</button>
-                </div>      
-             <Gen recalumni={this.state.records} change={(event,data,_id)=>this.submitForm(event,data)}/>
+                </div>
+                {
+                    this.state.records?
+                    this.state.records.map((item,i)=>{
+                        if((i+1)==this.state.records.length){
+                            return null
+                        }
+                        console.log(i)
+                        if(i==0){
+                           console.log(this.state.records.slice(i,i+3),i,i+3)
+                            return(<div key={i} className='row'>
+                            <Gen recalumni={this.state.records.slice(i,i+3)} change={(event,data,_id)=>this.submitForm(event,data)}/>
+                            </div>)
+                        }
+                        if(i%3==0){
+                            if((i+3)>=this.state.records.length){
+                                var n=3-(i+3)+this.state.records.length
+                                console.log(n)
+                            }
+                            else{
+                                n=3
+                            }
+                            console.log(this.state.records.slice(i,i+n),i,i+n)
+                  return(<div key={i} className='row'>
+             <Gen recalumni={this.state.records.slice(i,i+n)} change={(event,data,_id)=>this.submitForm(event,data)}/>
+             </div>)
+                        }
+                    })
+    :null
+                }
              </div>
 
          }      

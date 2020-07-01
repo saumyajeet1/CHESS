@@ -73,7 +73,7 @@ class Header extends Component {
                      this.props.user.userData.isAuth?
                     this.props.user.userData.role===1?
                     <li className="nav-item">
-                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/details" >ADD ACADEMIC DETAILS</Link>
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/details" >ADD ALUMNI DETAILS</Link>
                     </li>
                     :
                     <li className="nav-item">
@@ -105,6 +105,19 @@ class Header extends Component {
                    
                     <li className="nav-item">
                     <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/addnews" >ADD NEWS</Link>
+                    </li>
+                    :null
+                    :null
+                    :null
+                   }
+
+          {
+                     this.props.user.userData?
+                     this.props.user.userData.isAuth?
+                    this.props.user.userData.role===1?
+                   
+                    <li className="nav-item">
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/addnews" >SENT NOTIFICATIONS</Link>
                     </li>
                     :null
                     :null

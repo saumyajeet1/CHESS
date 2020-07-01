@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import stripes from '../../images/stripes.png'
 class Card extends Component {
     render() {
         console.log(this.props.images[0])

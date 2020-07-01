@@ -90,7 +90,21 @@ var transporter = nodemailer.createTransport({
     }
      });
 
-
+     app.post('/api/members/register',(req,res)=>{
+       
+           const emaildata={
+               to:"chessnitd2020@gmail.com",
+               subject:'ALUMNIENTER',
+               text:"ALUMNI WANTS TO ENTER",
+               html:`<p>${req.body.email.name} WANTS ACCESS TO  CHESS WEBSITE. HIS EMAIL IS ${req.body.email}</p>`
+           }
+           
+        sendmail(emaildata)
+              
+        res.status(200).json({
+               success: true
+                           })
+           })
 
 
     app.post('/api/members/forgetpassword',(req,res)=>{

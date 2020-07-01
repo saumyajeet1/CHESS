@@ -4,13 +4,16 @@ import {
     AUTH_USER,
     FORGET,
     PASS,
-    logoutuser
+    logoutuser,
+    REGISTER_ALUM
 } from "../actions/types";
 
 export default function(state={},action){
     switch(action.type){ 
         case REGISTER_USER:
         return {...state, register: action.payload }
+        case REGISTER_ALUM:
+        return {...state, entalum: action.payload }
         case LOGIN_USER:
             return {...state,member:action.payload}
          case AUTH_USER:

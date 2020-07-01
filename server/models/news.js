@@ -4,7 +4,14 @@ const validator=require('validator');
 const Schema = mongoose.Schema;
 
 const newsSchema=mongoose.Schema({
-    
+    month:{
+      type:String,
+      required:true
+    },
+    date:{
+        type:String,
+        required:true
+      },
     author:{
         type:String
     },

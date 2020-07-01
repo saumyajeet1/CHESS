@@ -25,7 +25,7 @@ class Addnews extends Component {
             label:true
         },
         subject: {
-            element:'input',
+            element:'textarea',
             value:'',
             config:{
                 name:'SUBJECT',
@@ -37,6 +37,36 @@ class Addnews extends Component {
             },
             valid:true,
             validationMessage:'',
+            label:true
+        },
+        month: {
+            element:'input',
+            value:'',
+            config:{
+                name:'MONTH',
+                placeholder:'Type the month',
+                type:'text'
+            },
+            validation:{
+                required:false
+            },
+            valid:true,
+            validationMessage:'',
+            label:true
+        },
+          date: {
+            element:'input',
+            value:'',
+            config:{
+                name:'DATE',
+                placeholder:'Type the date',
+                type:'text'
+            },
+            validation:{
+                required:true
+            },
+            valid:true,
+            validationMessage:'Enter the date',
             label:true
         },
         link: {
@@ -152,6 +182,28 @@ submitform=(event)=>{
                <FormFields
                   formdata={this.state.formdata.link}
                   id={'link'}
+                  change={(event)=>{this.updateform(event)}}
+                />
+            </div>
+            </div>
+
+            
+            
+            <div className="row">
+            <div className="each">
+               <FormFields
+                  formdata={this.state.formdata.month}
+                  id={'month'}
+                  change={(event)=>{this.updateform(event)}}
+                />
+            </div>
+            </div>
+
+            <div className="row">
+            <div className="each">
+               <FormFields
+                  formdata={this.state.formdata.date}
+                  id={'date'}
                   change={(event)=>{this.updateform(event)}}
                 />
             </div>

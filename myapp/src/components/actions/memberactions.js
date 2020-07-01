@@ -5,7 +5,8 @@ import {
     AUTH_USER,
     FORGET,
     PASS,
-    logoutuser
+    logoutuser,
+    REGISTER_ALUM
 } from './types';
 
 import { MEMBER_SERVER } from '../utils/misc';
@@ -15,13 +16,26 @@ export function registeruser(data){
     console.log('hhhh')
     const request = axios.post(`${MEMBER_SERVER}/register`,data)
         .then(response => response.data);
-    console.log(request)
+    // console.log(request)
     return {
         type: REGISTER_USER,
         payload: request
     }
 }
 
+
+export function alumnienter(name,email){
+    const data={
+        name,email
+    }
+    const request = axios.post(`${MEMBER_SERVER}/alumnienter`,data)
+        .then(response => response.data);
+    
+    return {
+        type: REGISTER_ALUM,
+        payload: request
+    }
+}
 
 
 export function forgetpass(reset,data){

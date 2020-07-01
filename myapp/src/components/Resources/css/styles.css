@@ -257,6 +257,23 @@ textarea {
     color: #000;
   }
   
+  
+  #description{
+   display:block !important;
+    border-radius: 5px; 
+        margin-bottom:30px;
+        margin-top: 90px; 
+        overflow: hidden;
+        font-family: 'Oswald', sans-serif;
+        font-size:20px;
+        font-style: oblique;
+        font-weight:800;
+      
+  }
+  #description h1{
+    font-weight: 800;
+    color: #000;
+  }
   .circle{
     background-image:url("../../../images/djlogo.png");
     background-size:cover ;
@@ -380,16 +397,22 @@ float: right;
   }
 #testimonials
 {
+    margin-top: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
+
+
+
 #testimonials .row
 {
  margin-top: 30px;
+ 
 }
 .col-md-4
 {
-    margin: 40px auto;
+    margin-left: 40px auto;
 }
 .profile
 {
@@ -427,6 +450,8 @@ float: right;
     margin-top: 0px;
     color: #000000;
 }
+
+
 .d
 {
     font-size: 20px;

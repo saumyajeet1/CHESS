@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import FormFields from '../utils/formfields';
 import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
-import {registeruser} from '../actions/memberactions'
+import Button from '@material-ui/core/Button';
+import {registeruser,alumnienter} from '../actions/memberactions'
 import hexa from '../../images/hexa.png'
 
 class Register extends Component {
@@ -115,16 +116,35 @@ updateform=(element)=>{
         formdata:newdata,
     })
 }
+submitalumni=(event)=>{
+    event.preventDefault()
+    const isformvalid=validform(this.state.formdata,'register')
+    if(isformvalid){
+    const name=this.state.formdata.name.value
+    const email=this.state.formdata.email.value
+    this.props.dispatch(alumnienter(name,email)).then(res=>{
+        console.log('hurray')
+        this.setState({
+            show:'YOUR RESPONSE HAS BEEN SENT TO THE ADMIN> YOU WILL BE ABLE TO REGISTER IN FEW MOMENTS'
+        })   
+    }
+        
+    ).catch(err=>{
+     console.log(err)   
+    })
 
+    }
+    
+}
 submitform=(event)=>{
-    console.log("Dfdf")
+    // console.log("Dfdf")
 event.preventDefault();
 const isformvalid=validform(this.state.formdata,'register')
 const data=generatedata(this.state.formdata,'register')
-console.log(data)
-console.log(isformvalid)
+// console.log(data)
+// console.log(isformvalid)
 if(isformvalid){
-    console.log("lll")
+    // console.log("lll")
     this.props.dispatch(registeruser(data)).then((response)=>{
         
         if(response.payload.success){
@@ -143,14 +163,14 @@ if(isformvalid){
                     formError:true,
                     show:response.payload.message
                 })
-                console.log('sddsd')
+                // console.log('sddsd')
             }
         }
     )}
 }
 
 onrchange=(e)=>{
-    console.log(this.state.formdata.role.value)
+    // console.log(this.state.formdata.role.value)
     const newformdata=this.state.formdata
 
     newformdata['role'].value=e.target.value
@@ -162,7 +182,7 @@ onrchange=(e)=>{
     this.setState({
       value:1
     })
-    console.log(this.state)
+    // console.log(this.state)
 }
     render() {
         return (
@@ -256,13 +276,21 @@ onrchange=(e)=>{
 
                 <br></br>
                 <br></br>
-                        <center>  
-              <fieldset>
-                 <button id="contact-submit" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
-                     Create an account
-                </button>
-                </fieldset>
-                </center> 
+                   
+        <div className="row">
+            <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+            
+                <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+         REGISTER AS A STUDENT
+                </Button>
+                </div>
+
+            <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px"}} onClick={(event)=> this.submitalumni(event)}>
+             REGISTER AS AN ALUMNI
+                </Button>
+                </div>
+                </div> 
                 </form>
                 </div>
                 
