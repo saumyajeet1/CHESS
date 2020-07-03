@@ -17,6 +17,7 @@ import Addnews from './components/main/addnews'
 import Subject from './components/main/subject';
 import Blog from './components/main/blog'
 import Live from './components/main/live';
+import Notific from './components/main/notification';
 import Member from './components/main/members';
 import Facad from './components/main/facad';
 import Auth from './components/hoc/auth'
@@ -62,6 +63,7 @@ const Routes = () => {
 
             <Route exact component={Auth(Allalum,true)} path="/allalum"/>
             <Route exact component={Auth(Addnews,true)} path="/addnews"/>
+            <Route exact component={Auth(Notific,true)} path="/notific"/>
             
             <Route exact component={Auth(Member,false)} path="/member"/>
             

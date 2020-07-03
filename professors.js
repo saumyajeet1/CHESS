@@ -1,0 +1,2 @@
+var prof=["rajib.ghoshchaudhuri@che.nitdgp.ac.in","bimal.das@che.nitdgp.ac.in","susmita.dutta@che.nitdgp.ac.in","kartik.ghanta@che.nitdgp.ac.in","parthapratim.gupta@che.nitdgp.ac.in","gopinath.halder@che.nitdgp.ac.in","abhiram.hens@che.nitdgp.ac.in","sandipkumar.lahiri@che.nitdgp.ac.in","mrinalkanti.mandal@che.nitdgp.ac.in","tamal.mandal@che.nitdgp.ac.in","bk.mondal@che.nitdgp.ac.in","parimal.pal@che.nitdgp.ac.in","swapan.paruya@che.nitdgp.ac.in","anupkumar.sadhukhan@che.nitdgp.ac.in","jaya.sikder@che.nitdgp.ac.in"]
+exports.prof=prof

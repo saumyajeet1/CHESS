@@ -6,6 +6,7 @@ import {
     FORGET,
     PASS,
     logoutuser,
+    NOTIFICATION,
     REGISTER_ALUM
 } from './types';
 
@@ -33,6 +34,20 @@ export function alumnienter(name,email){
     
     return {
         type: REGISTER_ALUM,
+        payload: request
+    }
+}
+
+
+export function notific(subject,main,imageurl,argum){
+    const data={
+        subject,main,imageurl,argum
+    }
+    const request = axios.post(`${MEMBER_SERVER}/sentnotifications`,data)
+        .then(response => response.data);
+    
+    return {
+        type: NOTIFICATION,
         payload: request
     }
 }

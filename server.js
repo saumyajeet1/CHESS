@@ -12,6 +12,8 @@ const {News}=require("./server/models/news")
 const jwt=require('jsonwebtoken')
 var nodemailer = require('nodemailer');
 var arr = require('./paidmembers.js').arr;
+var stu = require('./students.js').stu;
+var prof = require('./professors.js').prof;
 var compression = require('compression'); 
 
 const app=express()
@@ -90,13 +92,68 @@ var transporter = nodemailer.createTransport({
     }
      });
 
-     app.post('/api/members/register',(req,res)=>{
+
+     
+    app.post('/api/members/sentnotifications',(req,res)=>{
+        console.log(req.body.imageurl[0])
+        if(req.body.arguments=='prof'){
+        prof.forEach(email=>{
+            
+           const emaildata={
+            to:email,
+            subject:req.body.subject,
+            text:req.body.subject,
+            
+
+            html:`<img src='cid:logo' alt='vb'/><br/><p style='color:red'>${ req.body.main}</p>`,
+            attachments:[
+                {
+                    filename:'chess',
+                  path: req.body.imageurl[0].url,
+                  cid:'logo'
+                }
+              ],
+        }
+        
+     sendmail(emaildata)
+    
+        })
+    }else{
+        stu.forEach(email=>{
+            
+            const emaildata={
+             to:email,
+             subject:req.body.subject,
+             text:req.body.subject,
+
+             html:`<img src='cid:logo' alt='vb'/><br/><p style='color:red'>${ req.body.main}</p>`,
+             attachments:[
+                 {
+                     filename:'chess',
+                   path: req.body.imageurl[0].url,
+                   cid:'logo'
+                 }
+               ],
+         }
+         
+      sendmail(emaildata)
+     
+         })
+    }
+    res.status(200).json({
+        success: true
+                    })
+    
+        });
+   
+   
+     app.post('/api/members/alumnienter',(req,res)=>{
        
            const emaildata={
                to:"chessnitd2020@gmail.com",
                subject:'ALUMNIENTER',
                text:"ALUMNI WANTS TO ENTER",
-               html:`<p>${req.body.email.name} WANTS ACCESS TO  CHESS WEBSITE. HIS EMAIL IS ${req.body.email}</p>`
+               html:`<p>${req.body.name} WANTS ACCESS TO  CHESS WEBSITE. HIS EMAIL IS ${req.body.email}</p>`
            }
            
         sendmail(emaildata)

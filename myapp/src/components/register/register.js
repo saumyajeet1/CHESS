@@ -125,7 +125,7 @@ submitalumni=(event)=>{
     this.props.dispatch(alumnienter(name,email)).then(res=>{
         console.log('hurray')
         this.setState({
-            show:'YOUR RESPONSE HAS BEEN SENT TO THE ADMIN> YOU WILL BE ABLE TO REGISTER IN FEW MOMENTS'
+            show:'YOUR RESPONSE HAS BEEN SENT TO THE ADMIN. YOU WILL BE ABLE TO REGISTER IN FEW MOMENTS'
         })   
     }
         

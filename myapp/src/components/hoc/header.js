@@ -117,7 +117,7 @@ class Header extends Component {
                     this.props.user.userData.role===1?
                    
                     <li className="nav-item">
-                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/addnews" >SENT NOTIFICATIONS</Link>
+                    <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/notific" >SENT NOTIFICATIONS</Link>
                     </li>
                     :null
                     :null
