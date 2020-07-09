@@ -28,7 +28,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={PPG} className="user"/>
+                <img src={PPG} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Parthapratim Gupta</div>
@@ -57,7 +57,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={PP} className="user"/>
+                <img src={PP} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Parimal Pal</div>
@@ -86,7 +86,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={KCG} className="user"/>
+                <img src={KCG} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Kartik Chandra Ghanta</div>
@@ -115,7 +115,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={TM} className="user"/>
+                <img src={TM} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Tamal Mandal</div>
@@ -145,7 +145,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={AKS} className="user"/>
+                <img src={AKS} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Anup Kumar Sadhukhan</div>
@@ -173,7 +173,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={SD} className="user"/>
+                <img src={SD} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Susmita Dutta</div>
@@ -202,7 +202,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={GH} className="user"/>
+                <img src={GH} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Gopinath Halder</div>
@@ -229,7 +229,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={MKM} className="user"/>
+                <img src={MKM} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Mrinal Kanti Mondal</div>
@@ -257,7 +257,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={JS} className="user"/>
+                <img src={JS} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Jaya Sikder</div>
@@ -285,7 +285,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={SKL} className="user"/>
+                <img src={SKL} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Sandip Kumar Lahiri</div>
@@ -314,7 +314,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={SP} className="user"/>
+                <img src={SP} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Swapan Paruya</div>
@@ -343,7 +343,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={BD} className="user"/>
+                <img src={BD} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Bimal Das</div>
@@ -371,7 +371,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={AH} className="user"/>
+                <img src={AH} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Abhiram Hens</div>
@@ -399,7 +399,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={RGC} className="user"/>
+                <img src={RGC} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Rajib Ghosh Chaudhuri</div>
@@ -427,7 +427,7 @@ const Facad = () => {
                
               <div className="profile">
                 <div className="color1">
-                <img src={BKM} className="user"/>
+                <img src={BKM} className="user" loading="lazy"/>
                 </div>
               <div className="desco">
                 <div className="b">Bikash Kumar Mondal</div>

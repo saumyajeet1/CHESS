@@ -77,19 +77,19 @@ class Main extends Component {
           <div className="carousel-inner">
       
             <div className="item active" >
-              <img src={four} alt="chess" id="win" />
+              <img src={four} alt="chess" id="win" loading="lazy" />
               <div className="carousel-caption">
               </div>
             </div>
       
             <div className="item"  >
-              <img src={five} alt="chess" id="win"/>
+              <img src={five} alt="chess" id="win" loading="lazy"/>
               <div className="carousel-caption">
               </div>
             </div>
           
             <div className="item" >
-              <img src={six} alt="chess" id="win"/>
+              <img src={six} alt="chess" id="win" loading="lazy"/>
               <div className="carousel-caption">
               </div>
             </div>
