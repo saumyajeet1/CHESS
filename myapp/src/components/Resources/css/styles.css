@@ -212,7 +212,7 @@ textarea {
     color: #000;
   }
   .circle{
-    background-image:url("../../../images/djlogo.png");
+    background-image:url("../../../images/djlogo.webp");
     background-size:cover ;
     width:120px;
     height:120px;
@@ -226,7 +226,7 @@ textarea {
 
   
   .circler{
-    background-image:url("../../../images/GH.jpg");
+    background-image:url("../../../images/GH.webp");
     background-size:cover ;
     width:120px;
     height:120px;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import AH from '../../images/AH.jpg'
 import AKS from '../../images/AKS.jpg'
-import GH from '../../images/GH.jpg'
+import GH from '../../images/GH.webp'
 import SD from '../../images/SD.jpg'
 import JS from '../../images/JS.jpg'
 import BKM from '../../images/BKM.jpg'

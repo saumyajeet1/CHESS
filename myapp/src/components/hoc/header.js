@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import {log} from "../actions/memberactions"
-import chess from '../../images/chess.png'
-import djlogo from '../../images/djlogo.png'
+import chess from '../../images/chess.webp'
+import djlogo from '../../images/djlogo.webp'
 class Header extends Component {
   
    logoutuser=()=>{
