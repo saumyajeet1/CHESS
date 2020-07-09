@@ -140,7 +140,7 @@ class Main extends Component {
             
             </div>
             
-              <div className="row" >
+              {/* <div className="row" >
                <div id="box">
                 <div id="smallbox">
                     <i className="fas fa-user-graduate" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
@@ -161,7 +161,7 @@ class Main extends Component {
                </div>
                  
             </div>
-             </div>
+             </div> */}
              <div className="row" id="about">
                
                <div className="col-lg-12 col-sm-12 col-md-12 description" >
