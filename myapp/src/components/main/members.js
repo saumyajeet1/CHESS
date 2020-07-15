@@ -249,7 +249,7 @@ const Member = () => {
           <img loading="lazy" className="card-img-top" src={SM} alt="Card image cap" style={{height:"250px",objectFit:"cover",borderRadius:"15px"}}/>
             <div classNAme="card-body">
               <center>  <h3 className="card-text" style={{fontFamily:"'Montserrat', sans-serif"}}>Saumyajeet Mukherjee</h3>
-    <h3 className="card-text" style={{fontFamily:"'Montserrat', sans-serif"}}>Junior Coordinators</h3> </center>
+    <h3 className="card-text" style={{fontFamily:"'Montserrat', sans-serif"}}>Website Developer and Junior Coordinators</h3> </center>
              </div>
         </div>
        </div>
