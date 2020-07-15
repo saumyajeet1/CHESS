@@ -11,7 +11,7 @@ const Footer = () => {
         
             <div className="row">
                 <footer>
-                    Developed And Manages By Saumyajeet Mukherjee
+                                                         Developed And Managed By Saumyajeet Mukherjee
         </footer>
         </div>
     );
