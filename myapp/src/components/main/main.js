@@ -35,7 +35,7 @@ class Main extends Component {
 //      :null
 // } */}
 //   </a>
-<li key={i} className="row" style={{backgroundColor:"#BAB2B5"}}>
+<li key={i} className="row">
 
 
   <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4">
@@ -108,7 +108,7 @@ class Main extends Component {
           
           </div>
 
-          <div className="col-lg-6 col-md-6" style={{backgroundColor:"#BAB2B5"}}>
+          <div className="col-lg-6 col-md-6">
               <ul className="sam row" >
             {this.newslist()}
               </ul>
