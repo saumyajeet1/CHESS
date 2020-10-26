@@ -95,29 +95,54 @@ var transporter = nodemailer.createTransport({
 
      
     app.post('/api/members/sentnotifications',(req,res)=>{
-        console.log(req.body.imageurl[0])
-        if(req.body.arguments=='prof'){
-        prof.forEach(email=>{
+        console.log(prof)
+        if(req.body.argum==1){
+            prof.forEach(email=>{
             
-           const emaildata={
-            to:email,
-            subject:req.body.subject,
-            text:req.body.subject,
-            
-
-            html:`<img src='cid:logo' alt='vb'/><br/><p style='color:red'>${ req.body.main}</p>`,
-            attachments:[
-                {
-                    filename:'chess',
-                  path: req.body.imageurl[0].url,
-                  cid:'logo'
-                }
-              ],
-        }
-        
-     sendmail(emaildata)
+                const emaildata={
+                 to:email,
+                 subject:req.body.subject,
+                 text:req.body.subject,
     
-        })
+                 html:`<p style="text-align:left !important" >
+                 Respected Sir/Ma'am,
+                <br/>
+                <br/>
+                 Hope you are safe and doing well during this tough time of the year. We, the Chemical Engineering Students Society (ChESS) would like to invite you to attend the Online Farewell event named "Ascension" for our Final Year BTech, MTech and PhD Seniors.
+                 <br/>
+                 <br/>
+                 They have been your diligent students, our respected
+                 seniors and a vibrant, ambitious batch, the pride of the department. Our B.Tech fourth year seniors, M.Tech final years and a number of PhD scholars are towards the end of their college life, ready to face greater challenges and have newer endeavours.  As this signifies a new beginning in their lives, we have named the farewell program “Ascension". It is unfortunate that the ongoing pandemic has forced us to conduct in a virtual or online mode, but our enthusiasm about giving a befitting tribute to our seniors has not even withered a bit. 
+                 <br/>
+                 <br/>
+                 Yes, you have been their guide over the years and it’s your encouragement and motivation that they need as they bid us adieu. We, the members of the  Chemical Engineering Students' society, would like you to be present in the occasion and witness our seniors' walk down the memory lane, of which even you have been a part. Please be there on Sunday, the 5th of July, at 6PM on MS Teams to make this event a grand success. 
+                 <br/>
+                 <br/>
+                 The Invitation Card is attached herewith the mail. Please find the attachment.
+                 <br/>
+                 <br/>
+                 The link is : 
+                 https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjMGVkZGMtMGRmNC00OThmLTlhMDAtMDMxNWEyMmNmNjgy%40thread.v2/0?context=%7b%22Tid%22%3a%22a58978f7-efcb-4b53-bd81-8361fa13fa5c%22%2c%22Oid%22%3a%228f18636e-311d-4091-97fd-2126709cc7a6%22%7d
+                 <br/>
+                 <br/>
+                 Thanking You in anticipation,
+                 <br/>
+                 <br/>
+                 Yours sincerely,<br/>
+                 Team ChESS.<br/>
+                 </p></br><img src='cid:logo' style="width:800px; height:800px" alt='pic'/><br/>`,
+                 attachments:[
+                     {
+                         filename:'chess',
+                       path: req.body.imageurl[0].url,
+                       cid:'logo'
+                     }
+                   ],
+             }
+             
+          sendmail(emaildata)
+         
+             })
     }else{
         stu.forEach(email=>{
             
@@ -126,7 +151,33 @@ var transporter = nodemailer.createTransport({
              subject:req.body.subject,
              text:req.body.subject,
 
-             html:`<img src='cid:logo' alt='vb'/><br/><p style='color:red'>${ req.body.main}</p>`,
+             html:`<p style="text-align:left !important" >
+             Respected Sir/Ma'am,
+            <br/>
+            <br/>
+             Hope you are safe and doing well during this tough time of the year. We, the Chemical Engineering Students Society (ChESS) would like to invite you to attend the Online Farewell event named "Ascension" for our Final Year BTech, MTech and PhD Seniors.
+             <br/>
+             <br/>
+             They have been your diligent students, our respected
+             seniors and a vibrant, ambitious batch, the pride of the department. Our B.Tech fourth year seniors, M.Tech final years and a number of PhD scholars are towards the end of their college life, ready to face greater challenges and have newer endeavours.  As this signifies a new beginning in their lives, we have named the farewell program “Ascension". It is unfortunate that the ongoing pandemic has forced us to conduct in a virtual or online mode, but our enthusiasm about giving a befitting tribute to our seniors has not even withered a bit. 
+             <br/>
+             <br/>
+             Yes, you have been their guide over the years and it’s your encouragement and motivation that they need as they bid us adieu. We, the members of the  Chemical Engineering Students' society, would like you to be present in the occasion and witness our seniors' walk down the memory lane, of which even you have been a part. Please be there on Sunday, the 5th of July, at 6PM on MS Teams to make this event a grand success. 
+             <br/>
+             <br/>
+             The Invitation Card is attached herewith the mail. Please find the attachment.
+             <br/>
+             <br/>
+             The link is : 
+             https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjRjMGVkZGMtMGRmNC00OThmLTlhMDAtMDMxNWEyMmNmNjgy%40thread.v2/0?context=%7b%22Tid%22%3a%22a58978f7-efcb-4b53-bd81-8361fa13fa5c%22%2c%22Oid%22%3a%228f18636e-311d-4091-97fd-2126709cc7a6%22%7d
+             <br/>
+             <br/>
+             Thanking You in anticipation,
+             <br/>
+             <br/>
+             Yours sincerely,<br/>
+             Team ChESS.<br/>
+             </p></br><img src='cid:logo' style="width:800px; height:800px" alt='vb'/><br/>`,
              attachments:[
                  {
                      filename:'chess',

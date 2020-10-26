@@ -111,16 +111,16 @@ resetpassword=(event)=>{
             :
             <div className="containers">
                            
-                           <div className="headtitle row">
-                    <h2 className="neon" style={{fontFamily:"sans serif"}}>PLEASE LOGIN</h2>
+                           <div className="row">
+                    <h2 className="neon" style={{fontFamily:"Gilroy",color:"#AC3B61"}}>PLEASE LOGIN</h2>
                 </div>
  
-           <form id="contact" onSubmit={(event)=>{
+           <form  style={{backgroundColor:'#123C69'}} id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
                        <div><img src={hexa} id="image"/>
-              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
-                <h4>National Institute of Technology Durgapur</h4>
+              <h3 style={{color:"#EDC7B7"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4 style={{color:"#EDC7B7"}}>National Institute of Technology Durgapur</h4>
                 {
                     this.state.show?
                 <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
@@ -142,13 +142,13 @@ resetpassword=(event)=>{
                   change={(event)=>{this.updateform(event)}}
                 />
                 </div>
-                  
+                  <br/>
         <div className="row">
             <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
             {/* <button className="contact-submit" style={{padding:"10px"}}onClick={(event)=> this.submitform(event)}>
                      Login
                 </button> */}
-                <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+                <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
             LOGIN
                 </Button>
                 </div>
@@ -157,7 +157,7 @@ resetpassword=(event)=>{
                 </button> */}
                 
             <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-                <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px"}} onClick={(event)=> this.resetpassword(event)}>
+                <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.resetpassword(event)}>
                 Forgot Password
                 </Button>
                 </div>

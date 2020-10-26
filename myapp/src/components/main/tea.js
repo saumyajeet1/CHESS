@@ -39,7 +39,7 @@ class Team extends Component {
 <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
    <input type="checkbox" className="checked" name=" "/>
    <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={TTS} /></div>
+   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={TTS} /></div>
    <div className="details"> 
    <div className="row">
   <div className="col-lg-12 name">
@@ -59,7 +59,7 @@ class Team extends Component {
    <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={R} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={R} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -77,17 +77,17 @@ class Team extends Component {
    <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={T} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={anik} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
-      Tejaswi Shah
+      Anik Saha
       </div>
        </div>
        
        <div className="row">
       <div className="col-lg-12 descp">
-       Treasurer
+       Treasurer and Art Wing Head
       </div>
        </div>
      </div>
@@ -101,7 +101,7 @@ class Team extends Component {
 <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
    <input type="checkbox" className="checked" name=" "/>
    <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={T} /></div>
+   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={T} /></div>
    <div className="details"> 
    <div className="row">
   <div className="col-lg-12 name">
@@ -111,7 +111,7 @@ class Team extends Component {
    
    <div className="row">
   <div className="col-lg-12 descp">
-  Tresaurer
+  Tresaury
   </div>
    </div></div>
 </div>
@@ -121,7 +121,7 @@ class Team extends Component {
    <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={NK} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={NK} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -139,7 +139,7 @@ class Team extends Component {
    <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AK} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={AK} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -163,7 +163,7 @@ Graphics Designer
 <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
    <input type="checkbox" className="checked" name=" "/>
    <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={RK} /></div>
+   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={RK} /></div>
    <div className="details"> 
    <div className="row">
   <div className="col-lg-12 name">
@@ -183,7 +183,7 @@ Graphics Designer
    <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={SDE} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={SDE} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -201,7 +201,7 @@ Graphics Designer
    <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AC} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={AC} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -225,7 +225,7 @@ Graphics Designer
 <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
    <input type="checkbox" className="checked" name=" "/>
    <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={N} /></div>
+   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={N} /></div>
    <div className="details"> 
    <div className="row">
   <div className="col-lg-12 name">
@@ -245,7 +245,7 @@ Graphics Designer
    <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={DG} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={DG} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -263,7 +263,7 @@ Graphics Designer
    <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={SN} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={SN} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -287,7 +287,7 @@ Graphics Designer
 <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
    <input type="checkbox" className="checked" name=" "/>
    <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={HA} /></div>
+   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={AB} /></div>
    <div className="details"> 
    <div className="row">
   <div className="col-lg-12 name">
@@ -307,7 +307,7 @@ Graphics Designer
    <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AB} /></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={AB} /></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -321,26 +321,10 @@ Graphics Designer
       </div>
        </div></div>
    </div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={D} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Darpan Shyamkumar Agarwal
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-     Senior Coordinators
-      </div>
-       </div>
-     </div>
-   </div>
+       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
+   
  </div>
+
 
     <div className="members row">
    
@@ -348,7 +332,7 @@ Graphics Designer
 <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
    <input type="checkbox" className="checked" name=" "/>
    <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AHossain}/></div>
+   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={AHossain}/></div>
    <div className="details"> 
    <div className="row">
   <div className="col-lg-12 name">
@@ -368,7 +352,7 @@ Graphics Designer
    <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={S}/></div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={S}/></div>
        <div className="details"> 
        <div className="row">
       <div className="col-lg-12 name">
@@ -383,7 +367,24 @@ Graphics Designer
        </div></div>
    </div>
        <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   
+   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
+       <input type="checkbox" className="checked" name=" "/>
+       <div className="toogle">+</div>
+       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover !important"}} loading="lazy" className="cardimg " src={D} /></div>
+       <div className="details"> 
+       <div className="row">
+      <div className="col-lg-12 name">
+      Darpan Shyamkumar Agarwal
+      </div>
+       </div>
+       
+       <div className="row">
+      <div className="col-lg-12 descp">
+     Senior Coordinators
+      </div>
+       </div>
+     </div>
+   </div>
  </div>
 
 

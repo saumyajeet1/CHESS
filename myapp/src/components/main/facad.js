@@ -18,8 +18,11 @@ import KCG from '../../images/KCG.jpg'
 
 const Facad = () => {
     return (
-        <div>
+        <div style={{marginLeft:'20px'}}>
+          <div className="row">
+            <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
           
+          <div>
           <section id="testimonials">
               <div className="container">
               
@@ -46,9 +49,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
+             </section>  
+             </div>           
+             </div>
 
-
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -75,9 +81,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
 
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -104,9 +113,14 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
+             </section>  
+             </div>           
+             </div>
+             </div>
              
-             
+             <div className="row">
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -133,10 +147,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
+             </section>  
+             </div>           
+             </div>
              
-             
-             
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -163,8 +179,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
+
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -191,9 +211,14 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
-             
+             </section>  
+             </div>           
+             </div>
+             </div>
+
+             <div className="row">
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -220,7 +245,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
+             </section>  
+             </div>           
+             </div>
+
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -247,8 +277,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
+
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -275,8 +309,15 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
+             </section>  
+             </div>           
                
+               </div>
+               </div>
+
+               <div className="row">
+               <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -303,9 +344,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
 
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -332,9 +376,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
- 
-             
+             </section>  
+             </div>           
+ </div>
+
+         <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">      
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -361,8 +408,14 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
+             </div>
+
+<div className="row">
+<div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -389,8 +442,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-            
+             </section>  
+             </div>           
+     </div>
+
+       <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">       
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -417,8 +474,12 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
+
+             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+             <div>
              <section id="testimonials">
               <div className="container">
               
@@ -445,8 +506,10 @@ const Facad = () => {
               </div>
               </div>
               </div>
-             </section>             
-             
+             </section>  
+             </div>           
+             </div>
+             </div>
              
         </div>
     );

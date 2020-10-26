@@ -123,8 +123,8 @@ submitalumni=(event)=>{
     const name=this.state.formdata.name.value
     const email=this.state.formdata.email.value
     this.props.dispatch(alumnienter(name,email)).then(res=>{
-        console.log('hurray')
-        alert("YOUR RESPONSE HAS BEEN SENT TO THE ADMIN. YOU WILL BE ABLE TO REGISTER IN FEW MOMENTS")
+       
+        alert("YOUR RESPONSE HAS BEEN SENT TO THE ADMIN.")
         this.setState({
             show:'YOUR RESPONSE HAS BEEN SENT TO THE ADMIN. YOU WILL BE ABLE TO REGISTER IN FEW MOMENTS'
         })   
@@ -192,15 +192,15 @@ onrchange=(e)=>{
             :
             <div className="containers">
                 
-                <div className="headtitle row">
-                    <h2 className="neon" style={{fontFamily:"sans serif"}}>REGISTER YOURSELF TO CHEMICAL ALUMNI DATABASE</h2>
+                <div className="row">
+                    <h2 className="neon" style={{fontFamily:"Gilroy",color:"#AC3B61"}}>REGISTER YOURSELF TO CHEMICAL ALUMNI DATABASE</h2>
                 </div>
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
-                }}>
+                }} style={{backgroundColor:"#123C69"}}>
                              <div><img src={hexa} id="image"/>
-              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
-                <h4>National Institute of Technology Durgapur</h4>
+              <h3 style={{color:"#EDC7B7"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4 style={{color:"#EDC7B7"}}>National Institute of Technology Durgapur</h4>
                 {
                     this.state.show?
                 <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
@@ -281,13 +281,13 @@ onrchange=(e)=>{
         <div className="row">
             <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
             
-                <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+                <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
          REGISTER AS A STUDENT
                 </Button>
                 </div>
 
             <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-                <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px"}} onClick={(event)=> this.submitalumni(event)}>
+                <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitalumni(event)}>
              REGISTER AS AN ALUMNI
                 </Button>
                 </div>

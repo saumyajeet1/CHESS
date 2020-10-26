@@ -458,8 +458,6 @@ body {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  color: #777;
-  background: #002451;
   display: block;
 }
 
@@ -590,6 +588,12 @@ fieldset {
         height:50px;
         width:50px;
 
+}
+body{
+    background-color: #edc7b7 !important;
+}
+html,body{
+    overflow-x: hidden;
 }
 #contact h3{
     font-size: 2em;
