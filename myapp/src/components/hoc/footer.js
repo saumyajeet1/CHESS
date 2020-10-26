@@ -10,9 +10,7 @@ const Footer = () => {
     return (
         
             <div className="row">
-                <footer>
-                                                         Developed And Managed By Saumyajeet Mukherjee
-        </footer>
+                
         </div>
     );
 };
