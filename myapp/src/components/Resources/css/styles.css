@@ -1,4 +1,10 @@
 
+body{
+    background-color: #EDC7B7 !important;
+}
+html,body{
+    overflow-x: hidden;
+}
 *{
     margin:0px;
     padding:0px; 
@@ -587,10 +593,9 @@ fieldset {
     #image{
         height:50px;
         width:50px;
-
 }
 body{
-    background-color: #edc7b7 !important;
+    background-color: #EDC7B7 !important;
 }
 html,body{
     overflow-x: hidden;
@@ -687,6 +692,7 @@ float: right;
     #box{
         margin-right: 0%;
         width: 60%;
+        margin-left:0px;
         background-color: rgb(233, 233, 230);
     }
     .smallbox{
@@ -750,7 +756,7 @@ float: right;
 {
     #box{
         margin-right: 0%;
-        margin-left:50px !important ;
+        margin-left:0px !important;
         width: 80%;
         background-color: rgb(233, 233, 230);
     }
