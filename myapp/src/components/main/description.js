@@ -94,6 +94,7 @@ class Desc extends Component {
      <div className="page"><p className="paf">{this.props.location.state.item.main5}</p></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main6}</p></div>
      <div className="page"><p className="paf">{this.props.location.state.item.main7}</p></div>
+     <div className="page"><p className="paf">{this.props.location.state.item.main8}</p></div>
    </div>
    </div> 
 

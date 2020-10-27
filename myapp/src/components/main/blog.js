@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import {Link} from 'react-router-dom'
 import {
   List,
   ListItem,
   ListItemText,
   ListItemIcon,
-  IconButton,
-  ListItemSecondaryAction
 } from "@material-ui/core";
 import RootRef from "@material-ui/core/RootRef";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
@@ -15,13 +12,16 @@ import InboxIcon from "@material-ui/icons/Inbox";
 import { makeStyles ,withStyles} from '@material-ui/core/styles';
 const useStyles = theme => ({
   root: {
-     fontSize:"25px",
-   },
+
+  },
+   u:{
+    fontSize:"25px",
+    color:'#163C69',
+   }
 });
 
 const getItemStyle = (isDragging, draggableStyle) => ({
-  // styles we need to apply on draggables
-  ...draggableStyle,
+    ...draggableStyle,
 
   ...(isDragging && {
     background: "rgb(235,235,235)"
@@ -515,6 +515,34 @@ Tips to juniors : Above all can be followed only when you clear apti round. So p
 more weightage than technical round. So concentrate on it. Be patient and calm during interview and use paper
 and pen more in the interview it helps more.(paper and pen will be provided in interview ).
 `,company:"Reliance Industries Limited ",batch:"2020",email:"",name:"TT Sriram"},
+{id:"21",primary:"Ritika Das (Saint-Gobain India Pvt Ltd)",secondary:`
+Hey guys, this is Ritika Das. I am really elated that CHeSS is providing us a platform to share our...
+`,
+main:`
+Hey guys, this is Ritika Das. I am really elated that CHeSS is providing us a platform to share our personal 
+campus placement experiences and I am definite that the upcoming batches will find it useful when they face their placements.
+ So, I got selected in Saint-Gobain India Pvt Ltd through the on-campus recruitment process. The selection procedure consists of 4 rounds with each 
+ being an eliminative one:`,main2:`
+ 1)Aptitude cum Technical online test-it consisted of 4 sections- non verbal reasoning, verbal reasoning, numerical ability, technical
+  section. The level of difficulty was moderate and the technical section was not only limited to your branch subjects but also had 
+  question from basic sciences. For this round platforms such as Indiabix, Pariksha can be useful and for the technical part class notes would be more than sufficient.`,
+  main3:`
+  2) Group Discussion: The GD was based on a case study. A problem statement was given to the group and each of the candidate was given some 
+  clues using which they had to mutually come to a solution to the problem statement.`,main4:`
+  3)PI round: Both Technical and HR questions were asked during this round.
+   Questions from your internships and branch related subjects were asked. The main focus was on the subject of fluid mechanics and heat transfer. The level of difficulty of the questions were moderate and having a basic understanding of the subjects will be enough to get you through. I personally followed only my class notes on these subjects. `
+   ,main5:`
+   I would suggest prepare fluid mechanics, Heat transfer, Process control thoroughly. Be prepared with whatever information you are providing on your CV because they will always refer to it and ask from all those points. For HR part the basic questions such as- what are your career goals , why would you choose saint-gobain, and questions regarding your extra-curricular and college activities were  asked.`
+   ,main6:`
+   4)MD round- This round was held in the Chennai head office with the MD of the company. Technical as well as non technical questions were asked. For technical parts questions from Fluid mechanics were asked and basic equations like the navier stoke, Bernoulli's theorem was asked to derive. I would suggest be thoroughly prepared with basic derivations from fluid mechanics and transport theorem and also brush up on your mathematics. For non technical part questions can be asked from any domain and you might be asked to do anything even push-ups (yes you read that right). `  
+   ,main7:`
+   I was asked questions from political scenarios in West Bengal and was asked my opinion on it which I had to justify.
+This company has a very unique recruitment process than the rest of the organisations. The key factor here is to have a sound knowledge of the subjects, being thorough with your CV and having confidence. Confidence is a very important factor because the GD, PI round will be pool campusing where  you will be up against students of even other NIT's and the interview rounds can last up to more than an hour (it was 1hr 20 min for me).Even for the MD round you have to travel all the way up to Chennai`
+  ,main8:`
+  (accommodations and travel fare will be provided by them) which can be tiring, but you have to stay calm and composed. So you have to have the nerves , be patient and prove yourself worthy. Another piece of advice is that do not try to bluff the panellists, if you can't answer then just surrender.
+I hope my experience will be of help to you all. Tick all the checkboxes and rest is on luck. All The Best!!
+`
+  ,company:"Saint-Gobain India Pvt Ltd",batch:"2020",email:"dasritika98@gmail.com",name:"Ritika Das"},
 ]
     };
     this.onDragEnd = this.onDragEnd.bind(this);
@@ -560,12 +588,11 @@ and pen more in the interview it helps more.(paper and pen will be provided in i
                         <Link to={{pathname:'/des',state:{
                             item
                         }}}
-                        className={classes.root}
+                        className={classes.u}
                         >
                         <ListItemText
                           primary={item.primary}
                           secondary={item.secondary}
-                          
                         />
                         </Link>
                      
