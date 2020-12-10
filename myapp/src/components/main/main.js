@@ -15,7 +15,7 @@ class Main extends Component {
      newslist=()=>(
          this.state.news?
        
-         this.state.news.map((item,i)=>(  
+         this.state.news.reverse().map((item,i)=>(  
 
 //   <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
 //   <div className="d-flex w-100 justify-content-between">
