@@ -67,7 +67,7 @@ if(isformvalid){
             <div className="containers">
                      
                      <div className="headtitle row">
-                    <h2 className="neon" style={{fontFamily:"sans serif"}}>RESET PASSWORD</h2>
+                    <h2 className="neon" style={{fontFamily:"Aeonik"}}>RESET PASSWORD</h2>
                 </div>
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
@@ -75,8 +75,8 @@ if(isformvalid){
                       
  
                         <div><img src={hexa} id="image"/>
-              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
-                <h4>National Institute of Technology Durgapur</h4>
+              <h3 style={{fontFamily:"Aeonik"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4 style={{fontFamily:"Aeonik"}}>National Institute of Technology Durgapur</h4>
                 
               </div>
                 <div className="block row">

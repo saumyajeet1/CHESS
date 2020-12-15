@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
 import four from '../../images/gre1.jpg' 
 import five from '../../images/gre1.jpg'
 import six from '../../images/gate1.jpg'
@@ -126,6 +125,7 @@ class Main extends Component {
                <div  id="description" >
                    
                <h1 style={{color:"#AC3B61",fontFamily:"Aeonix",fontStyle:'normal',textAlign:'center'}}>ABOUT</h1>
+               <br></br>
                    <div className="circle">
     
                    </div>
@@ -167,6 +167,7 @@ class Main extends Component {
                <div className="col-lg-12 col-sm-12 col-md-12 description" >
                    
                <h1 style={{color:"#AC3B61",fontFamily:"Aeonix",fontStyle:'normal',textAlign:'center'}}>MESSAGE FROM HOD:Prof Gopinath Halder</h1>
+                   <br></br>
                    <div className="circler">
     
                    </div>
