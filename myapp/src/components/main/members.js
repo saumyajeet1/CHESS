@@ -365,7 +365,7 @@ Graphics Designer
    <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
 
 
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card" style={{border:"2px solid black"}}>
+   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
        <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={S}/></div>
@@ -383,7 +383,7 @@ Graphics Designer
        </div></div>
    </div>
        <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-       <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card" style={{border:"2px solid black"}}>
+       <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
        <input type="checkbox" className="checked" name=" "/>
        <div className="toogle">+</div>
        <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={SM}/></div>
@@ -409,7 +409,7 @@ Graphics Designer
    <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
       <input type="checkbox" className="checked" name=" "/>
       <div className="toogle">+</div>
-      <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={pandey}/></div>
+      <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={pandey}/></div>
       <div className="details"> 
       <div className="row">
      <div className="col-lg-12 name">
@@ -426,10 +426,10 @@ Graphics Designer
       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
    
    
-      <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card" style={{border:"2px solid black"}}>
+      <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
           <input type="checkbox" className="checked" name=" "/>
           <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={swagata}/></div>
+          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={swagata}/></div>
           <div className="details"> 
           <div className="row">
          <div className="col-lg-12 name">
@@ -444,14 +444,14 @@ Graphics Designer
           </div></div>
       </div>
           <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-          <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card" style={{border:"2px solid black"}}>
+          <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
           <input type="checkbox" className="checked" name=" "/>
           <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={S}/></div>
+          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={samr}/></div>
           <div className="details"> 
           <div className="row">
          <div className="col-lg-12 name">
-        Saumyajeet Mukherjee
+       Samriddho Saha
          </div>
           </div>
           
@@ -470,7 +470,7 @@ Graphics Designer
    <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
       <input type="checkbox" className="checked" name=" "/>
       <div className="toogle">+</div>
-      <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={anuj}/></div>
+      <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={anuj}/></div>
       <div className="details"> 
       <div className="row">
      <div className="col-lg-12 name">
@@ -487,10 +487,10 @@ Graphics Designer
       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
    
    
-      <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card" style={{border:"2px solid black"}}>
+      <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
           <input type="checkbox" className="checked" name=" "/>
           <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={ryt}/></div>
+          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={ryt}/></div>
           <div className="details"> 
           <div className="row">
          <div className="col-lg-12 name">
@@ -505,10 +505,10 @@ Graphics Designer
           </div></div>
       </div>
           <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-          <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card" style={{border:"2px solid black"}}>
+          <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
           <input type="checkbox" className="checked" name=" "/>
           <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={samn}/></div>
+          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={samn}/></div>
           <div className="details"> 
           <div className="row">
          <div className="col-lg-12 name">
