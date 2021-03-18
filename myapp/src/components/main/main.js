@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import four from '../../images/gre1.jpg' 
 import five from '../../images/gre1.jpg'
 import six from '../../images/gate1.jpg'
+import cfd from '../../images/CFD.jpeg'
 import {allnews} from '../actions/recordactions'
 import "./n.css"
 class Main extends Component {
@@ -76,7 +77,7 @@ class Main extends Component {
           <div className="carousel-inner">
       
             <div className="item active" >
-              <img src={four} alt="chess" id="win" loading="lazy" />
+              <img src={cfd} alt="chess" id="win" loading="lazy" />
               <div className="carousel-caption">
               </div>
             </div>
