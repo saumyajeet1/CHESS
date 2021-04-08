@@ -102,47 +102,51 @@ class Allalumni extends Component {
                     ALUMNI INFORMATION
                  </h3>
                  <div className="row">
-                 <div className="col-lg-4 col-md-4 col-xs-4 col-sm-4">
-                 <p style={{color:"black", family:"Aeonik"}}>Name:- {this.state.data.name}</p>
+                 {/* <div className="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                 <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Name:- {this.state.data.name}</p>
                  </div>
                  <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div>
-                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div>
-             <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                 <Pic image={this.state.data.images[0]?this.state.data.images[0].url:null} text={"PHOTO"}/>
-             </div>
+                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div> */}
+             {/* <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4"> */}
+                <center> <Pic image={this.state.data.images[0]?this.state.data.images[0].url:null} text={"PHOTO"}/> </center>
+             {/* </div> */}
                      
              </div>
+
+             <div className="row">
+             <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Name:- {this.state.data.name}</p>
+            </div>
  
  
              <div className="row">
-                  <p style={{color:"black", family:"Aeonik"}}>Email:- {this.state.data.email}</p>
+                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Email:- {this.state.data.email}</p>
              </div>
                 
                 
              <div className="row">
-                  <p style={{color:"black", family:"Aeonik"}}>Current Degree:- {this.state.data.currentdegree}</p>
+                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Current Degree:- {this.state.data.currentdegree}</p>
              </div>
                  
                  
              <div className="row">
-                  <p style={{color:"black", family:"Aeonik"}}>Workplace:- {this.state.data.workplace}</p>
+                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Workplace:- {this.state.data.workplace}</p>
              </div>
  
                  
              <div className="row">
-                    <p style={{color:"black", family:"Aeonik"}}>Year:- {this.state.data.year}</p>
+                    <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Year:- {this.state.data.year}</p>
              </div>
  
              <div className="row">
-                 <p style={{color:"black", family:"Aeonik"}}>Additional Information:- {this.state.data.additional}</p>
+                 <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Additional Information:- {this.state.data.additional}</p>
              </div>
              
              <div className="row">
-             <p style={{color:"black", family:"Aeonik"}}>Academic Records:- {this.state.data.academicrecords}</p>
+             <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Academic Records:- {this.state.data.academicrecords}</p>
              </div>
              
              <div className="row">
-             <p style={{color:"black", family:"Aeonik"}}>Awards:- {this.state.data.awards}</p>
+             <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Awards:- {this.state.data.awards}</p>
              </div>
 
 
