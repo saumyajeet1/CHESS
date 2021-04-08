@@ -4,7 +4,7 @@ const FormRow = (props) => {
     return (
         <div className="formrow" key={props.j}>
             
-          <label className="name">{props.name}</label> : <p className="value">{props.value}</p>  
+              <label className="name" style={{color:"black", family:"Aeonik"}}>{props.name}</label> : <p className="value">{props.value}</p>  
        
         </div>
     );

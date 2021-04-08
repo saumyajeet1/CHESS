@@ -103,13 +103,18 @@ class Allalumni extends Component {
                     ALUMNI INFORMATION
                  </h3>
                  <div className="row">
-                 <div className="col-lg-6 col-sm-6">
-                     <FieldRow name={'name'}
+                 <div className="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                     <FieldRow name={'NAME'}
                      value={this.state.data.name}
                      />
                  </div>
- 
-             <div className="col-lg-6 col-sm-6">
+                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
+                     
+                 </div>
+                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
+                     
+                 </div>
+             <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4">
                  <Pic image={this.state.data.images[0]?this.state.data.images[0].url:null} text={"PHOTO"}/>
              </div>
                      
@@ -117,14 +122,14 @@ class Allalumni extends Component {
  
  
              <div className="row">
-                  <FieldRow name={'email'}
+                  <FieldRow name={'EMAIL'}
                      value={this.state.data.email}
                   />
              </div>
                 
                 
              <div className="row">
-                 <FieldRow name={'Current qualification'}
+                 <FieldRow name={'CURRENT QUALIFICATION'}
                      value={this.state.data.currentdegree}
                   />
              </div>
@@ -138,13 +143,13 @@ class Allalumni extends Component {
  
                  
              <div className="row">
-                 <FieldRow name={'Year of Passing'}
+                 <FieldRow name={'YEAR OF PASSING'}
                      value={this.state.data.year}
                  />
              </div>
  
              <div className="row">
-                 <FieldRow name={'Additional Information'}
+                 <FieldRow name={'ADDITIONAL INFORMATION'}
                      value={this.state.data.additional}
                   />
              </div>
@@ -156,7 +161,7 @@ class Allalumni extends Component {
              </div>
              
              <div className="row">
-                 <FieldRow name={'Awards'}
+                 <FieldRow name={'AWARDS'}
                      value={this.state.data.awards}
                   />
              </div>
