@@ -112,42 +112,58 @@ class Allalumni extends Component {
              {/* </div> */}
                      
              </div>
+             <br></br>
+             <br></br>
+             <br></br>
+             <br></br>
+             <br></br>
 
              <div className="row">
              <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Name:- {this.state.data.name}</p>
             </div>
  
- 
+  <br></br>
+
              <div className="row">
                   <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Email:- {this.state.data.email}</p>
              </div>
+             <br></br>
                 
                 
              <div className="row">
                   <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Current Degree:- {this.state.data.currentdegree}</p>
              </div>
                  
+             <br></br>
                  
              <div className="row">
                   <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Workplace:- {this.state.data.workplace}</p>
              </div>
  
+             <br></br>
                  
              <div className="row">
                     <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Year:- {this.state.data.year}</p>
              </div>
+             <br></br>
+
  
              <div className="row">
                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Additional Information:- {this.state.data.additional}</p>
              </div>
+
+             <br></br>
+
              
              <div className="row">
              <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Academic Records:- {this.state.data.academicrecords}</p>
              </div>
+             <br></br>
              
              <div className="row">
              <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Awards:- {this.state.data.awards}</p>
              </div>
+             <br></br>
 
 
              <button className="btn btn-primary" onClick={(event)=> this.goback(event)}>GO BACK</button>
