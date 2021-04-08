@@ -96,24 +96,17 @@ class Allalumni extends Component {
             <div className="container">
          {
              this.state.loading?
-             <div className="row">
+             <div className="container">
         
-             <div className="cv" >
                  <h3 className="neon" style={{textAlign:'center'}}>
                     ALUMNI INFORMATION
                  </h3>
                  <div className="row">
                  <div className="col-lg-4 col-md-4 col-xs-4 col-sm-4">
-                     <FieldRow name={'NAME'}
-                     value={this.state.data.name}
-                     />
+                 <p style={{color:"black", family:"Aeonik"}}>Name:- {this.state.data.name}</p>
                  </div>
-                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
-                     
-                 </div>
-                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
-                     
-                 </div>
+                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div>
+                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div>
              <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4">
                  <Pic image={this.state.data.images[0]?this.state.data.images[0].url:null} text={"PHOTO"}/>
              </div>
@@ -122,51 +115,39 @@ class Allalumni extends Component {
  
  
              <div className="row">
-                  <FieldRow name={'EMAIL'}
-                     value={this.state.data.email}
-                  />
+                  <p style={{color:"black", family:"Aeonik"}}>Email:- {this.state.data.email}</p>
              </div>
                 
                 
              <div className="row">
-                 <FieldRow name={'CURRENT QUALIFICATION'}
-                     value={this.state.data.currentdegree}
-                  />
+                  <p style={{color:"black", family:"Aeonik"}}>Current Degree:- {this.state.data.currentdegree}</p>
              </div>
                  
                  
              <div className="row">
-                 <FieldRow name={'Work Place'}
-                     value={this.state.data.workplace}
-                  />
+                  <p style={{color:"black", family:"Aeonik"}}>Workplace:- {this.state.data.workplace}</p>
              </div>
  
                  
              <div className="row">
-                 <FieldRow name={'YEAR OF PASSING'}
-                     value={this.state.data.year}
-                 />
+                    <p style={{color:"black", family:"Aeonik"}}>Year:- {this.state.data.year}</p>
              </div>
  
              <div className="row">
-                 <FieldRow name={'ADDITIONAL INFORMATION'}
-                     value={this.state.data.additional}
-                  />
+                 <p style={{color:"black", family:"Aeonik"}}>Additional Information:- {this.state.data.additional}</p>
              </div>
              
              <div className="row">
-                 <FieldRow name={'Academic Records'}
-                     value={this.state.data.academicrecords}
-                  />
+             <p style={{color:"black", family:"Aeonik"}}>Academic Records:- {this.state.data.academicrecords}</p>
              </div>
              
              <div className="row">
-                 <FieldRow name={'AWARDS'}
-                     value={this.state.data.awards}
-                  />
+             <p style={{color:"black", family:"Aeonik"}}>Awards:- {this.state.data.awards}</p>
              </div>
+
+
              <button className="btn btn-primary" onClick={(event)=> this.goback(event)}>GO BACK</button>
-             </div>
+             
         </div>
              :
                  <div>
