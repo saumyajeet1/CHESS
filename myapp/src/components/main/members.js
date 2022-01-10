@@ -29,501 +29,311 @@ import samn from '../../images/samn.jpg'
 class Team extends Component {
     render() {
         return (
-            <div>
-               
-    <h1 className="events" id="teammembers" style={{color:"#AC3B61",fontFamily:'Gilroy'}}>OUR TEAM</h1>
-
-<div className="members row">
-   
-   
-<div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-   <input type="checkbox" className="checked" name=" "/>
-   <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={TTS} /></div>
-   <div className="details"> 
-   <div className="row">
-  <div className="col-lg-12 name">
-  T T Sriram
-  </div>
-   </div>
-   
-   <div className="row">
-  <div className="col-lg-12 descp">
-  President
-  </div>
-   </div></div>
-</div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-
-
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={R} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Ritika Das
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-  Vice President
-      </div>
-       </div></div>
-   </div>
-       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={T} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Tejaswi Shah
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-       Treasurer
-      </div>
-       </div>
-     </div>
-   </div>
- </div>
-
-
-   <div className="members row">
-   
-   
-<div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-   <input type="checkbox" className="checked" name=" "/>
-   <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={T} /></div>
-   <div className="details"> 
-   <div className="row">
-  <div className="col-lg-12 name">
-  Tejaswi Shah
-  </div>
-   </div>
-   
-   <div className="row">
-  <div className="col-lg-12 descp">
-  Tresaurer
-  </div>
-   </div></div>
-</div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-
-
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={NK} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Naveen Kumar
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-     General Secretary
-      </div>
-       </div></div>
-   </div>
-       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AK} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Aritra Karmakar
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-Graphics Designer
-      </div>
-       </div>
-     </div>
-   </div>
- </div>
-
-
-   <div className="members row">
-   
-   
-<div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-   <input type="checkbox" className="checked" name=" "/>
-   <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={RK} /></div>
-   <div className="details"> 
-   <div className="row">
-  <div className="col-lg-12 name">
-  Rakesh Kumar Sisodiya
-  </div>
-   </div>
-   
-   <div className="row">
-  <div className="col-lg-12 descp">
-   Web Developer
-  </div>
-   </div></div>
-</div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-
-
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={SDE} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Subhadeepa Dey
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-     MTech Representative
-      </div>
-       </div></div>
-   </div>
-       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AC} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Arunava Chatetejee
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-      PHD Representative
-      </div>
-       </div>
-     </div>
-   </div>
- </div>
-
-
-   <div className="members row">
-   
-   
-<div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-   <input type="checkbox" className="checked" name=" "/>
-   <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={N} /></div>
-   <div className="details"> 
-   <div className="row">
-  <div className="col-lg-12 name">
-  Nishant Kumar
-  </div>
-   </div>
-   
-   <div className="row">
-  <div className="col-lg-12 descp">
-  Senior Coordinators
-  </div>
-   </div></div>
-</div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-
-
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={DG} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-    Debjit Goswami
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-    Senior Coordinators
-      </div>
-       </div></div>
-   </div>
-       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={SN} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-     Saurav Nag
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-   Senior Coordinators
-      </div>
-       </div>
-     </div>
-   </div>
- </div>
-
-
-   <div className="members row">
-   
-   
-<div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-   <input type="checkbox" className="checked" name=" "/>
-   <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={HA} /></div>
-   <div className="details"> 
-   <div className="row">
-  <div className="col-lg-12 name">
-  Harshit Anand
-  </div>
-   </div>
-   
-   <div className="row">
-  <div className="col-lg-12 descp">
-   Senior Coordinators
-  </div>
-   </div></div>
-</div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-
-
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AB} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Boyina Venkata Akhil
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-     Senior Coordinators
-      </div>
-       </div></div>
-   </div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={D} /></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Darpan Shyamkumar Agarwal
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-     Senior Coordinators
-      </div>
-       </div>
-     </div>
-   </div>
- </div>
-
-    <div className="members row">
-   
-   
-<div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-   <input type="checkbox" className="checked" name=" "/>
-   <div className="toogle">+</div>
-   <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={AHossain}/></div>
-   <div className="details"> 
-   <div className="row">
-  <div className="col-lg-12 name">
-  Adil Hussain
-  </div>
-   </div>
-   
-   <div className="row">
-  <div className="col-lg-12 descp">
-  Senior Coordinators
-  </div>
-   </div></div>
-</div>
-   <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-
-
-   <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={S}/></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-      Sucharita Pal
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-    Senior Coordinators
-      </div>
-       </div></div>
-   </div>
-       <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-       <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-       <input type="checkbox" className="checked" name=" "/>
-       <div className="toogle">+</div>
-       <div className="imgbox"> <img alt="pic" style={{objectFit:"cover"}} loading="lazy" className="cardimg " src={SM}/></div>
-       <div className="details"> 
-       <div className="row">
-      <div className="col-lg-12 name">
-     Saumyajeet Mukherjee
-      </div>
-       </div>
-       
-       <div className="row">
-      <div className="col-lg-12 descp">
-    Junior Coordinators
-      </div>
-       </div></div>
-   </div>
- </div>
-
-
- <div className="members row">
-   
-   
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-      <input type="checkbox" className="checked" name=" "/>
-      <div className="toogle">+</div>
-      <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={pandey}/></div>
-      <div className="details"> 
-      <div className="row">
-     <div className="col-lg-12 name">
-     Amar Pandey
-     </div>
-      </div>
-      
-      <div className="row">
-     <div className="col-lg-12 descp">
-     Junior Coordinator
-     </div>
-      </div></div>
-   </div>
-      <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   
-   
-      <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-          <input type="checkbox" className="checked" name=" "/>
-          <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={swagata}/></div>
-          <div className="details"> 
-          <div className="row">
-         <div className="col-lg-12 name">
-         Swagat Laxmi Sengupta
-         </div>
+          <div class="container">
+          <div class="section-title">
+              <h1>Our Team</h1>
           </div>
-          
-          <div className="row">
-         <div className="col-lg-12 descp">
-       Junior Coordinators
-         </div>
-          </div></div>
-      </div>
-          <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-          <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-          <input type="checkbox" className="checked" name=" "/>
-          <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={samr}/></div>
-          <div className="details"> 
-          <div className="row">
-         <div className="col-lg-12 name">
-       Samriddho Saha
-         </div>
+          <div class="row">
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={TTS} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>TT Sriram</h2>
+                           
+                      </div>
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={R} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Ritika Das</h2>
+                          
+                           
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={NK} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Naveen Kumar</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={T} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Tejaswi Shah</h2>
+                         
+                      </div>
+                      
+                  </div>
+              </div>
+          </div> 
+          <div class="row">
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={AK} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Aritra Karmakar</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={RK} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Rakesh Kumar Sisodiya</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={SDE} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Subhadeepa Dey</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={AC} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Arunava Chatterjee</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+          </div> 
+          <div class="row">
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={DG} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Debjit Goswami</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={S} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Sucharita Pal</h2>
+                         
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={AB} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Boyina Venkata Akhil</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={HA} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Harshit Anand</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+          </div> 
+          <div class="row">
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={D} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Darpan Shyamkumar Agarwal</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={AHossain} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Adil Hossain</h2>
+                        
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={NK} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Nishant Kumar</h2>
+                         
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={SN} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Saurav Nag</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
           </div>
-          
-          <div className="row">
-         <div className="col-lg-12 descp">
-       Junior Coordinators
-         </div>
-          </div></div>
-      </div>
-    </div>
-
-
-    <div className="members row">
-   
-   
-   <div  className="col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-      <input type="checkbox" className="checked" name=" "/>
-      <div className="toogle">+</div>
-      <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={anuj}/></div>
-      <div className="details"> 
-      <div className="row">
-     <div className="col-lg-12 name">
-     Anuj Patel
-     </div>
-      </div>
-      
-      <div className="row">
-     <div className="col-lg-12 descp">
-     Junior Coordinator
-     </div>
-      </div></div>
-   </div>
-      <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-   
-   
-      <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-          <input type="checkbox" className="checked" name=" "/>
-          <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={ryt}/></div>
-          <div className="details"> 
-          <div className="row">
-         <div className="col-lg-12 name">
-         Rhythm Aich
-         </div>
+          <div class="row">
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={ryt} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Rhythm Aich</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={SM} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Saumyajeet Mukherjee</h2>
+                        
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={samn} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Sammanoy Mukherjee</h2>
+                         
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={swagata} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Swagata Laxmi Sengupta</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+          </div> 
+          <div class="row">
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={pandey} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Amar Kumar Pandey</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={AHossain} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Samriddho Saha</h2>
+                        
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={rao} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>BHV Prasad</h2>
+                         
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="column">
+                  <div class="team-5">
+                      <div class="team-img">
+                          <img src={anuj} alt="Team Image"/>
+                      </div>
+                      <div class="team-content">
+                          <h2 style={{fontSize:"15px"}}>Anuj Patel</h2>
+                          
+                      </div>
+                      
+                  </div>
+              </div>
           </div>
-          
-          <div className="row">
-         <div className="col-lg-12 descp">
-       Junior Coordinators
-         </div>
-          </div></div>
       </div>
-          <div className="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
-          <div  className=" col-lg-3 col-md-10 col-sm-10 col-xs-10 " id="card">
-          <input type="checkbox" className="checked" name=" "/>
-          <div className="toogle">+</div>
-          <div className="imgbox"> <img alt="pic" style={{objectFit:"cover",border:"2px solid black"}} loading="lazy" className="cardimg " src={samn}/></div>
-          <div className="details"> 
-          <div className="row">
-         <div className="col-lg-12 name">
-       Samannoy Mukherjee
-         </div>
-          </div>
-          
-          <div className="row">
-         <div className="col-lg-12 descp">
-       Junior Coordinators
-         </div>
-          </div></div>
-      </div>
-    </div>
-  </div>
 
         );
     }

@@ -42,9 +42,6 @@ class Header extends Component {
                   <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/member">MEMBER</Link>
                   </li>
                   <li className="nav-item">
-                  <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/subject">SYLLABUS</Link>
-                  </li>
-                  <li className="nav-item">
                   <Link className ="nav-link" style={{fontFamily:"Times new roman",fontSize:"15px"}} to="/register">REGISTER</Link>    
                   </li>
                   {this.props.user.userData?

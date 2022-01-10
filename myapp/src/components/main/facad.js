@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./teamss.css"
 import AH from '../../images/AH.jpg'
 import AKS from '../../images/AKS.jpg'
 import GH from '../../images/GH.webp'
@@ -18,501 +18,243 @@ import KCG from '../../images/KCG.jpg'
 
 const Facad = () => {
     return (
-        <div style={{marginLeft:'20px'}}>
-          <div className="row">
-            <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-          
-          <div>
-          <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={PPG} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Parthapratim Gupta</div>
-              <div className="c">Professor</div>
-              <div className="b">parthapratim.gupta@che.nitdgp.ac.in</div>
-              <div className="d">9434788028</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
+      <div class="container">
+      <div class="section-title">
+          <h1>Faculty Members</h1>
+      </div>
+      <div class="row">
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={PPG} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Parthapratim Gupta</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>parthapratim.gupta@che.nitdgp.ac.in</h6>
+                      <h4>9434788028</h4>
+                  </div>
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={PP} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>PARIMAL PAL</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>parimal.pal@che.nitdgp.ac.in</h6>
+                      <h4>9434788105</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={KCG} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Kartik Chandra Ghanta</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>kartik.ghanta@che.nitdgp.ac.in</h6>
+                      <h4>9434788020</h4>
+                  </div>
+                  
               </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={PP} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Parimal Pal</div>
-              <div className="c">Professor</div>
-              <div className="b">parimal.pal@che.nitdgp.ac.in</div>
-              <div className="d">9434788105</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={TM} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Tamal Mandal</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>tamal.mandal@che.nitdgp.ac.in</h6>
+                      <h4>9434788078</h4>
+                  </div>
+                  
               </div>
+          </div>
+      </div> 
+      <div class="row">
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={AKS} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Anup Kumar Sadhukhan</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>anupkumar.sadhukhan@che.nitdgp.ac.in</h6>
+                      <h4>9434788048</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={SD} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Susmita Dutta</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>susmita.dutta@che.nitdgp.ac.in</h6>
+                      <h4>9434788120</h4>
+                  </div>
+                  
               </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={KCG} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Kartik Chandra Ghanta</div>
-              <div className="c">Professor</div>
-              <div className="b">kartik.ghanta@che.nitdgp.ac.in</div>
-              <div className="d">9434788020</div>
-{/*               
-              <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={GH} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Gopinath Halder</h2>
+                      <h3>PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>gopinath.halder@che.nitdgp.ac.in</h6>
+                      <h4>9434788189</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={MKM} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Mrinal Kanti Mondal</h2>
+                      <h3>ASSOCIATE PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>mrinalkanti.mandal@che.nitdgp.ac.in</h6>
+                      <h4>9434788188</h4>
+                  </div>
+                  
               </div>
+          </div>
+      </div> 
+      <div class="row">
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={JS} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Jaya Sikder</h2>
+                      <h3>ASSOCIATE PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>jaya.sikder@che.nitdgp.ac.in</h6>
+                      <h4>9434788186</h4>
+                  </div>
+                  
               </div>
-             </section>  
-             </div>           
-             </div>
-             </div>
-             
-             <div className="row">
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={TM} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Tamal Mandal</div>
-              <div className="c">Professor</div>
-              <div className="b">tamal.mandal@che.nitdgp.ac.in</div>
-              <div className="d">9434788078</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={SKL} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Sandip Kumar Lahiri</h2>
+                      <h3>ASSOCIATE PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>sandipkumar.lahiri@che.nitdgp.ac.in</h6>
+                      <h4>9007659000</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={SP} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Swapan Paruya</h2>
+                      <h3>ASSISTANT PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>swapan.paruya@che.nitdgp.ac.in</h6>
+                      <h4>9474404033</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={BD} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Bimal Das</h2>
+                      <h3>ASSISTANT PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>bimal.das@che.nitdgp.ac.in</h6>
+                      <h4>9434789023</h4>
+                  </div>
+                  
               </div>
-             </section>  
-             </div>           
-             </div>
-             
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={AKS} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Anup Kumar Sadhukhan</div>
-              <div className="c">Professor</div>
-              <div className="b">anupkumar.sadhukhan@che.nitdgp.ac.in</div>
-              <div className="d">9434788048</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
+          </div>
+      </div> 
+      <div class="row">
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={BKM} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Bimal Kumar Mandal</h2>
+                      <h3>ASSISTANT PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>bk.mondal@che.nitdgp.ac.in</h6>
+                      <h4>7699782330</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={RGC} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Rajib Ghosh Chaudhuri</h2>
+                      <h3>ASSISTANT PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>rajib.ghoshchaudhuri@che.nitdgp.ac.in</h6>
+                      <h4>7596854649</h4>
+                  </div>
+                  
               </div>
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={AH} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>ABHIRAM HENS</h2>
+                      <h3>ASSISTANT PROFESSOR</h3>
+                       <h6 style={{fontSize:"14px"}}>abhiram.hens@che.nitdgp.ac.in</h6>
+                      <h4>9434789040</h4>
+                  </div>
+                  
               </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={SD} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Susmita Dutta</div>
-              <div className="c">Professor</div>
-              <div className="b">susmita.dutta@che.nitdgp.ac.in</div>
-              <div className="d">9434788120</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
+          </div>
+          <div class="column">
+              <div class="team-5">
+                  <div class="team-img">
+                      <img src={AH} alt="Team Image"/>
+                  </div>
+                  <div class="team-content">
+                      <h2 style={{fontSize:"15px"}}>Ananta Sarkar</h2>
+                      <h3>INSPIRE FACULTY</h3>
+                       <h6 style={{fontSize:"14px"}}>XXX@che.nitdgp.ac.in</h6>
+                      <h4>XXX</h4>
+                  </div>
+                  
               </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-             </div>
-
-             <div className="row">
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={GH} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Gopinath Halder</div>
-              <div className="c">Professor</div>
-              <div className="b">gopinath.halder@che.nitdgp.ac.in</div>
-              <div className="d">9434788189</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={MKM} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Mrinal Kanti Mondal</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">mrinalkanti.mandal@che.nitdgp.ac.in</div>
-              <div className="d">9434788188</div>
-{/*               
-              <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button> */}
-              
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={JS} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Jaya Sikder</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">jaya.sikder@che.nitdgp.ac.in</div>
-              <div className="d">9434788186</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-               
-               </div>
-               </div>
-
-               <div className="row">
-               <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={SKL} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Sandip Kumar Lahiri</div>
-              <div className="c">Associate Professor</div>
-              <div className="b">sandipkumar.lahiri@che.nitdgp.ac.in</div>
-              <div className="d">9007659000</div>
-{/*               
-              <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={SP} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Swapan Paruya</div>
-              <div className="c">Assistant Professor</div>
-              <div className="b">swapan.paruya@che.nitdgp.ac.in</div>
-              <div className="d">9474404033</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
- </div>
-
-         <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">      
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={BD} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Bimal Das</div>
-              <div className="c">Assitant Professor</div>
-              <div className="b">bimal.das@che.nitdgp.ac.in</div>
-              <div className="d">9434789023</div>
-{/*               
-              <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-             </div>
-
-<div className="row">
-<div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={AH} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Abhiram Hens</div>
-              <div className="c">Assistant Professor</div>
-              <div className="b">abhiram.hens@che.nitdgp.ac.in</div>
-              <div className="d">9434789040</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-     </div>
-
-       <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">       
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={RGC} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Rajib Ghosh Chaudhuri</div>
-              <div className="c">Assitant Professor</div>
-              <div className="b">rajib.ghoshchaudhuri@che.nitdgp.ac.in</div>
-              <div className="d">7596854649</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-
-             <div className="col-lg-4 col-sm-12 col-md-4 col-xs-12">
-             <div>
-             <section id="testimonials">
-              <div className="container">
-              
-              <div className="row">
-             <div className="col-md-4 text-center">
-               
-              <div className="profile">
-                <div className="color1">
-                <img src={BKM} className="user" loading="lazy"/>
-                </div>
-              <div className="desco">
-                <div className="b">Bikash Kumar Mondal</div>
-              <div className="c">Assistant Professor</div>
-              <div className="b">bk.mondal@che.nitdgp.ac.in</div>
-              <div className="d">7699782330</div>
-              
-              {/* <div id="linkedin">LinkedIn ID</div>
-              <div id="link">https://www.linkedin.com
-                /in/rakesh-kumar-sisodiya-835851143/</div>
-              <button name="submit" type="submit" id="contact-submit">LOGIN</button>
-               */}
-            </div>
-              </div>            
-              </div>
-              </div>
-              </div>
-             </section>  
-             </div>           
-             </div>
-             </div>
-             
-        </div>
-    );
+          </div>
+      </div> 
+  </div>
+      );
 };
 
 export default Facad;

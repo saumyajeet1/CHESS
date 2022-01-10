@@ -2,6 +2,7 @@ import React from 'react';
 
 const Subject = () => {
     return (
+      <div className="container">
         <div id="box" style={{backgroundColor:"#EDC7B7"}}>
                  <div className="row">
                     <h2 className="neon" style={{fontFamily:"Gilroy",fontSize:'40px',textAlign:'center',color:"#AC3B61"}}>COURSE MATERIALS</h2>
@@ -141,6 +142,7 @@ const Subject = () => {
        
        
        }
+      </div>
       </div>
     );
 };

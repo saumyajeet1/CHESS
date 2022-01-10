@@ -1,7 +1,4 @@
 
-body{
-    background-color: #EDC7B7 !important;
-}
 html,body{
     overflow-x: hidden;
 }
@@ -330,8 +327,6 @@ float: right;
   
   .profile button[type="submit"]:hover {
     background: #E38845;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   
@@ -594,9 +589,7 @@ fieldset {
         height:50px;
         width:50px;
 }
-body{
-    background-color: #EDC7B7 !important;
-}
+
 html,body{
     overflow-x: hidden;
 }
