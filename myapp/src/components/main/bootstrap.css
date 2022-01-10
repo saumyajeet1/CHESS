@@ -4,10 +4,6 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- #root {
-	display: flex;
-	flex-direction: column;
-   }
    html, body, #root {
 	height: 100%;
   }
