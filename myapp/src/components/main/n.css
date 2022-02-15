@@ -53,7 +53,7 @@
   
   }
   .sam li .date span{
-    line-height: 35px;
+    line-height:5px;
 margin-left:10px;
     text-align: center !important;
   }
@@ -81,7 +81,7 @@ margin-left:10px;
   
   @media (max-width:800px){
     #win{
-      display:none
+      /* display:none */
    }
 .y{
   display: block;
@@ -104,7 +104,7 @@ margin-left:10px;
     position:relative ;
     list-style-type: none ;
     padding:4px ;
-    height:120px;
+    height:auto;
     border-radius: 4px ;
     border-bottom: 1px solid rgba(0,0,0,0.1) ;
   }
