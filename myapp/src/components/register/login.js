@@ -3,8 +3,6 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import FormFields from '../utils/formfields';
 import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import {loginuser} from '../actions/memberactions'
 import hexa from '../../images/hexa.png'
 
@@ -19,7 +17,7 @@ class Login extends Component {
             value:'',
             config:{
                 name:'Email',
-                placeholder:'Enter your Email here',
+                placeholder:'Email',
                 type:'email'
             },
             validation:{
@@ -34,7 +32,7 @@ class Login extends Component {
             value:'',
             config:{
                 name:'password',
-                placeholder:'Enter your password here',
+                placeholder:'Password',
                 type:'password'
             },
             validation:{
@@ -110,25 +108,24 @@ resetpassword=(event)=>{
             <center> <CircularProgress thickness={7} size={100} style={{color:'grey'}} />  </center>
             :
             <div className="container">
-                           
-                <div className="row">
-                    <h2 className="neon" style={{fontFamily:"Gilroy",color:"#AC3B61"}}>PLEASE LOGIN</h2>
-                </div>
+                <div className='row'>
+                  <div className='col-lg-3 col-md-3'></div>
+                  <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
  
-                <form  style={{backgroundColor:'#123C69'}} id="contact" onSubmit={(event)=>{
+                <form  style={{backgroundColor:'white',borderRadius:"5%",alignItems:"center"}} id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
                     
                    <div><img src={hexa} id="image"/>
-                   <h3 style={{color:"#EDC7B7"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
-                   <h4 style={{color:"#EDC7B7"}}>National Institute of Technology Durgapur</h4>
+                   <h3 style={{color:"#EDC7B7", fontFamily:"Times New Roman"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                   <h4 style={{color:"#EDC7B7", fontFamily:"Times New Roman"}}>National Institute of Technology Durgapur</h4>
                    {
                     this.state.show?
                     <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
                    }
                    </div>
                
-                   <div className=" row block lblock">
+                   <div className="row block lblock" style={{display:"inline"}}>
                     <FormFields
                       formdata={this.state.formdata.email}
                       id={'email'}
@@ -136,7 +133,7 @@ resetpassword=(event)=>{
                     />
                    </div>
                 
-                  <div className="row block lblock">
+                  <div className="row block lblock" style={{display:"inline"}}>
                     <FormFields
                      formdata={this.state.formdata.password}
                      id={'password'}
@@ -144,20 +141,23 @@ resetpassword=(event)=>{
                     />
                 </div>
                 <br/>
-                <div className="row">
-                    <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-                    <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
+                <div className="row" style={{display:"inline"}}>
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <button className="btn btn-info" type="button" onClick={(event)=> this.submitform(event)}>
                        LOGIN
-                    </Button>
+                    </button>
                     </div>
                 
-                <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-                    <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.resetpassword(event)}>
+                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <button type="button" className="btn btn-info" onClick={(event)=> this.resetpassword(event)}>
                       Forgot Password
-                    </Button>
+                    </button>
                 </div>
             </div>
         </form>
+        </div>
+        <div className='col-lg-3 col-md-3'></div>
+        </div>
     </div>
         );
     }

@@ -25,13 +25,13 @@ class FormFields extends Component {
         switch(this.props.formdata.element){
           case('input'):
           template=(<div>
-              {this.props.formdata.label?
+              {/* {this.props.formdata.label?
             <div className="label_inputs" id="email"><label>{this.props.formdata.config.name}</label></div>
             :null  
-            }
+            } */}
             <input className="input" type={this.props.formdata.config.type} placeholder={this.props.formdata.config.placeholder} 
             onChange={(event)=>{this.props.change({event,id})}} name={this.props.formdata.config.name}
-            onBlur={(event)=> this.props.change({event,id,blur:true})}/>
+            onBlur={(event)=> this.props.change({event,id,blur:true})} style={{borderColor:"black",borderWidth:"1px"}}/>
           {this.showError()}
           </div>)
         
