@@ -294,13 +294,13 @@ code {
 	background: #edeff4;
 }
 
-p [data-toggle='tooltip'] {
+p:not(.lis) [data-toggle='tooltip'] {
 	padding-left: .25em;
 	padding-right: .25em;
 	color: #505cfd;
 }
 
-p [style*='max-width'] {
+p:not(.lis) [style*='max-width'] {
 	display: inline-block;
 }
 
@@ -1401,7 +1401,6 @@ img {
 	display: inline-block;
 	font-weight: 400;
 	font-style: normal;
-	speak: none;
 	text-transform: none;
 }
 

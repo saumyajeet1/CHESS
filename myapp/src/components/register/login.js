@@ -109,7 +109,7 @@ resetpassword=(event)=>{
          this.state.loading?
             <center> <CircularProgress thickness={7} size={100} style={{color:'grey'}} />  </center>
             :
-            <div className="containers">
+            <div className="container">
                            
                 <div className="row">
                     <h2 className="neon" style={{fontFamily:"Gilroy",color:"#AC3B61"}}>PLEASE LOGIN</h2>

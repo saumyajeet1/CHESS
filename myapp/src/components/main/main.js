@@ -23,35 +23,17 @@ class Main extends Component {
        
          this.state.news.reverse().map((item,i)=>(  
 
-//   <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
-//   <div className="d-flex w-100 justify-content-between">
-//     {/* <h5 className="mb-1">CREATED AT {item.createdAt}</h5> */}
-  
-//   </div>
-//      <a href={item.link} className="mb-1" style={{fontFamily:"'Montserrat', sans-serif"}}>{item.subject}</a>
-  
-//      {
-//        item.author?
-//        <a className="mb-1" style={{textTransform:"capitalize"}}>BY {item.author}</a>
-//      :null
-// }
-// {/* {
-//        item.link?
-//      <a href={item.link} className="mb-1">{item.link}</a>
-//      :null
-// } */}
-//   </a>
 <li key={i} className="row">
 
 
   <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4">
   <div className="date">
-   <h3><span id="er" >{item.month}</span><br/><span className="row">{item.date}</span></h3>
+   <h3><span id="er" id="lis">{item.month}</span><br/><span className="row" id="lis">{item.date}</span></h3>
    </div>
   </div>
   <div className="col-lg-8 col-sm-8 col-md-8 col-xs-8">
-   <a href={item.link}>
-     <p>{item.subject}</p>  </a>
+   <a href={item.link} >
+     <p className="lis">{item.subject}</p>  </a>
    </div>
 
 </li>

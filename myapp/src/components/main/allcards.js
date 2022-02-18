@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import "../utils/card.css"
 import Gen from '../utils/genall'
 import {allalum, searchyear} from '../actions/recordactions'
-import FieldRow from "../utils/formrow"
-import Pic from '../utils/pic';
 import FormFields from '../utils/formfields';
 import {updatesearch,generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
@@ -98,92 +97,67 @@ class Allalumni extends Component {
              this.state.loading?
              <div className="container">
         
-                 <h3 className="neon" style={{textAlign:'center'}}>
-                    ALUMNI INFORMATION
-                 </h3>
                  <div className="row">
-                 {/* <div className="col-lg-4 col-md-4 col-xs-4 col-sm-4">
-                 <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Name:- {this.state.data.name}</p>
-                 </div>
-                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div>
-                 <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2"></div> */}
-             {/* <div className="col-lg-4 col-sm-4 col-md-4 col-xs-4"> */}
-                <center> <Pic image={this.state.data.images[0]?this.state.data.images[0].url:null} text={"PHOTO"}/> </center>
-             {/* </div> */}
-                     
-             </div>
-             <br></br>
-             <br></br>
-             <br></br>
-             <br></br>
-             <br></br>
+                     <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                <img style={{border:"2px solid black"}} className="img-responsive" style={{borderRadius:"15%"}}src={this.state.data.images[0]?this.state.data.images[0].url:null} alt={"PHOTO"}/> 
+               </div> 
+                <div className='col-lg-60 col-md-6 col-sm-12 col-xs-12'>
 
-             <div className="row">
-             <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Name:- {this.state.data.name}</p>
+                <div className="row">
+             <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Name:- {this.state.data.name}</p>
             </div>
- 
-  <br></br>
 
              <div className="row">
-                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Email:- {this.state.data.email}</p>
-             </div>
-             <br></br>
-                
+                  <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Email:- {this.state.data.email}</p>
+             </div>                
                 
              <div className="row">
-                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Current Degree:- {this.state.data.currentdegree}</p>
+                  <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Current Degree:- {this.state.data.currentdegree}</p>
              </div>
                  
-             <br></br>
+             <div className="row">
+                  <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Workplace:- {this.state.data.workplace}</p>
+             </div>
                  
              <div className="row">
-                  <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Workplace:- {this.state.data.workplace}</p>
+                    <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Year:- {this.state.data.year}</p>
              </div>
  
-             <br></br>
-                 
              <div className="row">
-                    <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Year:- {this.state.data.year}</p>
-             </div>
-             <br></br>
-
- 
-             <div className="row">
-                 <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Additional Information:- {this.state.data.additional}</p>
+                 <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Additional Information:- {this.state.data.additional}</p>
              </div>
 
-             <br></br>
-
-             
              <div className="row">
-             <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Academic Records:- {this.state.data.academicrecords}</p>
+             <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Academic Records:- {this.state.data.academicrecords}</p>
+             </div>
+
+             <div className="row">
+             <p style={{color:"black", family:"Times New Roman",fontSize:"15px"}}>Awards:- {this.state.data.awards}</p>
+             </div>
+
+                </div>
              </div>
              <br></br>
-             
-             <div className="row">
-             <p style={{color:"black", family:"Aeonik",fontSize:"25px"}}>Awards:- {this.state.data.awards}</p>
-             </div>
              <br></br>
-
 
              <button className="btn btn-primary" onClick={(event)=> this.goback(event)}>GO BACK</button>
              
         </div>
              :
-                 <div>
-               <div className="block row">
+             <div style={{position:"relative",maxWidth:"100%"}}>
+               <div className="row">
                <FormFields
                   formdata={this.state.search}
                   id={'year'}
                   change={(event)=>{this.updateform(event)}}
-                />
-            
-            
-                </div><br></br>
-                <div className="blo">
-                   
+                />                
+                </div>
+
+                <div className='row'>
                 <button className="btn btn-primary" onClick={(event)=> this.search(event)}>SEARCH</button>
                 </div>
+                
+                <br></br>
                 {
                     this.state.records?
                     this.state.records.map((item,i)=>{
@@ -193,9 +167,9 @@ class Allalumni extends Component {
                         console.log(i)
                         if(i==0){
                            console.log(this.state.records.slice(i,i+3),i,i+3)
-                            return(<div key={i} className='row'>
+                            return(
                             <Gen recalumni={this.state.records.slice(i,i+3)} change={(event,data,_id)=>this.submitForm(event,data)}/>
-                            </div>)
+                            )
                         }
                         if(i%3==0){
                             if((i+3)>=this.state.records.length){
@@ -206,16 +180,18 @@ class Allalumni extends Component {
                                 n=3
                             }
                             console.log(this.state.records.slice(i,i+n),i,i+n)
-                  return(<div key={i} className='row'>
-             <Gen recalumni={this.state.records.slice(i,i+n)} change={(event,data,_id)=>this.submitForm(event,data)}/>
-             </div>)
+                  return(
+             <Gen recalumni={this.state.records.slice(i,i+n)} key={i} change={(event,data,_id)=>this.submitForm(event,data)}/>
+             
+             )
+
                         }
-                    })
+                    }
+            )
     :null
                 }
-             </div>
-
-         }      
+                </div>
+         }     
             </div>
         );
     }

@@ -119,11 +119,10 @@ textarea {
 
 .label_inputs {
     text-transform:capitalize;
-    font-family:algerian;
+    font-family:"Times New Roman";
     display: inline-block;
-    font-display:swap;
-    
-    color: black;
+    font-display:swap;    
+    color: black !important;
     padding: 5px;
 }
 

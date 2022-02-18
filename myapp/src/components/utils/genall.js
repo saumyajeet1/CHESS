@@ -24,7 +24,7 @@ const Gen = (props) => {
              )):null
         )
     return (
-        <div>
+        <div className='row'>
             {generatecards()}
         </div>
     );

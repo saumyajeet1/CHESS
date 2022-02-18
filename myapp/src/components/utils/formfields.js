@@ -26,7 +26,7 @@ class FormFields extends Component {
           case('input'):
           template=(<div>
               {this.props.formdata.label?
-            <div className="label_inputs" id="email"><label style={{fontFamily:'Aeonik',color:"#EDC7B7"}}>{this.props.formdata.config.name}</label></div>
+            <div className="label_inputs" id="email"><label>{this.props.formdata.config.name}</label></div>
             :null  
             }
             <input className="input" type={this.props.formdata.config.type} placeholder={this.props.formdata.config.placeholder} 
@@ -40,7 +40,7 @@ class FormFields extends Component {
         template = (
             <div>
                 {this.props.formdata.label?
-                <div className="label_inputs" id="email" style={{fontFamily:'sans serif'}}>
+                <div className="label_inputs" id="email">
                     {this.props.formdata.config.name}
                 </div>
                 :null}
