@@ -17,20 +17,21 @@ const useStyles = theme => ({
    u:{
     fontSize:"25px",
     color:'#163C69',
+    fontFamily:'Times New Roman',
    }
 });
 
-const getItemStyle = (isDragging, draggableStyle) => ({
-    ...draggableStyle,
+// const getItemStyle = (isDragging, draggableStyle) => ({
+//     ...draggableStyle,
 
-  ...(isDragging && {
-    background: "rgb(235,235,235)"
-  })
-});
+//   ...(isDragging && {
+//     background: "rgb(235,235,235)"
+//   })
+// });
 
-const getListStyle = isDraggingOver => ({
-  //background: isDraggingOver ? 'lightblue' : 'lightgrey',
-});
+// const getListStyle = isDraggingOver => ({
+//   //background: isDraggingOver ? 'lightblue' : 'lightgrey',
+// });
 
 class Blog extends Component {
   constructor(props) {
@@ -115,8 +116,8 @@ remember any topic say that clearly instead of making stories. Good luck.`,compa
 ,
 {id:"5",primary:"Aritra Karmakar (TREDENCE)",secondary:`
 Hey everyone. This is Aritra Karmakar. It’s a great platform that CHESS is providing to guide the upcoming batches of
-Chemical Engineering. I was selected in Tredence...
-
+Chemical Engineering. I was selected in Tredence...`
+,main:`
 Hey everyone. This is Aritra Karmakar. It’s a great platform that CHESS is providing to guide the upcoming batches of
 Chemical Engineering. I was selected in Tredence from college placement which is a non-core IT company. The placement
 process was conducted in three rounds: Aptitude, technical and HR. I practiced aptitude from Indiabix and Pariksha. For
@@ -134,8 +135,8 @@ various youtube videos . Puzzles are also very important. Just go to geekforgeek
 see the first 100 puzzles and you will surely get some common questions during the interview. And for the Hr round, I would
 suggest you be confident about what you speak that will do the job.`,company:"Tredence",batch:"2020",email:"aritra240@gmail.com",name:"Aritra Karmakar"},
 {id:"6",primary:"J Anisha Rao (ADITYA BIRLA GROUP)",secondary:`
-First of all I would like to thank CheSS for proving me the opportunity to help my juniors. I was selected in Aditya Birla Group...
-
+First of all I would like to thank CheSS for proving me the opportunity to help my juniors. I was selected in Aditya Birla Group...`,
+main:`
 First of all I would like to thank CheSS for proving me the opportunity to help my juniors. I was selected in Aditya Birla Group
 from campus placement. The placement process was held in 4 rounds: Online Test, GD, Technical Interview and HR
 Interview.Below are the sites I had followed while preparing for aptitude in order of difficulty:
@@ -161,8 +162,8 @@ Last but not the least I would like to add few more points:
 4. If you don’t know any answer just admit it. Don’t be oversmart.`,company:"Aditya Birla Group",batch:"2020",email:"j.nisharao@gmail.com",name:"J Anisha Rao"},
 {id:"7",primary:"Sonu Dixit (LINDE)",secondary:`
 Hi, this is Sonu Dixit. Thank you ChESS, for providing this platform. I got selected at Linde through the campus
-placement process...
-
+placement process...`,
+main:`
 Hi, this is Sonu Dixit. Thank you ChESS, for providing this platform. I got selected at Linde through the campus
 placement process. There were two rounds conducted by the company namely,
 1-written test
@@ -186,8 +187,8 @@ Some tips to juniors for preparation are:
 ALL THE BEST!`,company:"Linde",batch:"2020",email:"sonu.dixit.505@gmail.com",name:"Sonu Dixit"},
 {id:"8",primary:"Supratim Dey (RELIANCE INDUSTRIES LIMITED)",secondary:`
 Hi, everyone. I appreciate the initiative taken by ChESS. I got selected in RIL through campus placement process.
-The different rounds conducted by the company were...
-
+The different rounds conducted by the company were...`,
+main:`
 Hi, everyone. I appreciate the initiative taken by ChESS. I got selected in RIL through campus placement process.
 The different rounds conducted by the company were
 · Online aptitude + technical 1st round
@@ -223,8 +224,8 @@ Some tips to juniors to prepare for this particular company&#39;s interview are:
 All the very best for your future!`,company:"Reliance Industries Limited",batch:"2020",email:"tubaione98@gmail.com",name:"Supratim Dey"},
 {id:"9",primary:"Bidipta Ghosh (RELIANCE INDUSTRIES LIMITED)",secondary:`
 Hi, this is Bidipta. I got selected in RIL through the campus placement procedure. Thank you, ChESS for
-giving me an opportunity to...
-
+giving me an opportunity to...`,
+main:`
 Hi, this is Bidipta. I got selected in RIL through the campus placement procedure. Thank you, ChESS for
 giving me an opportunity to share my experience. The different rounds conducted by the company were:
 · Online(Aptitude + Technical)
@@ -257,8 +258,8 @@ answer them.
 Good luck !!`,company:"Reliance Industries Limited",batch:"2020",email:"ghoshbidipta660@gmail.com",name:"Bidipta Ghosh"},
 {id:"10",primary:"Ananya Ghosh (LINDE)",secondary:`
 Hi, this is Ananya. Thank you for asking me to share my experience. I got selected in Linde by the campus
-recruitment process. There were three different...
-
+recruitment process. There were three different...`,
+main:`
 Hi, this is Ananya. Thank you for asking me to share my experience. I got selected in Linde by the campus
 recruitment process. There were three different rounds conducted by the company namely, Pen and Paper Test
 (includes technical, aptitude and english), PI (technical and HR). For the pen and paper test, I checked in
@@ -286,8 +287,8 @@ All the best.
 `,company:"Linde",batch:"2020",email:"anu17ananya@gmail.com",name:"Ananya Ghosh"},
 {id:"11",primary:"Polaki Sri Kavya (PRADAN)",secondary:`
 Hi, everyone. This is Polaki Sri Kavya, I got selected at PRADAN through the campus placement procedure.
-There were three different rounds conducted...
-
+There were three different rounds conducted...`,
+main:`
 Hi, everyone. This is Polaki Sri Kavya, I got selected at PRADAN through the campus placement procedure.
 There were three different rounds conducted by the company.For the online round I, basically prepared for the
 Non verbal Reasoning. 100 questions were asked in the online round, the level of difficulty for which was 3/5.
@@ -296,8 +297,8 @@ any locality. The level of difficulty of the PI round was 3/5. Some tips to juni
 companies interview would be that you should be fast enough in reasoning. All the best.
 `,company:"PRADAN",batch:"2020",email:"srikavyapolaki@gmail.com",name:"Polaki Sri Kavya"},
 {id:"12",primary:"Monalisa Gorain (RELIANCE INDUSTRIES LIMITED)",secondary:`
-Hi, this is Monalisa Gorain. I got selected in Reliance Industries Limited by the campus placement procedure...
-
+Hi, this is Monalisa Gorain. I got selected in Reliance Industries Limited by the campus placement procedure...`,
+main:`
 Hi, this is Monalisa Gorain. I got selected in Reliance Industries Limited by the campus placement procedure.
 I practiced aptitude questions from pariksha and brushed up the important concepts and formula of fluid
 mechanics, mass transfer, heat transfer, cre and process control before the test. Many of the previous year gate
@@ -334,8 +335,8 @@ job. Besides you will get exposed to almost every unit operation you have studie
 `,company:"Reliance Industries Limited",batch:"2020",email:"monalisa.gorain@gmail.com",name:"Monalisa Gorain"},
 {id:"13",primary:"Aradhna Lama Yolmo (HELIUM CONSULTING)",secondary:`
 Hi , this is Aradhna and I got selected at Helium Consulting through campus placement. The different rounds
-conducted by the company were...
-
+conducted by the company were...`,
+main:`
 Hi , this is Aradhna and I got selected at Helium Consulting through campus placement. The different rounds
 conducted by the company were:
 1) HR round
@@ -360,8 +361,8 @@ confident.`
 ,company:"Helium Consulting",batch:"2020",email:"aradhna.542@gmail.com",name:"Aradhna Lama Yolmo"},
 {id:"14",primary:"Shahbal Akhter Ansari (ADITYA BIRLA GROUP)",secondary:`
 Hello everyone this is Shahbal from 2020 batch. I was selected in Aditya Birla Group through campus placement
-process...
-
+process...`,
+main:`
 Hello everyone this is Shahbal from 2020 batch. I was selected in Aditya Birla Group through campus placement
 process. Overall there were 3 rounds namely an Online test, GD(case study) and PI. For aptitude part I practised
 from IndiaBix website and watched CareerRide Youtube channel for shortcuts and tricks. The online test has
@@ -375,8 +376,7 @@ columns, pumps, heat exchangers, evaporators are important topics, so study the 
 `,company:"Aditya Birla Group",batch:"2020",email:"netshahbal@gmail.com",name:"Shahbal Akhter Ansari"},
 {id:"15",primary:"Naveen Kumar (RELIANCE INDUSTRIES LIMITED)",secondary:`
 Hello everyone, this is Naveen Kumar. I was selected in Reliance Industries Limited through campus placement
-process...
-
+process...`,main:`
 Hello everyone, this is Naveen Kumar. I was selected in Reliance Industries Limited through campus placement
 process. Overall there were 3 rounds : Online test, Technical PI and HR interview. For the online test I practiced
 both technical and aptitude part from IndiaBix. I followed Genique Education youtube channel and my personal
@@ -391,8 +391,7 @@ be humble in your tone. As a tip I would suggest that you should be careful whil
 anything that you don’t know.
 `,company:"Reliance Industries Limited",batch:"2020",email:"naveen.kr98@gmail.com",name:"Naveen Kumar"},
 {id:"16",primary:"Neha (Aditya Birla Group)",secondary:`
-Hello I’m Neha. The selection procedure of Aditya Birla in my case consisted of rounds - Physcometric test,...
-
+Hello I’m Neha. The selection procedure of Aditya Birla in my case consisted of rounds - Physcometric test,...`,main:`
 Hello I’m Neha. The selection procedure of Aditya Birla in my case consisted of rounds - Physcometric test,
 aptitude test, technical test, 2 technical plus HR rounds. For the online round I took preparation from India bix
 website and gate aptitude questions.60 aptitude question for 1 hour and 30 technical questions for half an hour
@@ -411,7 +410,7 @@ moral values and present your moral views where you get the chance. Tips to juni
 subject completely, prepare well with your second year and third year training and project, always present
 yourself with having moral values and views.`,company:"Aditya Birla Group",batch:"2020",email:"nehasweet3333@gmail.com",name:"Neha"},
 {id:"17",primary:"Disha Dhar (Novartis Healthcare Private Limited)",secondary:`
-Hi Disha here. Selection Rounds were : Online aptitude round,GD round,Case study round,Technical PI,HR ...
+Hi Disha here. Selection Rounds were : Online aptitude round,GD round,Case study round,Technical PI,HR ...`,main:`
 Hi Disha here. Selection Rounds were : Online aptitude round,GD round,Case study round,Technical PI,HR PI.
 For preparation of online round It requires knowledge of basic Maths and English from school level. There was a
 GD round and my topic was “Is India ready for digital economy”. Nothing much as a preparation for GD, just
@@ -422,8 +421,8 @@ join the company, why that job role,why that location and job sector. Takeway fr
 know about anything I must be confident enough to say a &#39;no&#39; rather than pretend.”. Tips to my juniors - They
 want mostly active learners because none of us freshers can know much about medicines or analytics.`,company:"Novartis Healthcare Private Limited",batch:"2020",email:"disha.dhar98@gmail.com",name:"Disha Dhar"},
 {id:"18",primary:"Devyansh Singh (PI Industries)",secondary:`
-Selection procedures in my case were : Offline pen and paper test, GD, Technical INterview, HR round. For the...
-
+Selection procedures in my case were : Offline pen and paper test, GD, Technical INterview, HR round. For the...`,
+main:`
 Selection procedures in my case were : Offline pen and paper test, GD, Technical INterview, HR round. For the
 first round, I took no special preparation, just had basic knowledge. There were 20 questions from technical pen
 and paper round. My GD topic was - “How you can save the Enviroment”. No special preparation I took for GD
@@ -448,8 +447,8 @@ ideas?
 Tips to juniors : prepare the basic principles of Chemical Engineering,Aptitude and Be confident.
 Presence of Mind and self awareness.These two will lend you a Job.`,company:"PI Industries",batch:"2020",email:"singhdev9255@gmail.com",name:"Devyansh Singh"},
 {id:"19",primary:"Sayan Goswami (PI Industries)",secondary:`
-Selection rounds were : Technical, GD, PI. First round was It was offline and 30 questions were asked...
-
+Selection rounds were : Technical, GD, PI. First round was It was offline and 30 questions were asked...`,
+main:`
 Selection rounds were : Technical, GD, PI. First round was It was offline and 30 questions were asked. No
 preparation for first round. My GD topic was “Environmental concerns”. No preparation for GD. Technical
 questions I faced are : Numerical to calculate economy and steam consumption and heat load in evaporator, Write
@@ -460,8 +459,8 @@ allow you?, What makes you angry?, where do you like to see yourself after 5 yea
 takeaway from interview : Interviews became monotonous for me as I was getting same type of HR questions till
 being placed. Tips to juniors : Do a academic project.`,company:"PI Industries",batch:"2020",email:"sayangoswami1972@gmail.com",name:"Sayan Goswami"},
 {id:"20",primary:"TT Sriram (RELIANCE INDUSTRIES LIMITED)",secondary:`
-Aptitude round preparation can be done from the websites like IndiaBix. There were...
-
+Aptitude round preparation can be done from the websites like IndiaBix. There were...`,
+main:`
 Aptitude round preparation can be done from the websites like IndiaBix. There were 30-aptitude,50-technical
 mcq. There is no GD round in RIL But still we can prepare GD by discussing about the current affairs between
 friends and also practising it individually.
@@ -486,8 +485,7 @@ more weightage than technical round. So concentrate on it. Be patient and calm d
 and pen more in the interview it helps more.(paper and pen will be provided in interview ).
 `,company:"Reliance Industries Limited ",batch:"2020",email:"",name:"TT Sriram"},
 {id:"21",primary:"Ritika Das (Saint-Gobain India Pvt Ltd)",secondary:`
-Hey guys, this is Ritika Das. I am really elated that CHeSS is providing us a platform to share our...
-
+Hey guys, this is Ritika Das. I am really elated that CHeSS is providing us a platform to share our...`,main:`
 Hey guys, this is Ritika Das. I am really elated that CHeSS is providing us a platform to share our personal 
 campus placement experiences and I am definite that the upcoming batches will find it useful when they face their placements.
  So, I got selected in Saint-Gobain India Pvt Ltd through the on-campus recruitment process. The selection procedure consists of 4 rounds with each 
@@ -509,7 +507,7 @@ I hope my experience will be of help to you all. Tick all the checkboxes and res
   ,company:"Saint-Gobain India Pvt Ltd",batch:"2020",email:"dasritika98@gmail.com",name:"Ritika Das"},
 ]
     };
-    this.onDragEnd = this.onDragEnd.bind(this);
+   
   }
 
   onDragEnd(result) {
@@ -530,7 +528,7 @@ I hope my experience will be of help to you all. Tick all the checkboxes and res
         <Droppable droppableId="droppable">
           {(provided, snapshot) => (
             <RootRef rootRef={provided.innerRef}>
-              <List style={getListStyle(snapshot.isDraggingOver)}>
+              <List>
                 {this.state.items.map((item, index) => (
                   <Draggable key={item.id} draggableId={item.id} index={index}>
                     {(provided, snapshot) => (
@@ -539,12 +537,7 @@ I hope my experience will be of help to you all. Tick all the checkboxes and res
                         ContainerComponent="li"
                         ContainerProps={{ ref: this.props.innerRef }}
                         innerRef={provided.innerRef}
-                        {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                        style={getItemStyle(
-                          snapshot.isDragging,
-                          provided.draggableProps.style
-                        )}
+                       
                       >
                         <ListItemIcon>
                           <InboxIcon />

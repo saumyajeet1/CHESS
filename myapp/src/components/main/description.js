@@ -99,8 +99,8 @@ class Desc extends Component {
   //  </div> 
 
 <div>
-  <h1>{this.props.location.state.item.name}</h1>
-
+  <h1>{this.props.location.state.item.primary}</h1>
+  
   <div>
     <p><i class="fa fa-quote-right"></i><br></br>
     {this.props.location.state.item.main}
