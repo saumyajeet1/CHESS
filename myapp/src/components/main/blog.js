@@ -6,10 +6,8 @@ import {
   ListItemText,
   ListItemIcon,
 } from "@material-ui/core";
-import RootRef from "@material-ui/core/RootRef";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import InboxIcon from "@material-ui/icons/Inbox";
-import { makeStyles ,withStyles} from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 const useStyles = theme => ({
   root: {
 
@@ -20,18 +18,6 @@ const useStyles = theme => ({
     fontFamily:'Times New Roman',
    }
 });
-
-// const getItemStyle = (isDragging, draggableStyle) => ({
-//     ...draggableStyle,
-
-//   ...(isDragging && {
-//     background: "rgb(235,235,235)"
-//   })
-// });
-
-// const getListStyle = isDraggingOver => ({
-//   //background: isDraggingOver ? 'lightblue' : 'lightgrey',
-// });
 
 class Blog extends Component {
   constructor(props) {
@@ -93,8 +79,7 @@ explain in the simplest manner with technical terms when asked., Prepare your fa
 whether you have been in a place for too long or not because their job demands all round India transfer.`,company:"Hindustan Unilever Limited (HUL)",batch:"2020",email:"tanushreemondal1998@gmail.com",name:"Tanushree Mondal"}
 ,   {id:"4",primary:"Kaberi Sarkar (TCE)",secondary:`
 Hi, this is Kaberi Sarkar. I really appreciate the effort of Chess to help us reach out to our juniors. Firstly, I got selected at
-Tata Consulting Engineers...
-
+Tata Consulting Engineers...`,main:`
 Hi, this is Kaberi Sarkar. I really appreciate the effort of Chess to help us reach out to our juniors. Firstly, I got selected at
 Tata Consulting Engineers through the campus placement process. There were three rounds conducted by the company
 namely, pen and paper test, technical interview and HR interview. For the online round, I prepared basics of chemical core
@@ -510,34 +495,18 @@ I hope my experience will be of help to you all. Tick all the checkboxes and res
    
   }
 
-  onDragEnd(result) {
-    // dropped outside the list
-    if (!result.destination) {
-      return;
-    }
 
-  }
-
-  // Normally you would want to split things out into separate components.
-  // But in this example everything is just done in one place for simplicity
   render() {
     const {classes} = this.props;
 
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
-        <Droppable droppableId="droppable">
-          {(provided, snapshot) => (
-            <RootRef rootRef={provided.innerRef}>
-              <List>
+              <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 {this.state.items.map((item, index) => (
-                  <Draggable key={item.id} draggableId={item.id} index={index}>
-                    {(provided, snapshot) => (
                       <ListItem
+                      alignItems="flex-start"
                       className={classes.root}
                         ContainerComponent="li"
                         ContainerProps={{ ref: this.props.innerRef }}
-                        innerRef={provided.innerRef}
-                       
                       >
                         <ListItemIcon>
                           <InboxIcon />
@@ -554,15 +523,9 @@ I hope my experience will be of help to you all. Tick all the checkboxes and res
                         </Link>
                      
                       </ListItem>
-                    )}
-                  </Draggable>
                 ))}
-                {provided.placeholder}
               </List>
-            </RootRef>
-          )}
-        </Droppable>
-      </DragDropContext>
+          
     );
   }
 }
