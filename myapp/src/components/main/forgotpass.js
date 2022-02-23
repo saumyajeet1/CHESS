@@ -6,6 +6,7 @@ import {connect} from 'react-redux'
 import {forgetpass} from '../actions/memberactions'
 import queryString from 'query-string';
 import hexa from '../../images/hexa.png'
+import Button from '@material-ui/core/Button';
 
 
 
@@ -89,21 +90,21 @@ if(isformvalid){
             this.state.loading?
         <center> <CircularProgress thickness={7} size={10} style={{color:'grey'}} />  </center>
             :
-            <div className="containers">
-                <div className="headtitle row">
+            <div className="container">
+                {/* <div className="headtitle row">
                     <h2 className="neon" style={{fontFamily:"sans serif"}}>RESET PASSWORD</h2>
-                </div>
+                </div> */}
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
-                }}>
+                }} style={{backgroundColor:"#123C69",borderRadius:"5%",alignItems:"center"}}>
             <div>
                 <img src={hexa} id="image"/>
-              <h3>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
-                <h4>National Institute of Technology Durgapur</h4>
+              <h3 style={{color:"#EDC7B7", fontFamily:"Times New Roman"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4 style={{color:"#EDC7B7", fontFamily:"Times New Roman"}}>National Institute of Technology Durgapur</h4>
                 
               </div>
                
-                <div className="block row">
+                <div className="row block lblock" style={{display:"inline"}}>
                   <FormFields
                   formdata={this.state.formdata.password}
                   id={'password'}
@@ -111,7 +112,7 @@ if(isformvalid){
                 />
                 </div><br></br>
 
-                <div className="block row">
+                <div className="row block lblock" style={{display:"inline"}}>
                 <FormFields
                   formdata={this.state.formdata.confirmpassword}
                   id={'confirmpassword'}
@@ -125,9 +126,10 @@ if(isformvalid){
                 <br></br>
                 <fieldset>
           <center>   
-                <button class="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
-                     Reset your Password
-                </button></center> 
+                <Button variant="outlined" color="primary" id="reset"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
+                 Reset Password
+                </Button>
+                </center> 
                 </fieldset>
                 </form>
                 </div>

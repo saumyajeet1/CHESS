@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FormFields from '../utils/formfields';
 import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
+import Button from '@material-ui/core/Button';
 import {forget} from '../actions/memberactions'
 import hexa from '../../images/hexa.png'
 
@@ -64,22 +65,22 @@ if(isformvalid){
             this.state.loading?
         <center> <h2>Email sent to <u>{this.state.data.email}</u></h2> </center>
             :
-            <div className="containers">
-                     
+            <div className="container">
+{/*                      
                      <div className="headtitle row">
                     <h2 className="neon" style={{fontFamily:"Aeonik"}}>RESET PASSWORD</h2>
-                </div>
+                </div> */}
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
-                }}>
+                }} style={{backgroundColor:"#123C69",borderRadius:"5%",alignItems:"center"}}>
                       
  
                         <div><img src={hexa} id="image"/>
-              <h3 style={{fontFamily:"Aeonik"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
-                <h4 style={{fontFamily:"Aeonik"}}>National Institute of Technology Durgapur</h4>
+              <h3 style={{color:"#EDC7B7", fontFamily:"Times New Roman"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
+                <h4 style={{color:"#EDC7B7", fontFamily:"Times New Roman"}}>National Institute of Technology Durgapur</h4>
                 
               </div>
-                <div className="block row">
+                <div className="row block lblock" style={{display:"inline"}}>
                   <FormFields
                   formdata={this.state.formdata.email}
                   id={'email'}
@@ -92,9 +93,10 @@ if(isformvalid){
                 <br></br>
                 <fieldset>
           <center>     
-                <button id="contact-submit" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
-                     Reset your Password
-                </button>
+               
+                <Button variant="outlined" color="primary" id="reset"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
+         Reset Your Password
+                </Button>
           </center>
                 </fieldset>
                 </form>

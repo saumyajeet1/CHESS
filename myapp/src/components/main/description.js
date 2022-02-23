@@ -70,35 +70,43 @@ import React, { Component } from 'react';
 import './des.css'
 
 class Desc extends Component {
-    componentDidMount() {
-        const script = document.createElement("script");
+    // componentDidMount() {
+    //     const script = document.createElement("script");
     
-        script.src = "des.js";
-        script.async = true;
+    //     script.src = "des.js";
+    //     script.async = true;
     
-        document.body.appendChild(script);
-      }
+    //     document.body.appendChild(script);
+    //   }
     
     render() {
         return (
-   <div className="book">
-   <div id="pages" className="pages">
-     <div className="page"><p className="paf">{this.props.location.state.item.name}<br/>{this.props.location.state.item.email}</p></div>
-     <div className="page">{this.props.location.state.item.batch}</div>
-     <div className="page"><p className="paf">Hello there!</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main1}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main2}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main3}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main4}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main5}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main6}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main7}</p></div>
-     <div className="page"><p className="paf">{this.props.location.state.item.main8}</p></div>
-   </div>
-   </div> 
+  //  <div className="book">
+  //  <div id="pages" className="pages">
+  //    <div className="page"><p className="paf">{this.props.location.state.item.name}<br/>{this.props.location.state.item.email}</p></div>
+  //    <div className="page">{this.props.location.state.item.batch}</div>
+  //    <div className="page"><p className="paf">Hello there!</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main1}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main2}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main3}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main4}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main5}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main6}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main7}</p></div>
+  //    <div className="page"><p className="paf">{this.props.location.state.item.main8}</p></div>
+  //  </div>
+  //  </div> 
 
+<div>
+  <h1>{this.props.location.state.item.name}</h1>
 
+  <div>
+    <p><i class="fa fa-quote-right"></i><br></br>
+    {this.props.location.state.item.main}
+    </p>
+  </div>
+</div>
         );
     }
 }

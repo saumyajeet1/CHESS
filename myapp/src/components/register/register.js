@@ -18,7 +18,7 @@ class Register extends Component {
             value:'',
             config:{
                 name:'name',
-                placeholder:'Enter your name here',
+                placeholder:'First Name',
                 type:'text'
             },
             validation:{
@@ -33,7 +33,7 @@ class Register extends Component {
             value:'',
             config:{
                 name:'lastname',
-                placeholder:'Enter your Last name here',
+                placeholder:'Last Name',
                 type:'text'
             },
             validation:{
@@ -52,7 +52,7 @@ class Register extends Component {
                 type:'email'
             },
             validation:{
-                email:true
+                required:true,
               },
             valid:false,
             validationMessage:'',
@@ -63,7 +63,7 @@ class Register extends Component {
             value:'',
             config:{
                 name:'password',
-                placeholder:'Enter password here',
+                placeholder:'Password',
                 type:'password'
             },
             validation:{
@@ -78,7 +78,7 @@ class Register extends Component {
             value:'',
             config:{
                 name:'Confirm Password',
-                placeholder:'ReEnter your Password here',
+                placeholder:'Confirm your Password',
                 type:'password'
             },
             validation:{
@@ -193,11 +193,11 @@ onrchange=(e)=>{
             <div className="container">
                 
                 <div className="row">
-                    <h2 className="neon" style={{fontFamily:"Gilroy",color:"#AC3B61"}}>REGISTER YOURSELF TO CHEMICAL ALUMNI DATABASE</h2>
-                </div>
+                <div className='col-lg-3 col-md-3'></div>
+                <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
                 <form id="contact" onSubmit={(event)=>{
                   this.submitform(event)
-                }} style={{backgroundColor:"#123C69"}}>
+                }} style={{backgroundColor:"#123C69",borderRadius:"5%",alignItems:"center"}}>
                              <div><img src={hexa} id="image"/>
               <h3 style={{color:"#EDC7B7"}}>CHEMICAL ENGINEERING STUDENTS SOCIETY</h3>
                 <h4 style={{color:"#EDC7B7"}}>National Institute of Technology Durgapur</h4>
@@ -206,37 +206,37 @@ onrchange=(e)=>{
                 <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
                 }
               </div>
-               <div className="block row">
+
+              <div className="row block lblock" style={{display:"inline"}}>
                <FormFields
                   formdata={this.state.formdata.name}
                   id={'name'}
                   change={(event)=>{this.updateform(event)}}
                 />
                 </div><br></br>
-               <div className="block row">
+
+                <div className="row block lblock" style={{display:"inline"}}>
                <FormFields
                   formdata={this.state.formdata.lastname}
                   id={'lastname'}
                   change={(event)=>{this.updateform(event)}}
                 />
                 </div><br></br>
-               <div className="block row">
+                <div className="row block lblock" style={{display:"inline"}}>
                <FormFields
                   formdata={this.state.formdata.email}
                   id={'email'}
                   change={(event)=>{this.updateform(event)}}
                 />
                 </div><br></br>
-                
-                <div className="block row">
+                <div className="row block lblock" style={{display:"inline"}}>
                   <FormFields
                   formdata={this.state.formdata.password}
                   id={'password'}
                   change={(event)=>{this.updateform(event)}}
                 />
                 </div><br></br>
-
-                <div className="block row">
+                <div className="row block lblock" style={{display:"inline"}}>
                 <FormFields
                   formdata={this.state.formdata.confirmpassword}
                   id={'confirmpassword'}
@@ -281,18 +281,21 @@ onrchange=(e)=>{
         <div className="row">
             <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
             
-                <Button variant="outlined" color="primary" id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
+                <Button variant="outlined" color="primary" id="studentregister"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
          REGISTER AS A STUDENT
                 </Button>
                 </div>
 
             <div className="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-                <Button variant="outlined" color="primary"  id="forgot"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitalumni(event)}>
+                <Button variant="outlined" color="primary"  id="alumniregister"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitalumni(event)}>
              REGISTER AS AN ALUMNI
                 </Button>
                 </div>
-                </div> 
+                </div>
                 </form>
+                </div>
+                <div className='col-lg-3 col-md-3'></div>
+                </div> 
                 </div>
                 
         );

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import FormFields from '../utils/formfields';
+
+import Button from '@material-ui/core/Button';
 import {update,validform, generatedata} from '../utils/formtions'
 import {connect} from 'react-redux'
 import {loginuser} from '../actions/memberactions'
@@ -112,7 +114,7 @@ resetpassword=(event)=>{
                   <div className='col-lg-3 col-md-3'></div>
                   <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
  
-                <form  style={{backgroundColor:'white',borderRadius:"5%",alignItems:"center"}} id="contact" onSubmit={(event)=>{
+                <form  style={{backgroundColor:"#123C69",borderRadius:"5%",alignItems:"center"}} id="contact" onSubmit={(event)=>{
                   this.submitform(event)
                 }}>
                     
@@ -141,19 +143,21 @@ resetpassword=(event)=>{
                     />
                 </div>
                 <br/>
-                <div className="row" style={{display:"inline"}}>
-                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <button className="btn btn-info" type="button" onClick={(event)=> this.submitform(event)}>
-                       LOGIN
-                    </button>
-                    </div>
-                
-                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <button type="button" className="btn btn-info" onClick={(event)=> this.resetpassword(event)}>
-                      Forgot Password
-                    </button>
+               
+        <div className="row" >
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            
+                <Button variant="outlined" color="primary"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.submitform(event)}>
+         Login
+                </Button>
                 </div>
-            </div>
+
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <Button variant="outlined" color="primary"  style={{padding:"10px",color:"#EDC7B7"}} onClick={(event)=> this.resetpassword(event)}>
+        Forget Password
+                </Button>
+                </div>
+                </div>
         </form>
         </div>
         <div className='col-lg-3 col-md-3'></div>

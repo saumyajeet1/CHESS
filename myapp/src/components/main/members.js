@@ -17,7 +17,6 @@ import T from '../../images/T.jpg'
 import AC from '../../images/AC.jpeg'
 import NK from '../../images/NK.jpg'
 import HA from '../../images/HA.jpg'
-import N from '../../images/N.jpg'
 import anuj from '../../images/anuj.jpg'
 import ryt from '../../images/ryt.jpg'
 import pandey from '../../images/pandey.jpg'
@@ -299,7 +298,7 @@ class Team extends Component {
               <div class="column">
                   <div class="team-5">
                       <div class="team-img">
-                          <img src={AHossain} alt="Team Image"/>
+                          <img src={samr} alt="Team Image"/>
                       </div>
                       <div class="team-content">
                           <h2 style={{fontSize:"15px"}}>Samriddho Saha</h2>
