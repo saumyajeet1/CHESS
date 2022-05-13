@@ -89,7 +89,7 @@ const Facad = () => {
                         <div class="team-content">
                             <h2 style={{ fontSize: "15px" }}>Anup Kumar Sadhukhan</h2>
                             <h3>PROFESSOR</h3>
-                            <h6 style={{ fontSize: "14px" }}>anupkumar.sadhukhan@che.nitdgp.ac.in</h6>
+                            <h6 style={{ fontSize: "12px" }}>anupkumar.sadhukhan@che.nitdgp.ac.in</h6>
                             <h4>9434788048</h4>
                         </div>
 
@@ -219,7 +219,7 @@ const Facad = () => {
                         <div class="team-content">
                             <h2 style={{ fontSize: "15px" }}>Rajib Ghosh Chaudhuri</h2>
                             <h3>ASSISTANT PROFESSOR</h3>
-                            <h6 style={{ fontSize: "14px" }}>rajib.ghoshchaudhuri@che.nitdgp.ac.in</h6>
+                            <h6 style={{ fontSize: "12px" }}>rajib.ghoshchaudhuri@che.nitdgp.ac.in</h6>
                             <h4>7596854649</h4>
                         </div>
 
