@@ -169,46 +169,46 @@ class Main extends Component {
           <div className="decor-text decor-text-2 wow fadeInUp" data-wow-delay=".3s">features</div>
         </section>
 
-        <section className="section bg-image-2">
+        <section className="section bg-image-2" style={{ backgroundBlendMode: "darken", borderRadius: "6rem", marginTop: "10%" }}>
           <div className="container section-md">
             <div className="row row-30 text-center">
               <div className="col-xl-3 col-sm-6 col-12">
                 <div className="counter-classic">
                   <div className="counter-classic-number"><span className="icon-lg novi-icon offset-right-10 mercury-icon-time"></span><span className="counter text-white" data-speed="2000">2020</span>
                   </div>
-                  <div className="counter-classic-title">Year of Establishment</div>
+                  <div className="counter-classic-title" style={{ fontWeight: "bold", color: "white" }}>Year of Establishment</div>
                 </div>
               </div>
               <div className="col-xl-3 col-sm-6 col-12">
                 <div className="counter-classic">
                   <div className="counter-classic-number"><span className="icon-lg novi-icon offset-right-10 mercury-icon-folder"></span><span className="counter text-white" data-speed="2000">10+</span>
                   </div>
-                  <div className="counter-classic-title">Successful Webinars</div>
+                  <div className="counter-classic-title" style={{ fontWeight: "bold", color: "white" }}>Successful Webinars</div>
                 </div>
               </div>
               <div className="col-xl-3 col-sm-6 col-12">
                 <div className="counter-classic">
                   <div className="counter-classic-number"><span className="icon-lg novi-icon offset-right-10 mercury-icon-users"></span><span className="counter text-white" data-speed="2000">3</span><span className="symbol text-white"></span>
                   </div>
-                  <div className="counter-classic-title">Courses</div>
+                  <div className="counter-classic-title" style={{ fontWeight: "bold", color: "white" }}>Courses</div>
                 </div>
               </div>
               <div className="col-xl-3 col-sm-6 col-12">
                 <div className="counter-classic">
                   <div className="counter-classic-number"><span className="icon-lg novi-icon offset-right-10 mercury-icon-group"></span><span className="counter text-white" data-speed="2000">18+</span>
                   </div>
-                  <div className="counter-classic-title">Team Members</div>
+                  <div className="counter-classic-title" style={{ fontWeight: "bold", color: "white" }}>Team Members</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="section section-md bg-gray-lighten">
+        <section className="section section-md bg-gray-lighten" style={{ backgroundColor: "#202020", marginTop: "15%", marginBottom: "5%", borderRadius: "2.5rem 2.5rem .5rem .5rem" }}>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-10">
-                <h3 className="wow fadeInLeft text-capitalize text-center" data-wow-delay=".3s">Our HOD's Opinions<span className="text-primary"> About CHESS</span></h3>
-                <p className="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Chemical Engineering Students'society is working with a motivation of developing professional and personal skills of students,which facilitate them to perform magnificently as an eminent engineer in the society. This society is aimed to provide a platform to showcase and sharpen student's talents through a variety of events and activities planned throughout four years, for overall development of students personalities. We continue our effort to prepare and guide the students for the various competitive exams and interviews so that they perform better and make their carrier in the selected fields. Real world problems will be blended in the curriculum and these are to be taught by experts from industry, in addition through guest lectures. Our focus is to effectively train our students as chemical engineers who can serve the society competently, collaboratively and ethically as planners, designers and operators of the environment.</p>
+                <h3 className="wow fadeInLeft text-capitalize text-center text-light" data-wow-delay=".3s">Our HOD's Opinions<span className="text-primary"> About CHESS</span></h3>
+                <p className="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" style={{ fontWeight: "bold", color: "white", fontFamily: "Roboto, sans-serif!important", lineHeight: "2", fontSize: "16px" }}>Chemical Engineering Students'society is working with a motivation of developing professional and personal skills of students,which facilitate them to perform magnificently as an eminent engineer in the society. This society is aimed to provide a platform to showcase and sharpen student's talents through a variety of events and activities planned throughout four years, for overall development of students personalities. We continue our effort to prepare and guide the students for the various competitive exams and interviews so that they perform better and make their carrier in the selected fields. Real world problems will be blended in the curriculum and these are to be taught by experts from industry, in addition through guest lectures. Our focus is to effectively train our students as chemical engineers who can serve the society competently, collaboratively and ethically as planners, designers and operators of the environment.</p>
                 <div className="owl-carousel review-carousel" data-items="1" data-sm-items="1" data-md-items="1" data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="true" data-autoplay="false">
                 </div>
               </div>
@@ -216,79 +216,6 @@ class Main extends Component {
           </div>
 
         </section>
-
-        {/* 
-
-               <div className="row">
-               
-               <div  id="description" >
-                   
-               <h1 style={{color:"#AC3B61",fontFamily:"Aeonix",fontStyle:'normal',textAlign:'center'}}>ABOUT</h1>
-               <br></br>
-                   <div className="circle">
-    
-                   </div>
-               
-                   <p style={{ fontFamily:"Aeonix",fontStyle:'normal' ,color:"#AC3B61"}} id="parag">The Chemical Engineering Student's Society (CHESS) is an independent student run society of Chemical Engineering Department of NIT Durgapur.It is solely dedicated to form a network
-                     among all the students,faculty members and alumni of the department. It promotes interaction  within the department and implements acadmeic, social and other programs of interest to its members.
-                   
-                   </p>
-               
-               
-                    </div>
-            
-            </div> */}
-
-        {/* <div className="row" >
-               <div id="box">
-                <div id="smallbox">
-                    <i className="fas fa-user-graduate" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
-                        <h3 id="faculty"><Link to="/facad">FACULTY</Link></h3></i>
-                </div>
-                <div id="smallbox">
-                    <i className="fas fa-graduation-cap" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
-                        <h3 id="faculty"><Link to="/subject">SYLLABUS</Link></h3></i>
-               </div>
-               
-               <div id="smallbox">
-                <i className="fa fa-book" id="cap1"style={{fontSize:"40px",color:"#E39821"}}>
-                <h3 id="faculty"><Link to="/register">REGISTER</Link></h3></i>
-               </div>
-               <div id="smallbox">
-                <i className="fa fa-lock" id="cap1" style={{fontSize:"40px",color:"#E39821"}}>
-                <h3 id="faculty"><Link to="/login">LOGIN</Link></h3></i>
-               </div>
-                 
-            </div>
-             </div> */}
-        {/* <div className="row" id="about">
-               
-               <div className="col-lg-12 col-sm-12 col-md-12 description" >
-                   
-               <h1 style={{color:"#AC3B61",fontFamily:"Aeonix",fontStyle:'normal',textAlign:'center'}}>MESSAGE FROM HOD:prof Gopinath Halder</h1>
-                   <br></br>
-                   <div className="circler">
-    
-                   </div>
-               
-                   <p style={{ fontFamily:"Aeonix" ,color:"#AC3B61",fontStyle:'normal'}} id="parag">Chemical Engineering Students'society is working with a motivation of developing professional
-                                    and personal skills of students,which facilitate them to perform magnificently as an eminent
-                                    engineer in the society. This society is aimed to provide a platform to showcase and sharpen
-                                    student's talents through a variety of events and activities planned throughout four years,
-                                    for overall development of students personalities. We continue our effort to prepare and
-                                    guide the students for the various competitive exams and interviews so that they perform
-                                    better and make their carrier in the selected fields. Real world problems will be blended in
-                                    the curriculum and these are to be taught by experts from industry, in addition through guest
-                                    lectures. Our focus is to effectively train our students as chemical engineers who can serve the
-                                    society competently, collaboratively and ethically as planners, designers and operators of the
-                                    environment.
-                   </p>
-               
-               
-                    </div>
-             
-            </div> */}
-
       </div>
 
     );

@@ -1,0 +1,80 @@
+* {
+  transition: all 0.2s ease-in;
+}
+.outer {
+  margin: auto;
+  padding: 1% 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  max-width: 112rem;
+  border-radius: 0.4rem;
+  background: #ecf0f1;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: "Baloo Tamma", cursive;
+}
+li {
+  color: #2c3e50;
+  font-size: 1.12rem;
+  line-height: 1.875rem;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: "Raleway", serif;
+}
+/*SG = style grid*/
+.SG {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.SG .sgLi {
+  min-width: 24%;
+  margin: 2% 0.35%;
+  display: inline-flex;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+.SG .sgLi:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.SG .box {
+  width: 100%;
+  height: 48vh;
+  padding: 1% 2%;
+  background: #fff;
+  min-height: 12.5rem;
+  box-sizing: border-box;
+}
+
+.s {
+  list-style: none;
+  padding: 2%;
+}
+.s li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  display: inline-block;
+  background: url(//goo.gl/lcPSVD);
+  background-position: 50%;
+}
+
+/* responsive grid*/
+@media (max-width: 970px) {
+  .SG .sgLi {
+    width: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .SG .sgLi {
+    width: 100%;
+  }
+  .SG .box {
+    height: auto;
+  }
+}

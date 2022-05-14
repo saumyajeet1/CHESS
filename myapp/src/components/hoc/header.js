@@ -26,7 +26,7 @@ class Header extends Component {
           <div className="heading1">CHEMICAL ENGINEERING STUDENTS SOCIETY</div>
           <div className="heading2">NATIONAL INSTITUTE OF TECHNOLOGY DURGAPUR</div>
         </div>
-        <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav className="navbar  navbar-expand-md bg-dark navbar-dark">
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span className="navbar-toggler-icon"></span>
           </button>

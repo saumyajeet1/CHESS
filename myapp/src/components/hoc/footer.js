@@ -6,12 +6,12 @@ import "../main/style.css"
 import "../main/n.css"
 const Footer = () => {
   return (
-    <footer className="section footer-classic section-sm">
+    <footer className="section footer-classic section-sm" style={{ background: "rgb(8 61 84)" }}>
       <div className="container">
         <div className="row row-30">
           <div className="col-lg-3 wow fadeInLeft">
             <a className="brand" href="./"><img className="brand-logo-dark" src={hexa} alt="" width="100" height="16" /><img className="brand-logo-light" src={hexa} style={{ objectFit: "cover" }} alt="" width="100" height="17" /></a>
-            <p className="footer-classic-description offset-top-0" style={{ color: "white", fontSize: "12px" }}>CHESS is a student's society at NIT Durgapur.</p>
+            <p className="footer-classic-description offset-top-0" style={{ color: "white", fontSize: "1.2rem" }}>CHESS is a student's society at NIT Durgapur.</p>
           </div>
           <div className="col-lg-3 col-sm-8 wow fadeInUp">
             <p className="footer-classic-title" style={{ color: "white" }}>Contact Info</p>
@@ -37,10 +37,10 @@ const Footer = () => {
             <form className="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
               <div className="form-wrap">
                 <label className="form-label" for="subscribe-email">Your Email Address</label>
-                <input className="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required" />
+                <input className="form-input" id="subscribe-email" type="email" style={{ backgroundColor: "#fff", border: "1px solid #39393e" }} name="email" data-constraints="@Email @Required" />
               </div>
               <div className="form-button group-sm text-center text-lg-left">
-                <button className="button button-primary button-circle" type="submit">Sign Up <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                <button className="button btn-outline-primary button-circle" style={{ backgroundColor: "rgb(0 34 70)", fontSize: "40px", border: "none" }} type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
               </div>
             </form>
             <p style={{ color: "inherit", marginTop: "6%" }}>Be the first to find out about our latest news, updates, and special offers.</p>
@@ -49,12 +49,12 @@ const Footer = () => {
       </div>
       <div className="container wow fadeInUp" data-wow-delay=".4s">
         <div className="footer-classic-aside">
-          <p className="rights"><span>&copy; {new Date().getFullYear()}</span><span className="copyright-year"></span> All Rights Reserved</p>
-          <ul className="social-links">
+          <p className="rights" style={{ color: "#fff" }}><span>&copy; {new Date().getFullYear()}</span><span className="copyright-year"></span> All Rights Reserved</p>
+          <ul className="social-links" style={{ color: "white" }}>
             <li><a className="fa fa-linkedin" href="https://in.linkedin.com/company/chemical-engineering-students-society-nit-durgapur?trk=public_profile_experience-item_profile-section-card_image-click"></a></li>
             <li><a className="fa fa fa-twitter" href="#"></a></li>
             <li><a className="fa fa-facebook" href="https://www.facebook.com/Chessnitd"></a></li>
-            <li><a className="fa fa-instagram" href="#"></a></li>
+            <li><a className="fa fa-instagram" href="https://www.instagram.com/chess_nit_dgp/"></a></li>
           </ul>
         </div>
       </div>

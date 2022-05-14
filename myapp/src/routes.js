@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch,Route} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Main from './components/main/main';
 import Register from './components/register/register';
 import Login from './components/register/login';
@@ -22,55 +22,55 @@ import Member from './components/main/members';
 import Facad from './components/main/facad';
 import Auth from './components/hoc/auth'
 import Desc from './components/main/description';
-import We from './components/main/n';
-import J from './components/main/j';
+// import We from './components/main/n';
+// import J from './components/main/j';
 const Routes = () => {
     return (
         <Layout>
-        <Switch>
-            
+            <Switch>
 
-            <Route exact component={Auth(Main,null)} path="/"/>
-           
-            <Route exact component={Auth(Live,null)} path="/live"/>
 
-            <Route exact component={Auth(Subject,null)} path="/subject"/>
-            
-            
-            <Route exact component={Auth(Facad,null)} path="/facad"/>
-            <Route exact component={Auth(Register,null)} path="/register"/>
-        
-            <Route exact component={Auth(Login,null)} path="/login"/>
+                <Route exact component={Auth(Main, null)} path="/" />
 
-            <Route exact component={Auth(Show,true)} path="/show"/>
+                <Route exact component={Auth(Live, null)} path="/live" />
 
-            <Route exact component={Auth(Award,true)} path="/award"/>
-            
-            <Route exact component={Auth(Education,true)} path="/qualify"/>
+                <Route exact component={Auth(Subject, null)} path="/subject" />
 
-        
-            <Route exact component={Auth(Blog,null)} path="/blogs"/>
-            <Route exact component={Auth(Desc,null)} path="/des"/>
 
-                          
-            <Route exact component={Auth(Forgot,null)} path="/resetpass"/>
-            
-            <Route exact component={Auth(Details,true)} path="/details"/>
+                <Route exact component={Auth(Facad, null)} path="/facad" />
+                <Route exact component={Auth(Register, null)} path="/register" />
 
-            <Route exact component={Auth(Disp,true)} path="/display"/>
-            
-            <Route exact component={Auth(Forget,null)} path="/forget"/>
+                <Route exact component={Auth(Login, null)} path="/login" />
 
-            <Route exact component={Auth(Allalum,true)} path="/allalum"/>
-            <Route exact component={Auth(Addnews,true)} path="/addnews"/>
-            <Route exact component={Auth(Notific,true)} path="/notific"/>
-            
-            <Route exact component={Auth(Member,false)} path="/member"/>
-            
-            <Route component={Error} /> 
+                <Route exact component={Auth(Show, true)} path="/show" />
 
-        
-        </Switch>
+                <Route exact component={Auth(Award, true)} path="/award" />
+
+                <Route exact component={Auth(Education, true)} path="/qualify" />
+
+
+                <Route exact component={Auth(Blog, null)} path="/blogs" />
+                <Route exact component={Auth(Desc, null)} path="/des" />
+
+
+                <Route exact component={Auth(Forgot, null)} path="/resetpass" />
+
+                <Route exact component={Auth(Details, true)} path="/details" />
+
+                <Route exact component={Auth(Disp, true)} path="/display" />
+
+                <Route exact component={Auth(Forget, null)} path="/forget" />
+
+                <Route exact component={Auth(Allalum, true)} path="/allalum" />
+                <Route exact component={Auth(Addnews, true)} path="/addnews" />
+                <Route exact component={Auth(Notific, true)} path="/notific" />
+
+                <Route exact component={Auth(Member, false)} path="/member" />
+
+                <Route component={Error} />
+
+
+            </Switch>
         </Layout>
     );
 };
